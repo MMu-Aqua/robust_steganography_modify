@@ -1,7 +1,8 @@
-from llm import get_next_word_distribution, sample_token, tokenizer, model, vocab_size
-from prf import PRF
+from llm import get_next_word_distribution, get_next_token_distribution, sample_token, sample_token_id, tokenizer, model, vocab_size
+from prf import PRF, PRF_t
 from Helpers import get_keys_to_use, get_limit, sample_key
 from tqdm import tqdm
+import torch
 
 """
 Implements the perturb function from our paper.
@@ -60,7 +61,7 @@ def encode(keys, h, m, delta, c):
 
   #! for now, concatenate the entire history together as the starting text
   text = ''.join(h) #! what seperator should we use?
-  tokens = [] # adding to compare tokens between encode and decode and see where the parsing error is
+  tokens = tokenizer(text, return_tensors='pt')
   # print('h: ', h)
   # print('text: ', text)
 
@@ -69,25 +70,34 @@ def encode(keys, h, m, delta, c):
     i = sample_key(watermarking_keys)
     # print('i: ', i)
     # Apply the language model over previous tokens to get a probability distribution p over the tth token
-    p = get_next_word_distribution(text, tokenizer, model)
+    p = get_next_token_distribution(tokens, model)
+    # p = get_next_word_distribution(text, tokenizer, model)
     # print('p: ', p)
     # compute r
     #! should only feed in the c prior tokens, not all of text
-    r = PRF(i, s, text, c)
+    r = PRF_t(i, s, tokens, c)
     # print('i, s, text, c: ', i[0], s, text, c)
     # print('j, i, r: ', j, i[0], r)
     # print('r: ', r)
     p_prime = perturb(p, r, delta)
     # print('p_prime: ', p_prime)
     # sample next token with p_prime
-    token = sample_token(p_prime)
-    with open("./encode.log", "a") as myfile:
-      myfile.write('j: {j}\n'.format(j=j))
-      myfile.write('i: {i}\n'.format(i=keys.index(i)))
-      myfile.write('r: {r}\n'.format(r=r[:10]))
-      myfile.write('token: {token}\n'.format(token=token))
-    text += token
-    tokens.append(token)
+    token = sample_token_id(p_prime)
+    # with open("./encode.log", "a") as myfile:
+    #   myfile.write('j: {j}\n'.format(j=j))
+    #   myfile.write('i: {i}\n'.format(i=keys.index(i)))
+    #   myfile.write('r: {r}\n'.format(r=r[:10]))
+    #   myfile.write('token: {token}\n'.format(token=token))
+    # print(tokens)
+    # print(token)
+    token_tensor = torch.tensor([[token]])
+    tokens['input_ids'] = torch.cat((tokens['input_ids'], token_tensor), dim=1)
+    tokens['attention_mask'] = torch.cat((tokens['attention_mask'], torch.tensor([[1]])), dim=1)
+    # tokens.append(token_tensor)
+
+#   print(tokens['input_ids'])
+  text =[tokenizer.decode(t.item()) for t in tokens['input_ids'][0]]
+  text = ''.join(text)
 
   return text, tokens
 
@@ -99,6 +109,7 @@ def decode(keys, h, ct, z, c):
 
   # tokenize stegotext
   tokens = tokenizer(ct, return_tensors='pt')['input_ids'][0] # this makes it line up with h as a starting point
+  print(tokens)
   text = ''
   idx = 0
   goal = ''.join(h)

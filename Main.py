@@ -14,7 +14,9 @@ c = 5
 
 # keys = [get_random_bytes(32), get_random_bytes(32), get_random_bytes(32)]
 delta = 0.0001
-ct, encode_tokens = encode(keys, h, m, delta, c)
+ct = encode(keys, h, m, delta, c)
+print(ct)
+exit(0)
 print('-------------------')
 recovered_counters, decode_tokens = decode(keys, h, ct, None, c)
 
@@ -23,7 +25,7 @@ print(recovered_counters)
 
 print(detect(get_limit(None), recovered_counters[0]))
 
-print(len(encode_tokens))
-print(encode_tokens)
-print(len(decode_tokens))
-print(decode_tokens)
+# print(len(encode_tokens))
+# print(encode_tokens)
+# print(len(decode_tokens))
+# print(decode_tokens)
