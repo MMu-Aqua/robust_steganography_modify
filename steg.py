@@ -19,6 +19,9 @@ def perturb(p, r, delta):
   # Build I: set of indices in [N] for which p_i ∈ [2δ, 1 − 2δ].
   I = set()
   for i, p_i in enumerate(p):
+    #! temp testing
+    # I.add(i)
+    #! end temp testing
     if (p_i >= 2 * delta and p_i <= 1 - 2 * delta):
       I.add(i)
 
@@ -39,6 +42,10 @@ def perturb(p, r, delta):
       p[j] += delta
     else:
       p[j] -= delta_prime
+      #! temp testing
+    #   if (p[j] < 0):
+    #     p[j] = 0
+      #! end temp testing
     # print('p_prime[j]: ', p[j])
   # the j not in I stay the same and since p was updated in place this has been handled
 #   print('p\': ', p)
@@ -83,11 +90,11 @@ def encode(keys, h, m, delta, c):
     # print('p_prime: ', p_prime)
     # sample next token with p_prime
     token = sample_token_id(p_prime)
-    with open("./encode.log", "a") as myfile:
-      myfile.write('j: {j}\n'.format(j=j))
-      myfile.write('i: {i}\n'.format(i=keys.index(i)))
-      myfile.write('r: {r}\n'.format(r=r[:10]))
-      myfile.write('token: {token}\n'.format(token=token))
+    # with open("./encode.log", "a") as myfile:
+    #   myfile.write('j: {j}\n'.format(j=j))
+    #   myfile.write('i: {i}\n'.format(i=keys.index(i)))
+    #   myfile.write('r: {r}\n'.format(r=r[:10]))
+    #   myfile.write('token: {token}\n'.format(token=token))
     # print(tokens)
     # print(token)
     token_tensor = torch.tensor([[token]])
@@ -137,12 +144,12 @@ def decode(keys, h, ct, z, c):
       # print('current_token_index: ', current_token_index)
       # print('r[current_token_index]: ', r[current_token_index])
       # For testing I need something that says: this is the next token. Here's what went into the PRF for sampling it.
-      with open("./decode.log", "a") as myfile:
-        myfile.write('j: {j}\n'.format(j=j - len(h_tokens)))
-        myfile.write('i: {i}\n'.format(i=i))
-        myfile.write('r: {r}\n'.format(r=r[:10]))
-        t = tokenizer.decode(current_token_index)
-        myfile.write('token: {t}\n'.format(t=current_token_index))
+    #   with open("./decode.log", "a") as myfile:
+    #     myfile.write('j: {j}\n'.format(j=j - len(h_tokens)))
+    #     myfile.write('i: {i}\n'.format(i=i))
+    #     myfile.write('r: {r}\n'.format(r=r[:10]))
+    #     t = tokenizer.decode(current_token_index)
+    #     myfile.write('token: {t}\n'.format(t=current_token_index))
       if (r[current_token_index] == 1):
         counters[i] += 1
         # print('counters: ', counters)
