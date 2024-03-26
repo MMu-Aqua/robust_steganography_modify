@@ -14,7 +14,8 @@ h = ['Hey! Want to get coffee?', 'Would Friday work for you?']
 c = 5
 
 # keys = [get_random_bytes(32), get_random_bytes(32), get_random_bytes(32)]
-delta = 0.0001
+# delta = 0.0001
+delta = 0.001
 ct, tokens = encode(keys, h, m, delta, c)
 print(ct)
 print(tokens)

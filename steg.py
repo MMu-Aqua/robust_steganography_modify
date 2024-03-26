@@ -83,11 +83,11 @@ def encode(keys, h, m, delta, c):
     # print('p_prime: ', p_prime)
     # sample next token with p_prime
     token = sample_token_id(p_prime)
-    # with open("./encode.log", "a") as myfile:
-    #   myfile.write('j: {j}\n'.format(j=j))
-    #   myfile.write('i: {i}\n'.format(i=keys.index(i)))
-    #   myfile.write('r: {r}\n'.format(r=r[:10]))
-    #   myfile.write('token: {token}\n'.format(token=token))
+    with open("./encode.log", "a") as myfile:
+      myfile.write('j: {j}\n'.format(j=j))
+      myfile.write('i: {i}\n'.format(i=keys.index(i)))
+      myfile.write('r: {r}\n'.format(r=r[:10]))
+      myfile.write('token: {token}\n'.format(token=token))
     # print(tokens)
     # print(token)
     token_tensor = torch.tensor([[token]])
@@ -137,12 +137,12 @@ def decode(keys, h, ct, z, c):
       # print('current_token_index: ', current_token_index)
       # print('r[current_token_index]: ', r[current_token_index])
       # For testing I need something that says: this is the next token. Here's what went into the PRF for sampling it.
-    #   with open("./decode.log", "a") as myfile:
-    #     myfile.write('j: {j}\n'.format(j=j))
-    #     myfile.write('i: {i}\n'.format(i=i))
-    #     myfile.write('r: {r}\n'.format(r=r[:10]))
-    #     t = tokenizer.decode(tokens[j])
-    #     myfile.write('token: {t}\n'.format(t=t))
+      with open("./decode.log", "a") as myfile:
+        myfile.write('j: {j}\n'.format(j=j - len(h_tokens)))
+        myfile.write('i: {i}\n'.format(i=i))
+        myfile.write('r: {r}\n'.format(r=r[:10]))
+        t = tokenizer.decode(current_token_index)
+        myfile.write('token: {t}\n'.format(t=current_token_index))
       if (r[current_token_index] == 1):
         counters[i] += 1
         # print('counters: ', counters)

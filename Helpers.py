@@ -3,7 +3,7 @@ import math
 
 def get_limit(num_watermarks):
   #! temporary constant
-  return 150
+  return 300
 
 def get_keys_to_use(m, keys):
   return [key for key, flag in zip(keys, m) if flag == 1]
