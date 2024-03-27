@@ -9,6 +9,11 @@ model = GPT2LMHeadModel.from_pretrained('gpt2-medium')
 vocab_size = tokenizer.vocab_size
 max_token_id = vocab_size - 1
 
+# Access the tokenizer's BPE ranks (merge list)
+merge_list = tokenizer.bpe_ranks  # This is an ordered dictionary where keys are token pairs and values are their rank.
+# Convert the ordered dictionary to a sorted list of merges
+sorted_merge_list = sorted(merge_list.items(), key=lambda x: x[1])
+
 """
 Generate the next word distribution given an input text using a language model.
 
@@ -62,7 +67,20 @@ def sample_token(probabilities):
   decoded_text = tokenizer.decode(index)
   return decoded_text
 
-def sample_token_id(probabilities):
+def sample_token_id(probabilities, prev_token):
+  # examine merge list corresponding to the previous token
+  prev_token_text = tokenizer.decode(prev_token)
+  relevant_merges = [merge[0] for merge in sorted_merge_list if merge[0][0] == prev_token_text]
+  banned_tokens = [item[1] for item in relevant_merges]
+  # convert back to ids
+  banned_tokens = [tokenizer.encode(token) for token in banned_tokens]
+  banned_tokens = [item[0] for item in banned_tokens]
+  # remove banned tokens from the probabilities
+  for banned in banned_tokens:
+    probabilities[banned] =  torch.tensor(0)
+#   print(probabilities)
+  # renormalize
+  probabilities = probabilities / sum(probabilities)
   # Sample a token from the probability distribution
   index = torch.multinomial(probabilities, 1).item()
   

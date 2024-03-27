@@ -85,7 +85,7 @@ def encode(keys, h, m, delta, c):
     r = PRF_t(i, s, tokens, c)
     p_prime = perturb(p, r, delta)
     # sample next token with p_prime
-    token = sample_token_id(p_prime)
+    token = sample_token_id(p_prime, tokens['input_ids'][0][-1].item())
     # prf_log(j, keys.index(i), r, token, "./encode.log")
     token_tensor = torch.tensor([[token]])
     tokens['input_ids'] = torch.cat((tokens['input_ids'], token_tensor), dim=1)
