@@ -5,7 +5,7 @@ set_deterministic_behavior()
 # rest of needed imports
 from llm import tokenizer
 from steg import encode, decode
-from Helpers import detect, get_limit
+from Helpers import detect, get_limit, generate_n_grams_with_counts, count_maintained_n_grams_with_frequency
 import torch
 
 token_match = 0
@@ -27,25 +27,16 @@ def find_delta(keys, h, m, c):
   detection = [detect(get_limit(None) * 10, x) for x in delta_counters]
   print(detection)
 
-def mismatch(enc_ids, dec_ids):
+def mismatch(enc_ids, dec_ids, c):
   enc = [tokenizer.decode(t) for t in enc_ids]
   dec = [tokenizer.decode(t) for t in dec_ids]
   print(enc)
   print(dec)
 
-  # compare how many indices are the same
-  same = 0
-  # smaller list index
-  limit = min(len(enc_ids), len(dec_ids))
-  for i in range(limit):
-    if enc_ids[i] == dec_ids[i]:
-      same += 1
-    else:
-        print('mismatch at index: ', i)
-        print('enc mismatch: ', enc_ids[i], tokenizer.decode(enc_ids[i]))
-        print('dec mismatch: ', dec_ids[i], tokenizer.decode(dec_ids[i]))
-  print('num same: ', same)
-  print('dec length: ', len(dec_ids))
+  total_c_grams = sum(generate_n_grams_with_counts(enc, c).values())
+  print('Total enc c-grams: ', total_c_grams)
+  maintained_c_grams = count_maintained_n_grams_with_frequency(enc, dec, c)
+  print('Maintained c-grams: ', maintained_c_grams)
 
 def test(keys, h, m, delta, c):
   global token_match
@@ -57,7 +48,7 @@ def test(keys, h, m, delta, c):
   if (same):
     token_match += 1
   if (not same):
-    mismatch(tokens['input_ids'][0], decode_tokens['input_ids'][0])
+    mismatch(tokens['input_ids'][0], decode_tokens['input_ids'][0], c)
 
   print('-------------------')
   print(ct)
