@@ -4,7 +4,7 @@ from collections import Counter
 
 def get_limit(num_watermarks):
   #! temporary constant
-  return 1000
+  return 100
 
 def get_keys_to_use(m, keys):
   return [key for key, flag in zip(keys, m) if flag == 1]
@@ -19,6 +19,11 @@ def detect(T, s_g):
   print (T, s_g)
   z = (2 * (s_g - T / 2)) / math.sqrt(T)
   return z > 2 #! temporary threshold
+
+def get_z(T, s_g):
+  print (T, s_g)
+  z = (2 * (s_g - T / 2)) / math.sqrt(T)
+  return z
 
 def generate_n_grams_with_counts(lst, n):
     """Generate n-grams from a list along with their counts."""

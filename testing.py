@@ -5,13 +5,14 @@ set_deterministic_behavior()
 # rest of needed imports
 from llm import tokenizer
 from steg import encode, decode
-from Helpers import detect, get_limit, generate_n_grams_with_counts, count_maintained_n_grams_with_frequency
+from Helpers import detect, get_z, get_limit, generate_n_grams_with_counts, count_maintained_n_grams_with_frequency
 import torch
 
 token_match = 0
 
 # results:
 # [-0.4472135954999579, 1.073312629199899, 1.6099689437998486, 1.2521980673998823, 1.6994116628998401, -1.8782971010998233]
+# [0.5059644256269407, 2.4033310217279684, 1.5178932768808222, 3.1622776601683795, 3.0357865537616444, 0.6957010852370434] for new version
 # use 0.001 for now
 def find_delta(keys, h, m, c):
   deltas = [0.00001, 0.0001, .001, .01, .1, .5]
@@ -24,7 +25,7 @@ def find_delta(keys, h, m, c):
       delta_counters[deltas.index(delta)] += result
   avg_delta_counters = [x / 10 for x in delta_counters]
   print(avg_delta_counters)
-  detection = [detect(get_limit(None) * 10, x) for x in delta_counters]
+  detection = [get_z(get_limit(None) * 10, x) for x in delta_counters]
   print(detection)
 
 def mismatch(enc_ids, dec_ids, c):
@@ -57,20 +58,23 @@ def test(keys, h, m, delta, c):
 #   for i in range(len(recovered_counters)):
 #     print(detect(get_limit(None), recovered_counters[i]))
   m_prime = [1 if detect(get_limit(None), x) else 0 for x in recovered_counters]
+  print('m: ', m)
   print('m_prime: ', m_prime)
 
   return recovered_counters
 
-m = [1, 0, 1, 1, 0]
+# m = [1, 0, 1, 1, 0]
+m = [1, 0, 1]
 l = len(m)
-keys = [b'\0' * 32, b'\1' * 32, b'\2' * 32, b'\3' * 32, b'\4' * 32]
+# keys = [b'\0' * 32, b'\1' * 32, b'\2' * 32, b'\3' * 32, b'\4' * 32]
+keys = [b'\0' * 32, b'\1' * 32, b'\2' * 32,]
 h = ['Hey! Want to get coffee? ', 'Would Friday work for you?']
 c = 3
-delta = 0.001
+# delta = 0.001
 
-# find_delta(keys, h, m, c)
+# find_delta([b'\0' * 32], h, [1], c)
 
-# delta = 0.01
+delta = 0.01
 # test how many times encode and decode perfectly match
 # for _ in range(15):
 #   test(keys, h, m, delta, c)

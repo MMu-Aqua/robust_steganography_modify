@@ -16,6 +16,9 @@ Implements the perturb function from our paper.
 p: distribution, r: prf output, delta: amount to adjust logits by
 Returns a perturbed distribution p' (p is updated in place to become p' and p is returned)
 """
+#! try just add and renormalize (no subtraction)
+#! try setting r[j] == 0 -> p[j] = 0 for testing to see if the watermark comes through (then renormalize)
+#! test bias of prf
 def perturb(p, r, delta):
 #   print('p: ', p)
 #   print('p sum: ', sum(p))
@@ -23,20 +26,22 @@ def perturb(p, r, delta):
   #! check that this is right and that p can be updated in place. Also check that p' sums to 1
   N = vocab_size
 
-  # Build I: set of indices in [N] for which p_i ∈ [2δ, 1 − 2δ].
-  I = set()
-  for i, p_i in enumerate(p):
-    #! temp testing
-    # I.add(i)
-    #! end temp testing
-    if (p_i >= 2 * delta and p_i <= 1 - 2 * delta):
-      I.add(i)
-
   # Set w to be the number of indices in [N] for which r_i = 1 and δ′ = δw/(N′ − w).
   #! double check
   w = sum(r)
   #! the formula says N_prime - w. Is this a typo? N_prime is never defined
   delta_prime = (delta * w) / (N - w)
+
+  # Build I: set of indices in [N] for which p_i ∈ [2δ, 1 − 2δ].
+  I = set()
+  for i, p_i in enumerate(p):
+    #! temp testing
+    # I.add(i)
+    if (p_i >= delta_prime and p_i <= 1 - delta):
+      I.add(i)
+    #! end temp testing
+    # if (p_i >= 2 * delta and p_i <= 1 - 2 * delta):
+    #   I.add(i)
 
 #   print('I: ', I)
 
@@ -50,8 +55,12 @@ def perturb(p, r, delta):
     else:
       p[j] -= delta_prime
       #! temp testing
-    #   if (p[j] < 0):
-    #     p[j] = 0
+      if (p[j] < 0):
+        print(I)
+        print(delta)
+        print(delta_prime)
+        print(j, p[j])
+        # p[j] = 0
       #! end temp testing
     # print('p_prime[j]: ', p[j])
   # the j not in I stay the same and since p was updated in place this has been handled
