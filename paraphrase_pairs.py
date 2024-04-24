@@ -1,11 +1,36 @@
 import seaborn as sns
 import matplotlib.pylab as plt
+import numpy as np
 from scipy.spatial.distance import cdist
 from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+# model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+# model = SentenceTransformer('Salesforce/SFR-Embedding-Mistral')
 
+# cosine: (0.26412625648523314, 0.19198280108103782)
+# euclidean: (210.40699938888304, 171.06754307519594)
+# Off diagonal pairs that are "too similar":
+# 18 16
+# 25 26
+# 36 37
+# 40 41
+def find_cutoff(matrix):
+    # find max of diagonal
+    diagonal = matrix.diagonal()
+    max_diagonal = np.max(diagonal)
 
+    # find min of off-diagonal
+    off_diagonal = []
+    for i in range(len(matrix[0])):
+        for j in range(len(matrix[0])):
+            if i != j:
+                if (matrix[i][j] < max_diagonal):
+                    print(i, j)
+                off_diagonal.append(matrix[i][j])
+    min_off_diagonal = np.min(off_diagonal)
+    
+    return max_diagonal, min_off_diagonal
 
+# Original and paraphrased sentences
 originals = [
     "A basso porto (At the Lower Harbour) is an opera in three acts by the Italian composer Niccola Spinelli. The opera sets an Italian-language libretto by Eugene Checchi, based on Goffredo Cognetti's 1889 play O voto. It premiered to critical success at the Cologne Opera on April 18, 1894, sung in a German translation by Ludwig Hartmann and Otto Hess. This watercolour illustration depicts the set design by Riccardo Salvadori for act 1 of the opera's premiere. A basso porto is set in the slums of Naples, and Spinelli included mandolins and guitars in his orchestral score.",
 
@@ -91,7 +116,6 @@ originals = [
 
     "And I hope you don't have money from cryptocurrency moving in and out of your bank accounts. The mortgage people DO NOT LIKE THAT and made me answer so many questions 😂😂😂",
 ]
-
 paraphrases = [
     "\"A basso porto (At the Lower Harbour)\" is a three-act opera by Niccola Spinelli, featuring a libretto in Italian by Eugene Checchi that adapts Goffredo Cognetti's 1889 drama, O voto. Its debut, performed in German by translators Ludwig Hartmann and Otto Hess, occurred at the Cologne Opera on April 18, 1894, and was met with acclaim. This watercolor represents Riccardo Salvadori's set design for the first act. Set against the backdrop of Naples' impoverished areas, the score of \"A basso porto\" is enriched by the inclusion of mandolins and guitars.",
 
@@ -179,14 +203,32 @@ paraphrases = [
 ]
 
 # compute embeddings
-original_embeddings = model.encode(originals)
-paraphrase_embeddings = model.encode(paraphrases)
+# original_embeddings = model.encode(originals)
+# paraphrase_embeddings = model.encode(paraphrases)
 
 # compute similarities
-cosine_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='cosine')
-euclidean_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='euclidean')
+# cosine_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='cosine')
+# euclidean_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='euclidean')
 
 # plot similarities
-ax = sns.heatmap(cosine_matrix, linewidth=0.5)
+# ax = sns.heatmap(cosine_matrix, linewidth=0.5)
 # ax = sns.heatmap(euclidean_matrix, linewidth=0.5)
-plt.show()
+# plt.show()
+
+# print(find_cutoff(euclidean_matrix))
+
+print(originals[18])
+print('\n')
+print(originals[16])
+print('-------------------------------')
+print(originals[25])
+print('\n')
+print(originals[26])
+print('-------------------------------')
+print(originals[36])
+print('\n')
+print(originals[37])
+print('-------------------------------')
+print(originals[40])
+print('\n')
+print(originals[41])
