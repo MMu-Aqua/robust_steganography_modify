@@ -1,6 +1,7 @@
 import seaborn as sns
 import matplotlib.pylab as plt
 import numpy as np
+import os
 from scipy.spatial.distance import cdist
 from sentence_transformers import SentenceTransformer
 # model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
@@ -17,6 +18,7 @@ def find_cutoff(matrix):
     # find max of diagonal
     diagonal = matrix.diagonal()
     max_diagonal = np.max(diagonal)
+    overlaps = []
 
     # find min of off-diagonal
     off_diagonal = []
@@ -24,11 +26,11 @@ def find_cutoff(matrix):
         for j in range(len(matrix[0])):
             if i != j:
                 if (matrix[i][j] < max_diagonal):
-                    print(i, j)
+                    overlaps.append((i, j))
                 off_diagonal.append(matrix[i][j])
     min_off_diagonal = np.min(off_diagonal)
     
-    return max_diagonal, min_off_diagonal
+    return max_diagonal, min_off_diagonal, overlaps
 
 # Original and paraphrased sentences
 originals = [
@@ -202,13 +204,9 @@ paraphrases = [
     "And just a heads-up, avoid having cryptocurrency transactions with your bank if you're applying for a mortgage—they really scrutinize that and I had to answer a ton of questions! 😂😂😂",
 ]
 
-# compute embeddings
-# original_embeddings = model.encode(originals)
-# paraphrase_embeddings = model.encode(paraphrases)
 
-# compute similarities
-# cosine_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='cosine')
-# euclidean_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='euclidean')
+
+
 
 # plot similarities
 # ax = sns.heatmap(cosine_matrix, linewidth=0.5)
@@ -217,18 +215,84 @@ paraphrases = [
 
 # print(find_cutoff(euclidean_matrix))
 
-print(originals[18])
-print('\n')
-print(originals[16])
-print('-------------------------------')
-print(originals[25])
-print('\n')
-print(originals[26])
-print('-------------------------------')
-print(originals[36])
-print('\n')
-print(originals[37])
-print('-------------------------------')
-print(originals[40])
-print('\n')
-print(originals[41])
+# print(originals[18])
+# print('\n')
+# print(originals[16])
+# print('-------------------------------')
+# print(originals[25])
+# print('\n')
+# print(originals[26])
+# print('-------------------------------')
+# print(originals[36])
+# print('\n')
+# print(originals[37])
+# print('-------------------------------')
+# print(originals[40])
+# print('\n')
+# print(originals[41])
+
+def save_plot(ax, measurement, model_name):
+    model_name = model_name.replace('/', '_')
+    filename = './embedding_comparison/{model_name}/{measurement}.png'.format(model_name=model_name, measurement=measurement)
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+    fig = ax.get_figure()
+    fig.savefig(filename)
+
+def save_cutoffs(max_diagonal, min_off_diagonal, overlaps, measurement, model_name):
+    model_name = model_name.replace('/', '_')
+    filename = './embedding_comparison/{model_name}/{measurement}_cutoffs.txt'.format(model_name=model_name, measurement=measurement)
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+    with open(filename, 'w') as f:
+        f.write('{max_diagonal}\n'.format(max_diagonal=max_diagonal))
+        f.write('{min_off_diagonal}\n'.format(min_off_diagonal=min_off_diagonal))
+        for pair in overlaps:
+            f.write('{pair[0]} {pair[1]}\n'.format(pair=pair))
+
+# for a embedding model, create heatmaps, find cutoffs, find pairs that are too similar
+def measure_embeddings(originals, paraphrases, model_name):
+    model = SentenceTransformer(model_name)
+    
+    # compute embeddings
+    original_embeddings = model.encode(originals)
+    paraphrase_embeddings = model.encode(paraphrases)
+    
+    # compute similarities
+    cosine_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='cosine')
+    euclidean_matrix = cdist(original_embeddings, paraphrase_embeddings, metric='euclidean')
+    
+    # plot similarities
+    plt.figure()
+    ax_cos = sns.heatmap(cosine_matrix, linewidth=0.5, cbar=True)
+    save_plot(ax_cos, 'cosine', model_name)
+    
+    plt.figure()
+    ax_euc = sns.heatmap(euclidean_matrix, linewidth=0.5, cbar=True)
+    save_plot(ax_euc, 'euclidean', model_name)
+    
+    # find cutoffs
+    max_diagonal_cos, min_off_diagonal_cos, overlaps_cos = find_cutoff(cosine_matrix)
+    max_diagonal_euc, min_off_diagonal_euc, overlaps_euc = find_cutoff(euclidean_matrix)
+    
+    # save cutoffs
+    save_cutoffs(max_diagonal_cos, min_off_diagonal_cos, overlaps_cos, 'cosine', model_name)
+    save_cutoffs(max_diagonal_euc, min_off_diagonal_euc, overlaps_euc, 'euclidean', model_name)
+
+def compare_embeddings(originals, paraphrases, model_names):
+    for model_name in model_names:
+        try:
+            measure_embeddings(originals, paraphrases, model_name)
+        except:
+            print('Error with model: {model_name}'.format(model_name=model_name))
+
+model_names = [
+    'paraphrase-MiniLM-L6-v2',
+    'Salesforce/SFR-Embedding-Mistral',
+    "Alibaba-NLP/gte-Qwen1.5-7B-instruct",
+    "voyage-2",
+    "GritLM/GritLM-7B",
+    "intfloat/e5-mistral-7b-instruct",
+    ]
+
+compare_embeddings(originals, paraphrases, model_names)
