@@ -4,6 +4,7 @@ from tqdm import tqdm
 from sklearn.decomposition import PCA
 from tabulate import tabulate
 from itertools import product
+import argparse
 
 # Load the pickled dataset
 def load_pickled_dataset(filename='dataset.pkl'):
@@ -139,57 +140,31 @@ def measure_uniformity(hashes, num_bits):
 
 # Main function to load, concatenate, and apply PCA
 if __name__ == "__main__":
-    # # Step 1: Load embeddings from the pickled file
-    embeddings1_pos, embeddings2_pos = load_pickled_dataset()
-    embeddings1_pos = embeddings1_pos[:-50000]
-    embeddings2_pos = embeddings2_pos[:-50000]
+    parser = argparse.ArgumentParser(description='Train PCA model on embeddings')
+    parser.add_argument('--dataset', type=str, default='dataset.pkl',
+                      help='Path to the pickled dataset')
+    parser.add_argument('--slice-end', type=int, default=-50,
+                      help='Index to slice embeddings from end (negative number)')
+    parser.add_argument('--output', type=str, default='pca_model.pkl',
+                      help='Output path for PCA model')
+    args = parser.parse_args()
 
-    # # Step 2: Concatenate the two sets of embeddings
+    # Step 1: Load embeddings from the pickled file
+    print(f"Loading embeddings from {args.dataset}")
+    embeddings1_pos, embeddings2_pos = load_pickled_dataset(args.dataset)
+    
+    # Step 2: Apply slicing
+    if args.slice_end < 0:
+        print(f"Slicing off last {abs(args.slice_end)} embeddings")
+        embeddings1_pos = embeddings1_pos[:args.slice_end]
+        embeddings2_pos = embeddings2_pos[:args.slice_end]
+    
+    print(f"Using {len(embeddings1_pos)} embeddings for training")
+
+    # Step 3: Concatenate the two sets of embeddings
     all_embeddings = np.concatenate([embeddings1_pos, embeddings2_pos], axis=0)
 
-    # # Step 3: Perform PCA on the concatenated embeddings
-    pca = compute_full_pca(embeddings1_pos) # all_embeddings
-    save_pca(pca)
-    exit()
-
-    pca = load_pca()
-
-    # test accuracies for various lenghts and start indices of PCA components
-    indices = [
-        (0, 1),
-        (0, 2),
-        (0, 3),
-        (0, 4),
-        (0, 5),
-        (0, 6),
-        (0, 7),
-        (0, 8),
-        (1, 2),
-        (1, 3),
-        (1, 4),
-        (1, 5),
-        (1, 6),
-        (1, 7),
-        (1, 8),
-        (1, 9),
-        (2, 3),
-        (2, 4),
-        (2, 5),
-        (2, 6),
-        (2, 7),
-        (2, 8),
-        (2, 9),
-        (2, 10),
-    ]
-    results = []
-    for start_index, end_index in tqdm(indices):
-        # Measure the accuracy
-        match_percentage = measure_accuracy(pca, embeddings1_pos, embeddings2_pos, start_index, end_index)
-        # Calculate the uniformity by hashing the embeddings
-        hashes = pca_hash(pca, embeddings1_pos, start=start_index, end=end_index)
-        uniformity = measure_uniformity(hashes, end_index - start_index)
-        results.append([start_index, end_index, f"{match_percentage:.2f}%", uniformity])
-    table = tabulate(results, headers=["Start Index", "End Index", "Accuracy (%)"], tablefmt="grid")
-    print(table)
-    
-    # print(measure_uniformity(pca_hash(pca, embeddings1_pos, start=0, end=2), 2))
+    # Step 4: Perform PCA on the concatenated embeddings
+    pca = compute_full_pca(embeddings1_pos)  # all_embeddings
+    save_pca(pca, args.output)
+    print("PCA training complete!")
