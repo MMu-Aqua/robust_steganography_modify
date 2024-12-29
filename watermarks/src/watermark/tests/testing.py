@@ -6,10 +6,10 @@ import os
 
 # Use absolute imports since we're in a package
 from watermark import (
-    NanoGPTModel,
+    ShakespeareNanoGPTModel,
     GPT2Model,
     AESPRF,
-    DeltaPerturb,
+    SmoothPerturb,
     Embedder,
     Extractor,
     set_seed
@@ -150,10 +150,10 @@ if __name__ == "__main__":
     # set_seed(9)
     
     # Initialize components
-    model = NanoGPTModel()
+    model = ShakespeareNanoGPTModel()
     # model = GPT2Model()
     prf = AESPRF(vocab_size=model.vocab_size, max_token_id=model.vocab_size-1)
-    perturb = DeltaPerturb()
+    perturb = SmoothPerturb()
     embedder = Embedder(model, model.tokenizer, prf, perturb)
     extractor = Extractor(model, model.tokenizer, prf)
 

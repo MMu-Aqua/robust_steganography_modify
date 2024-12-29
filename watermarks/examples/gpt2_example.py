@@ -12,7 +12,7 @@ natural language generation.
 from watermark import (
     GPT2Model,
     AESPRF,
-    DeltaPerturb,
+    SmoothPerturb,
     Embedder,
     Extractor,
     set_seed
@@ -25,7 +25,7 @@ def main():
     # Initialize components
     model = GPT2Model()
     prf = AESPRF(vocab_size=model.vocab_size, max_token_id=model.vocab_size-1)
-    perturb = DeltaPerturb()
+    perturb = SmoothPerturb()
     embedder = Embedder(model, model.tokenizer, prf, perturb)
     extractor = Extractor(model, model.tokenizer, prf)
 

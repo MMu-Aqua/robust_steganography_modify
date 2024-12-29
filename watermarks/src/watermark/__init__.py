@@ -1,9 +1,9 @@
-from .models.nanogpt import NanoGPTModel, CharacterTokenizer
+from .models.shakespeare_nanogpt import ShakespeareNanoGPTModel, ShakespeareCharacterTokenizer
 from .models.gpt2 import GPT2Model, GPT2Tokenizer
 from .models.base import LanguageModel, BaseTokenizer
 from .prf.aes_prf import AESPRF
 from .prf.base import PRF
-from .perturb.delta_perturb import DeltaPerturb
+from .perturb.smooth_perturb import SmoothPerturb
 from .perturb.harsh_perturb import HarshPerturb
 from .perturb.base import PerturbFunction
 from .core.embedder import Embedder
@@ -13,14 +13,14 @@ from .utils.config import set_seed
 __all__ = [
     'LanguageModel',
     'BaseTokenizer',
-    'NanoGPTModel',
-    'CharacterTokenizer',
+    'ShakespeareNanoGPTModel',
+    'ShakespeareCharacterTokenizer',
     'GPT2Model',
     'GPT2Tokenizer',
     'PRF',
     'AESPRF',
     'PerturbFunction',
-    'DeltaPerturb',
+    'SmoothPerturb',
     'HarshPerturb',
     'Embedder',
     'Extractor',

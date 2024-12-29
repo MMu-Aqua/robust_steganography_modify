@@ -1,5 +1,5 @@
 from .base import PerturbFunction
-from .delta_perturb import DeltaPerturb
+from .smooth_perturb import SmoothPerturb
 from .harsh_perturb import HarshPerturb
 
-__all__ = ['PerturbFunction', 'DeltaPerturb', 'HarshPerturb']
+__all__ = ['PerturbFunction', 'SmoothPerturb', 'HarshPerturb']

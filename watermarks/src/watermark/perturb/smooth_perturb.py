@@ -2,10 +2,11 @@ import torch
 import numpy as np
 from .base import PerturbFunction
 
-class DeltaPerturb(PerturbFunction):
+class SmoothPerturb(PerturbFunction):
     """
-    Implementation of delta-based probability perturbation.
-    Adjusts token probabilities up/down based on PRF output.
+    Implementation of smooth probability perturbation.
+    Gradually adjusts token probabilities up/down based on PRF output.
+    This is less aggressive than HarshPerturb and produces more natural text.
     """
     
     def __call__(self, p, r, delta):
@@ -44,4 +45,4 @@ class DeltaPerturb(PerturbFunction):
             # Fallback to uniform if numerical underflow occurred
             p = p.new_ones(N) / float(N) if hasattr(p, 'new_ones') else np.ones(N) / float(N)
 
-        return p
+        return p 

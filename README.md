@@ -99,23 +99,23 @@ python example.py
 ### Watermarking System
 
 The watermarking system supports two language models:
-1. **NanoGPT (Character-level)**: More reliable watermarking due to character-by-character tokenization
+1. **ShakespeareNanoGPT**: An example character-level model trained on Shakespeare's works. While character-level models are less common, they offer more reliable watermarking due to perfect token encoding/decoding (each character maps to exactly one token). Users can train their own character-level models on any text distribution and use them with this library - Shakespeare is just one example to demonstrate the benefits of character-level tokenization.
 2. **GPT2**: More natural text generation but less reliable watermarking due to BPE tokenization
 
 Basic example:
 ```python
 from watermark import (
-    NanoGPTModel,  # or GPT2Model
+    ShakespeareNanoGPTModel,  # or GPT2Model
     AESPRF,
-    DeltaPerturb,
+    SmoothPerturb,
     Embedder,
     Extractor
 )
 
 # Initialize components
-model = NanoGPTModel()
+model = ShakespeareNanoGPTModel()
 prf = AESPRF(vocab_size=model.vocab_size, max_token_id=model.vocab_size-1)
-perturb = DeltaPerturb()
+perturb = SmoothPerturb()
 embedder = Embedder(model, model.tokenizer, prf, perturb)
 extractor = Extractor(model, model.tokenizer, prf)
 
@@ -197,6 +197,31 @@ Follow testing instructions in embeddings/README.md
 cd watermarks
 python -m pytest src/watermark/tests/
 ```
+
+## Use Cases
+
+The steganography systems in this library can be used for various privacy-preserving and information-hiding applications:
+
+### Censorship Resistance
+- Enable secure communication in environments with active censorship or surveillance
+- Protect messages from being altered or tampered with during transmission
+- Allow verification of message authenticity even if intermediaries modify the text
+
+### Covert File Storage
+- Hide entire files within seemingly innocent text documents
+- Convert binary data into natural-looking text for border crossings or inspections
+- Store sensitive information in plain sight
+
+### Cloud Storage Privacy
+- Store private files on cloud platforms disguised as creative writing
+- Make sensitive data appear as:
+  - Collections of poetry or short stories
+  - Novel drafts or writing exercises
+  - Personal journal entries
+  - Blog posts or articles
+- Avoid drawing attention to encrypted files while maintaining data privacy
+
+Note: This tool is intended for legitimate privacy-preserving use cases. Users are responsible for complying with all applicable laws and regulations in their jurisdiction.
 
 ## Contributing
 

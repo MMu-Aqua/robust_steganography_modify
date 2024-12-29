@@ -5,7 +5,7 @@ less natural text but potentially stronger watermarks.
 """
 
 from watermark import (
-    NanoGPTModel,
+    ShakespeareNanoGPTModel,
     AESPRF,
     HarshPerturb,
     Embedder,
@@ -18,9 +18,9 @@ def main():
     set_seed(42)
     
     # Initialize with harsh perturbation
-    model = NanoGPTModel()
+    model = ShakespeareNanoGPTModel()
     prf = AESPRF(vocab_size=model.vocab_size, max_token_id=model.vocab_size-1)
-    perturb = HarshPerturb()  # Using harsh perturbation instead of delta
+    perturb = HarshPerturb()
     embedder = Embedder(model, model.tokenizer, prf, perturb)
     extractor = Extractor(model, model.tokenizer, prf)
 
