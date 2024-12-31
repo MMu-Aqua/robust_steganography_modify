@@ -17,7 +17,7 @@ The covertext length calculation accounts for:
 
 from watermark import (
     ShakespeareNanoGPTModel,
-    AESPRF,
+    HMACPRF,
     SmoothPerturb,
     SmoothCovertextCalculator,
     Embedder,
@@ -44,7 +44,7 @@ def main():
     
     # Initialize components
     model = ShakespeareNanoGPTModel()
-    prf = AESPRF(vocab_size=model.vocab_size, max_token_id=model.vocab_size-1)
+    prf = HMACPRF(vocab_size=model.vocab_size, max_token_id=model.vocab_size-1)
     perturb = SmoothPerturb()
     embedder = Embedder(model, model.tokenizer, prf, perturb)
     extractor = Extractor(model, model.tokenizer, prf)

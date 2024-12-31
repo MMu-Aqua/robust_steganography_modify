@@ -2,6 +2,7 @@ from .models.shakespeare_nanogpt import ShakespeareNanoGPTModel, ShakespeareChar
 from .models.gpt2 import GPT2Model, GPT2Tokenizer
 from .models.base import LanguageModel, BaseTokenizer
 from .prf.aes_prf import AESPRF
+from .prf.hmac_prf import HMACPRF
 from .prf.base import PRF
 from .perturb.smooth_perturb import SmoothPerturb
 from .perturb.harsh_perturb import HarshPerturb
@@ -20,6 +21,7 @@ __all__ = [
     'GPT2Tokenizer',
     'PRF',
     'AESPRF',
+    'HMACPRF',
     'PerturbFunction',
     'SmoothPerturb',
     'HarshPerturb',

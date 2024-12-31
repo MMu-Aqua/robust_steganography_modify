@@ -6,7 +6,7 @@ from .base import CovertextCalculator
 class SmoothCovertextCalculator(CovertextCalculator):
     """Calculator for smooth perturbation watermarking (only the 1-bits are used)."""
     
-    def get_covertext_length(self, n: int, epsilon: float, delta: float, p0: float = 0.5) -> int:
+    def get_covertext_length(self, n: int, epsilon: float, delta: float, p0: float = 0.5, safety_factor: int = 10) -> int:
         """
         Computes the minimum required covertext length L so that
         an n-bit message can be recovered with overall success probability ≥ 1 - epsilon,
@@ -24,6 +24,8 @@ class SmoothCovertextCalculator(CovertextCalculator):
             Watermark perturbation strength.
         p0 : float, optional
             Null (unwatermarked) probability that a token is labeled '1', by default 0.5.
+        safety_factor : int, optional
+            Safety factor to account for PRF biases, low entropy in covertext tokens, and potential adversarial attacks. This multiplies the minimum required length to ensure robust message recovery, by default 10.
 
         Returns
         -------
@@ -70,4 +72,7 @@ class SmoothCovertextCalculator(CovertextCalculator):
         L_float = (z**2 * n**2) / (4.0 * (shift**2))
         L = ceil(L_float)  # round up
 
-        return L
+        # Apply safety factor
+        L_safe = L * safety_factor
+
+        return L_safe

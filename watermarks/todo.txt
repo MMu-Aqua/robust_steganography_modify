@@ -1,7 +1,5 @@
 update examples to use get_limit function
 
-delete get_limit function
-
 try logging and comparing the prob dist before and after perturb
 
 write attacks
@@ -9,3 +7,11 @@ write attacks
     random reorder?
     within a certain levenshtein edit distance?
     ask chat gpt to rewrite them
+
+log prf values and compare between embedder and extractor
+
+log number of watermarked tokens in embedder and see how it compares to theory
+
+safety factor should be part of the covertext calculator?
+
+log how often "if w==0 or w==N: return p" is hit

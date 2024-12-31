@@ -12,10 +12,6 @@ def sample_key(keys: List[bytes]) -> bytes:
     """Randomly sample a key from the list."""
     return random.choice(keys)
 
-    return (s_g - E_s) / math.sqrt(Var_s)
-
-    return (z_value > threshold)
-
 def detect(T: int, s_g: int, n: int, epsilon: float) -> bool:
     """
     Detect if a particular watermark bit is present (1) or not (0) 
