@@ -6,6 +6,7 @@ from ..models.base import LanguageModel, BaseTokenizer
 from ..prf.base import PRF
 from ..perturb.base import PerturbFunction
 from ..utils.helpers import get_keys_to_use, sample_key
+from ..utils.debug import log_prf_output
 
 class Embedder:
     def __init__(
@@ -63,6 +64,7 @@ class Embedder:
             p = self.model.get_next_token_distribution(context_tokens)
             # compute r
             r = self.prf(i, s, context_tokens, c)
+            # perturb p
             p_prime = self.perturb_fn(p, r, delta)
             # sample next token with p_prime
             token = self.model.sample_token(p_prime, tokens['input_ids'][0][-1].item())

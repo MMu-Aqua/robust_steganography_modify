@@ -182,10 +182,32 @@ perturb = MyCustomPerturb()
 embedder = Embedder(model, model.tokenizer, prf, perturb)
 ```
 
+Additionally, the `covertext_calculator` module provides a way to calculate the minimum required covertext length for a given message length, error rate, and watermark strength.
+
+```python
+from watermark.covertext.smooth_calculator import SmoothCovertextCalculator
+
+n_bits = 3  # Length of message to hide
+epsilon = 0.05  # For 95% success probability
+delta = 0.2  # Perturbation strength
+safety_factor = 10
+
+calculator = SmoothCovertextCalculator()
+required_length = calculator.get_covertext_length(
+    n=n_bits,
+    epsilon=epsilon,
+    delta=delta,
+    safety_factor=safety_factor
+)
+
+# use this length as the covertext_length parameter in the embedder
+```
+
 For complete examples, see:
 - `examples/shakespeare_nanogpt_example.py`: Character-level watermarking
 - `examples/gpt2_example.py`: BPE-based watermarking
 - `examples/harsh_perturb_example.py`: Alternative perturbation method
+- `examples/covertext_calculator_example.py`: Calculating required covertext length example
 
 ## Testing
 

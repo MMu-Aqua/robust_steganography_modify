@@ -10,6 +10,7 @@ from .perturb.base import PerturbFunction
 from .core.embedder import Embedder
 from .core.extractor import Extractor
 from .utils.config import set_seed
+from .utils.debug import log_prf_output
 from .covertext import CovertextCalculator, SmoothCovertextCalculator
 
 __all__ = [
@@ -28,6 +29,7 @@ __all__ = [
     'Embedder',
     'Extractor',
     'set_seed',
+    'log_prf_output',
     'CovertextCalculator',
     'SmoothCovertextCalculator'
 ]

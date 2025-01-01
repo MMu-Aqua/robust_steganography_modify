@@ -4,6 +4,7 @@ from tqdm import tqdm
 
 from ..models.base import LanguageModel, BaseTokenizer
 from ..prf.base import PRF
+from ..utils.debug import log_prf_output
 
 class Extractor:
     def __init__(
@@ -38,7 +39,8 @@ class Extractor:
         history_len = history_tokens['input_ids'].shape[1]
 
         # Now tokenize full text (history + covertext)
-        full_text = history_text + ct
+        # full_text = history_text + ct
+        full_text = ct
         tokens = self.tokenizer(full_text, return_tensors='pt')
 
         # For each position in covertext (after history)
