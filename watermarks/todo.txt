@@ -1,4 +1,1 @@
-write attacks
-    within a certain levenshtein edit distance?
-
 log number of watermarked tokens in embedder and see how it compares to theory

@@ -209,6 +209,78 @@ For complete examples, see:
 - `examples/harsh_perturb_example.py`: Alternative perturbation method
 - `examples/covertext_calculator_example.py`: Calculating required covertext length example
 
+### Attacks
+
+The project includes several text modification attacks to test watermark robustness:
+
+#### Threat Model Attacks
+The watermarking scheme is designed to be robust against a specific family of attacks based on local text modifications:
+
+1. **Synonym Substitution** (`attacks/synonym.py`)
+   - Replaces words with their synonyms while preserving meaning
+   - Uses WordNet to find valid substitutions
+   - Configurable probability of replacing each eligible word
+   - Preserves sentence structure and formatting
+
+2. **N-gram Shuffling** (`attacks/ngram_shuffle.py`)
+   - Breaks text into token n-grams and randomly shuffles them
+   - Can operate globally or preserve sentence boundaries
+   - Configurable n-gram size and shuffle probability
+   - Handles both character-level and BPE tokenization
+
+These attacks can be composed to form a "paraphrase-preserving Levenshtein edit distance" attack-- i.e. complex attacks within the paper's threat model can be constructed by combining synonym substitution and n-gram shuffling.
+
+Example usage:
+```python
+from watermark.attacks import NGramShuffleAttack, SynonymAttack
+
+# N-gram shuffle attack
+attack = NGramShuffleAttack(
+    model=model,
+    n=3,  # n-gram size
+    probability=0.5,  # probability of shuffling each n-gram
+    local=True  # preserve sentence boundaries
+)
+modified_text = attack(original_text)
+
+# Synonym substitution attack
+attack = SynonymAttack(model=model, probability=0.3)
+modified_text = attack(original_text)
+```
+
+#### Beyond the Threat Model
+
+The project also includes a more powerful attack that falls outside the watermarking scheme's threat model:
+
+**LLM-based Paraphrasing** (`attacks/paraphrase.py`)
+- Uses GPT-4 to completely rephrase text while preserving meaning
+- Can operate globally or sentence-by-sentence
+- Configurable temperature for controlling variation
+- Much stronger than local edit-based attacks
+- Expected to defeat the watermarking scheme
+
+While this attack is too strong for the watermarking system, the embeddings-based steganography system is specifically designed to be robust against such semantic-preserving transformations.
+
+Example usage:
+```python
+from watermark.attacks import ParaphraseAttack
+from openai import OpenAI
+
+client = OpenAI()
+attack = ParaphraseAttack(
+    client=client,
+    model="gpt-4o-mini",
+    temperature=0.0,
+    local=True  # paraphrase sentence-by-sentence
+)
+modified_text = attack(original_text)
+```
+
+For complete examples of each attack, see:
+- `examples/ngram_shuffle_example.py`
+- `examples/synonym_attack_example.py`
+- `examples/paraphrase_example.py`
+
 ## Testing
 
 ### Embeddings System
