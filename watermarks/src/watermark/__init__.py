@@ -12,6 +12,7 @@ from .core.extractor import Extractor
 from .utils.config import set_seed
 from .utils.debug import log_prf_output
 from .covertext import CovertextCalculator, SmoothCovertextCalculator
+from .attacks import SynonymAttack, NGramShuffleAttack, ParaphraseAttack
 
 __all__ = [
     'LanguageModel',
@@ -31,5 +32,8 @@ __all__ = [
     'set_seed',
     'log_prf_output',
     'CovertextCalculator',
-    'SmoothCovertextCalculator'
+    'SmoothCovertextCalculator',
+    'SynonymAttack',
+    'NGramShuffleAttack',
+    'ParaphraseAttack'
 ]
