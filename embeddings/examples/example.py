@@ -1,12 +1,26 @@
+'''
 from embeddings.src.core.steg_system import StegSystem
 from embeddings.src.core.hash_functions import RandomProjectionHash
 from embeddings.src.core.error_correction import RepetitionCode, ConvolutionalCode
 from embeddings.src.core.encoder import MinimalEncoder
 import openai
+'''
+
+from robust_steganography.core.steg_system import StegSystem
+from robust_steganography.core.hash_functions import RandomProjectionHash
+from robust_steganography.core.error_correction import RepetitionCode, ConvolutionalCode
+from robust_steganography.core.encoder import MinimalEncoder
+import openai
 
 # Initialize components
-client = openai.OpenAI()
-hash_fn = RandomProjectionHash(embedding_dim=3072)
+#将 client 设为 None
+#client = openai.OpenAI()
+client = None
+
+# 384 是 all-MiniLM-L6-v2 模型输出的向量维度
+#hash_fn = RandomProjectionHash(embedding_dim=3072)
+hash_fn = RandomProjectionHash(embedding_dim=384)
+
 # ecc = ConvolutionalCode()
 ecc = RepetitionCode(repetitions=5)
 system_prompt = "You are a highly dynamic conversational model tasked with generating responses that are extremely varied in tone, content, and structure. Each response should aim to be unique and take the conversation in a new and unexpected direction. You can introduce sudden topic changes, challenge previous statements, or bring up something entirely unrelated. Embrace the unexpected: shift perspectives, introduce controversial ideas, or pose hypothetical questions. You can respond positively or negatively and DO NOT START RESPONSES with \"Ah, {repeated information}\" or anything similar. Avoid repeating any phrases or structures from previous responses. Your goal is to ensure each continuation is distinct, unpredictable, and creative."

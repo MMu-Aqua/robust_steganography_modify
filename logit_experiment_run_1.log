@@ -1,0 +1,115 @@
+/home/mumu/projects/robust_steganography/venv/lib/python3.12/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Loading local GPT-2 model (gpt2)...
+message: Well…or have you...<|endoftext|>
+sampled_bits: [0]
+desired_bits: [0]
+message: Russia's former head of Russia's harvest industry company, Last Tis, has been removed from a European club during an investigation by Land.m and asked to turn over his details, names and job purposes. Last Things Forward aims to help the public
+sampled_bits: [0]
+desired_bits: [0]
+message: and industry leaders continue the lifestyle, lifestyle and friendships that their father made, while shifting to a more a virtual online virtual world (VMM).
+
+
+In order to become an official member of Land.m, striker Dmitry Dokucha was suspended
+sampled_bits: [1]
+desired_bits: [0]
+message: heal the year 2010 as a reminder that China is only just getting started. On March 2nd last year, the billionaire Kaesong told a packed house of journalists in Tokyo that he was leaving China for his homeland after six years in London to start
+sampled_bits: [1]
+desired_bits: [0]
+message: find out where he is who will push for privatisation of Russia's agricultural sector, both for its shareholders and its farmers.
+
+The investigation claims that Russian officials failed to 'investigate' accuses of violating the 'European Convention on the Clause Against
+sampled_bits: [0]
+desired_bits: [0]
+message: Association.' There is public pressure to back down from the report officer, saying in an interview with Land.m he was 'hit by heavy traffic' over his actions, and complained that his company's owner, envoy to Kazakhstan, Maksim O
+sampled_bits: [1]
+desired_bits: [0]
+message: Repression of Negotiations'. Fierce opposition against the EU's agricultural quotaspeople has called for a renegotiation of them, because there is a moral hazard to trade earning €10bn in Russian soil every year, take any profits out into the
+sampled_bits: [1]
+desired_bits: [0]
+message: the United States' to the point of distribution to an international management firm called Agua Cocuda, which >Position aired ITV's The Harvest Show in 2007 and found responsibility for the sale of 4,700 tons (22,500 lbs) of hard
+sampled_bits: [1]
+desired_bits: [0]
+message: Corruption'. Indeed, with unusually private companies such as Melmna "delivering a global cacophonous campaign of lobbying and public support for practices which constitute violations of the Clean Water Act in the increase for plastics it uses and to prevent its diversifying
+sampled_bits: [0]
+desired_bits: [0]
+message: of its production long-distance from other agricultural produce and from the large member countries of the EU [EU]". That attempts, according to the registrar of farmers' chambers, any information and/or information derived is grounds for preventing the investigation from
+sampled_bits: [0]
+desired_bits: [0]
+message: taking place, which must be the sole point at which such information or information falls in line with the taxation of gross income.
+
+"The CETA executive has informed the EU that last year, including in 2015, it filed claims with the PAR
+sampled_bits: [0]
+desired_bits: [0]
+message: CC in connection with a p-echo test involving 70 farms engaged in agriculture in the vicinity of 1,100 square kilometres of Hadjou, Florida and at least 300 farms, operated by this dealer," say me.
+
+—Fatma Hawks
+sampled_bits: [0]
+desired_bits: [0]
+message: , Global News and Read.com on 3 June 2015
+
+Denys Blog: Shares fall hundreds and bolsters DA50 attack
+
+——-
+
+Editing by Tom Sparrow and Udon Dormhart<|endoftext|>
+sampled_bits: [0]
+desired_bits: [0]
+message: Multiple Nixon growing issues: 1978 Senate visit discusses Wall not quite broken, Oct. 12 for Pop Money
+
+By ALEX MARTIN
+
+16 March 1978 Six weeks before the election of state senator Charles Rapoport (R), but less
+sampled_bits: [0]
+desired_bits: [0]
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography/embeddings/src/robust_steganography/utils/steg.py", line 30, in sample_concurrent
+    responses = [future.result() for future in concurrent.futures.as_completed(response_futures)]
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge/lib/python3.12/concurrent/futures/_base.py", line 243, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/opt/miniforge/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography/embeddings/examples/example.py", line 45, in <module>
+    stego_texts = system.hide_message(message, history)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography/embeddings/src/robust_steganography/core/steg_system.py", line 112, in hide_message
+    cover_text = encode(
+                 ^^^^^^^
+  File "/home/mumu/projects/robust_steganography/embeddings/src/robust_steganography/utils/steg.py", line 51, in encode
+    response = sample_concurrent(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography/embeddings/src/robust_steganography/utils/steg.py", line 19, in sample_concurrent
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge/lib/python3.12/concurrent/futures/_base.py", line 647, in __exit__
+    self.shutdown(wait=True)
+  File "/opt/miniforge/lib/python3.12/concurrent/futures/thread.py", line 239, in shutdown
+    t.join()
+  File "/opt/miniforge/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/opt/miniforge/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/opt/miniforge/lib/python3.12/threading.py'>
+Traceback (most recent call last):
+  File "/opt/miniforge/lib/python3.12/threading.py", line 1594, in _shutdown
+    atexit_call()
+  File "/opt/miniforge/lib/python3.12/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/opt/miniforge/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/opt/miniforge/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt: 
+terminate called without an active exception

@@ -11,7 +11,8 @@ from openai import APIError, Timeout, APIConnectionError, AuthenticationError, R
 
 def compute_embeddings_local_pair(texts1, texts2, normalize, engine):
     # Load model
-    model = SentenceTransformer(engine)
+    #加入cpu
+    model = SentenceTransformer(engine,device='cpu')
 
     # compute embeddings
     embeddings_1 = model.encode(texts1)
@@ -26,7 +27,8 @@ def compute_embeddings_local_pair(texts1, texts2, normalize, engine):
 
 def compute_embeddings_local(texts, normalize, engine):
     # Load model
-    model = SentenceTransformer(engine)
+    #加入cpu
+    model = SentenceTransformer(engine,device='cpu')
 
     # compute embeddings
     embeddings = model.encode(texts)
