@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 import json
 import os
 import time
@@ -10,9 +11,12 @@ from sentence_transformers import SentenceTransformer
 from openai import APIError, Timeout, APIConnectionError, AuthenticationError, RateLimitError
 
 def compute_embeddings_local_pair(texts1, texts2, normalize, engine):
+    # 自动检测设备
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     # Load model
     #加入cpu
-    model = SentenceTransformer(engine,device='cpu')
+    #model = SentenceTransformer(engine,device='cpu')
+    model = SentenceTransformer(engine,device=device)
 
     # compute embeddings
     embeddings_1 = model.encode(texts1)
@@ -26,10 +30,12 @@ def compute_embeddings_local_pair(texts1, texts2, normalize, engine):
     return [embeddings_1, embeddings_2]
 
 def compute_embeddings_local(texts, normalize, engine):
+    # 自动检测设备
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     # Load model
     #加入cpu
-    model = SentenceTransformer(engine,device='cpu')
-
+    #model = SentenceTransformer(engine,device='cpu')
+    model = SentenceTransformer(engine,device=device)
     # compute embeddings
     embeddings = model.encode(texts)
     
