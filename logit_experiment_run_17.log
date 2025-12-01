@@ -1,0 +1,870 @@
+/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Running on device: cuda
+Loading local GPT-2 model (gpt2) on cuda...
+Top 1 score: 0.4252432501766723
+Top 1 score: 0.24428822565061847
+Top 1 score: 0.4485860415023919
+Top 1 score: 0.3293983261085514
+Top 1 score: 0.2938594487361446
+Top 1 score: 0.38057990052956103
+Top 1 score: 0.08929983830960544
+Top 1 score: 0.14751982785031192
+Top 1 score: 0.3135104034172166
+Top 1 score: 0.13510799275472837
+Top 1 score: 0.1852179698436889
+Top 1 score: 0.19312897305559273
+Top 1 score: 0.21058288121596758
+Top 1 score: 0.2647315438992485
+Top 1 score: 0.23224720423943931
+Top 1 score: 0.20026580370918962
+Top 1 score: 0.33164194439202743
+Top 1 score: 0.18973723652165086
+Top 1 score: 0.14794279208389055
+Top 1 score: 0.17859095534859942
+Top 1 score: 0.2387556825968483
+Top 1 score: 0.2591841475272736
+Top 1 score: 0.25918413693264153
+Top 1 score: 0.26356869741932887
+Top 1 score: 0.28432323140811194
+Top 1 score: 0.5136690651282471
+Top 1 score: 0.2831253054101296
+Top 1 score: 0.3253582860545807
+Top 1 score: 0.2723653048753315
+Top 1 score: 0.2821752138973118
+Top 1 score: 0.4092763194602107
+Top 1 score: 0.3746218553695766
+Top 1 score: 0.46258764500891897
+Top 1 score: 0.40693011738827806
+Top 1 score: 0.4287494310046561
+Top 1 score: 0.39088893171182737
+Top 1 score: 0.43717696613918194
+Top 1 score: 0.40839738697288575
+Top 1 score: 0.53705731090961
+Top 1 score: 0.5060419526817154
+Top 1 score: 0.48432235981347693
+Top 1 score: 0.46392308142399774
+Top 1 score: 0.4049313076686406
+Top 1 score: 0.4149660983906317
+Top 1 score: 0.4414066060665299
+Top 1 score: 0.4330177876228769
+Top 1 score: 0.3672214983477248
+Top 1 score: 0.43047640042840785
+Top 1 score: 0.3824556456465648
+Top 1 score: 0.40292958155965863
+Attempt 1: Target=[0], Got=[1]
+Generated message: I'm going to start with this, which is probably why I'm posting this here so soon!
+This is my first blog post! I hope you enjoy it as much as I enjoy sharing!
+If you're interested, check out my
+Top 1 score: 0.34914722326505543
+Top 1 score: 0.07166648130526548
+Top 1 score: 0.07243937898136563
+Top 1 score: 0.45803131525198537
+Top 1 score: 0.15260011334659906
+Top 1 score: 0.13321391422295778
+Top 1 score: 0.3011667422825329
+Top 1 score: 0.19936714857143054
+Top 1 score: 0.32884314371361656
+Top 1 score: 0.2106658520614852
+Top 1 score: 0.207081625868406
+Top 1 score: 0.32138687505148045
+Top 1 score: 0.4166060316176379
+Top 1 score: 0.4455135286403623
+Top 1 score: 0.35629315499376346
+Top 1 score: 0.24678070284783227
+Top 1 score: 0.41752783113264175
+Top 1 score: 0.41560572725150924
+Top 1 score: 0.4691962559208448
+Top 1 score: 0.22173740002280107
+Top 1 score: 0.1025833388931438
+Top 1 score: 0.08767585278173812
+Top 1 score: 0.12555042740732536
+Top 1 score: 0.10610536188697475
+Top 1 score: 0.11475289044517106
+Top 1 score: 0.13203370835767
+Top 1 score: 0.05132430641956673
+Top 1 score: 0.01686003231629407
+Top 1 score: 0.19479000572630595
+Top 1 score: -0.055276846903936694
+Top 1 score: 0.02053156863167352
+Top 1 score: 0.2048343924626072
+Top 1 score: -0.05421676266482138
+Top 1 score: -0.06051308988982898
+Top 1 score: -0.037186408216294986
+Top 1 score: -0.16214793437911118
+Top 1 score: -0.16326611797541665
+Top 1 score: -0.17550898451312097
+Top 1 score: -0.26287004805701947
+Top 1 score: -0.2507352072208423
+Top 1 score: -0.20965657849832395
+Top 1 score: -0.2910823525866985
+Top 1 score: -0.21409674238607052
+Top 1 score: -0.27529981647662205
+Top 1 score: -0.32751586425128765
+Top 1 score: -0.3014395108156013
+Top 1 score: -0.24627525158997116
+Top 1 score: -0.061221715729760956
+Top 1 score: -0.2382760619236968
+Top 1 score: -0.27135198162814433
+Attempt 2: Target=[0], Got=[1]
+Generated message: ____
+What are you looking forward to most?
+I'm looking forward to meeting the next person I'm going to be meeting. ____
+I've been looking forward to talking with people I know and have worked with on my projects. I
+Top 1 score: 0.19588875573445502
+Top 1 score: 0.42524260268839453
+Top 1 score: 0.22042460940254696
+Top 1 score: 0.26721553237999784
+Top 1 score: 0.2730568947317106
+Top 1 score: 0.13139822424381162
+Top 1 score: 0.2642583248192918
+Top 1 score: 0.21254201799084788
+Top 1 score: 0.3711032494676288
+Top 1 score: 0.4551698972846905
+Top 1 score: 0.4709046594886429
+Top 1 score: 0.5184484952689568
+Top 1 score: 0.5251287408741111
+Top 1 score: 0.4815682059516355
+Top 1 score: 0.42422103558882146
+Top 1 score: 0.5663829327032004
+Top 1 score: 0.29456119154030286
+Top 1 score: 0.16969987269522047
+Top 1 score: 0.12554392932638256
+Top 1 score: 0.11418205470796486
+Top 1 score: 0.12554323373714893
+Top 1 score: 0.15424789059153787
+Top 1 score: 0.47991786223010424
+Top 1 score: -0.013651566349326238
+Top 1 score: 0.022925048804514736
+Top 1 score: 0.14569885955499068
+Top 1 score: 0.37097676080072556
+Top 1 score: 0.2064828841024054
+Top 1 score: 0.1182965391536075
+Top 1 score: 0.2223287856463756
+Top 1 score: 0.17789042749135564
+Top 1 score: 0.09619204536654061
+Top 1 score: 0.13864076248672652
+Top 1 score: 0.2064192324110668
+Top 1 score: 0.23842032365187169
+Top 1 score: 0.2412017210306595
+Top 1 score: 0.4133790318468599
+Top 1 score: 0.23645252269044953
+Top 1 score: 0.41048557719762
+Top 1 score: 0.2812863793770232
+Top 1 score: 0.28575607814869597
+Top 1 score: 0.20236266762109753
+Top 1 score: 0.3297047244098967
+Top 1 score: 0.2743405161062584
+Top 1 score: 0.25226488811288733
+Top 1 score: 0.22656542765067067
+Top 1 score: 0.2930269968002045
+Top 1 score: 0.19832986108127984
+Top 1 score: 0.19832986108127984
+Top 1 score: 0.19832984550274219
+Attempt 3: Target=[0], Got=[0]
+Generated message: The next day, you'll be in the office with a few other employees.  
+The next day, you'll be in the lab with your team. You'll be working with them on the project and making notes.
+Top 1 score: 0.19832986108127984
+Top 1 score: 0.19832984550274219
+Top 1 score: 0.26511455836929076
+Top 1 score: 0.11972137062092338
+Top 1 score: 0.14549753621834757
+Top 1 score: 0.5190692860479531
+Top 1 score: 0.249613045192449
+Top 1 score: 0.20013746101686775
+Top 1 score: 0.27557791848112023
+Top 1 score: 0.23845814945443647
+Top 1 score: 0.08689100630839416
+Top 1 score: 0.08601868334066415
+Top 1 score: 0.08602665049838618
+Top 1 score: 0.11509846019449912
+Top 1 score: 0.0922482529674214
+Top 1 score: 0.09224867918297092
+Top 1 score: 0.09224867918297128
+Top 1 score: 0.09023787437471803
+Top 1 score: 0.22834646893261948
+Top 1 score: 0.15790434179748056
+Top 1 score: 0.16503165957323107
+Top 1 score: 0.07657003082122406
+Top 1 score: 0.23988475560827036
+Top 1 score: 0.22534178685166809
+Top 1 score: 0.2082690841679468
+Top 1 score: 0.10496856333789154
+Top 1 score: 0.15569369255373336
+Top 1 score: 0.10727689833334454
+Top 1 score: 0.1438982836732821
+Top 1 score: 0.17039127473025262
+Top 1 score: 0.21954564815187877
+Top 1 score: 0.21954564815187877
+Top 1 score: 0.21954564815187877
+Top 1 score: 0.26651202806723767
+Top 1 score: 0.42940272242735256
+Top 1 score: 0.37060957213658746
+Top 1 score: 0.3007689773513907
+Top 1 score: 0.39172734887902755
+Top 1 score: 0.37280851721928465
+Top 1 score: 0.39043139781770664
+Top 1 score: 0.4485061476949965
+Top 1 score: 0.3544932488353263
+Top 1 score: 0.3989826949196558
+Top 1 score: 0.4628920313909157
+Top 1 score: 0.35827230133946564
+Top 1 score: 0.39024734955852913
+Top 1 score: 0.39024705250974684
+Top 1 score: 0.4757814170259964
+Top 1 score: 0.5162588396576969
+Top 1 score: 0.46151895985906977
+Attempt 1: Target=[0], Got=[0]
+Generated message: Then, you'll be in the lab with the team.  
+You'll be working in a lab with a team of 3.   The team will be in the room, working on the project. 
+The team in
+Top 1 score: 0.5646287189571026
+Top 1 score: 0.5314898250720547
+Top 1 score: 0.4975452634383558
+Top 1 score: 0.48803535813571486
+Top 1 score: 0.46349898792019906
+Top 1 score: 0.424280562373038
+Top 1 score: 0.5101165498622307
+Top 1 score: 0.5412353810634641
+Top 1 score: 0.45588421283732966
+Top 1 score: 0.4889436142968923
+Top 1 score: 0.4816297966645627
+Top 1 score: 0.48894352624464005
+Top 1 score: 0.5691600085123649
+Top 1 score: 0.6083216570458653
+Top 1 score: 0.5727826147278892
+Top 1 score: 0.6578496556912994
+Top 1 score: 0.560756856629417
+Top 1 score: 0.6917660926097406
+Top 1 score: 0.5156202816694835
+Top 1 score: 0.4858069641721311
+Top 1 score: 0.5523970689881366
+Top 1 score: 0.6181419900187131
+Top 1 score: 0.5645719466653639
+Top 1 score: 0.64490782860041
+Top 1 score: 0.6751206930154914
+Top 1 score: 0.8615599441902567
+Top 1 score: 0.6857925757379268
+Top 1 score: 0.7523044937931688
+Top 1 score: 0.8728557709796134
+Top 1 score: 0.6919222705510659
+Top 1 score: 0.7064877850464567
+Top 1 score: 0.7064877850464567
+Top 1 score: 0.7064877850464567
+Top 1 score: 0.7526216401922735
+Top 1 score: 0.6552689375442324
+Top 1 score: 0.7688015560180121
+Top 1 score: 0.5007654173832716
+Top 1 score: 0.5613891853597406
+Top 1 score: 0.36778534809170016
+Top 1 score: 0.5413677737660114
+Top 1 score: 0.45435853135213655
+Top 1 score: 0.45100005295177986
+Top 1 score: 0.4787554248285846
+Top 1 score: 0.5188951346686088
+Top 1 score: 0.468903588508167
+Top 1 score: 0.49521112272781465
+Top 1 score: 0.48232782578198563
+Top 1 score: 0.5006278767044756
+Top 1 score: 0.5041160034158406
+Top 1 score: 0.5254064689341017
+Attempt 1: Target=[0], Got=[0]
+Generated message: the room will be working on the project. 
+The team in the room will be working with a team of 6, working on the project.  
+You'll then be working in a lab with a team of 4, working on the
+Top 1 score: 0.645830082886137
+Top 1 score: 0.5131455276913022
+Top 1 score: 0.537340703889902
+Top 1 score: 0.5373407038899021
+Top 1 score: 0.5514703276397322
+Top 1 score: 0.5730857555276427
+Top 1 score: 0.6513267535974365
+Top 1 score: 0.6226292206337155
+Top 1 score: 0.6116757910908454
+Top 1 score: 0.4274549566031083
+Top 1 score: 0.4100651593522579
+Top 1 score: 0.4412702916494581
+Top 1 score: 0.44595556947920967
+Top 1 score: 0.44486176511445197
+Top 1 score: 0.45255850328235137
+Top 1 score: 0.44933917625398306
+Top 1 score: 0.47620622142868946
+Top 1 score: 0.49630759130523233
+Top 1 score: 0.5095881176544942
+Top 1 score: 0.6439314343731364
+Top 1 score: 0.5031205826048037
+Top 1 score: 0.46951872410360074
+Top 1 score: 0.448262718889373
+Top 1 score: 0.46951872410360074
+Top 1 score: 0.4698883012573749
+Top 1 score: 0.4505097908488097
+Top 1 score: 0.4817947142069457
+Top 1 score: 0.49381411323600555
+Top 1 score: 0.8684892225758385
+Top 1 score: 0.5108982820094934
+Top 1 score: 0.49568733163747547
+Top 1 score: 0.47504133671515214
+Top 1 score: 0.4843529402130564
+Top 1 score: 0.41753187426435234
+Top 1 score: 0.4512717378210819
+Top 1 score: 0.4888358238185212
+Top 1 score: 0.42205293317408393
+Top 1 score: 0.46300244743295976
+Top 1 score: 0.543157529983553
+Top 1 score: 0.44457889792756566
+Top 1 score: 0.44538493943084057
+Top 1 score: 0.5331378247462981
+Top 1 score: 0.5399615030480779
+Top 1 score: 0.587852294171983
+Top 1 score: 0.5406675448021901
+Top 1 score: 0.5797234051342581
+Top 1 score: 0.6509798224739468
+Top 1 score: 0.7197446336819291
+Top 1 score: 0.6037892752027357
+Top 1 score: 0.5625107396917641
+Attempt 1: Target=[0], Got=[0]
+Generated message: project.  
+You'll then be working with a team of 3, working on the project.  
+Then the team in the room, working together, will be on the project. The team in
+the room will be working on
+Top 1 score: 0.7013566118524506
+Top 1 score: 0.6995567256891685
+Top 1 score: 0.641137077807632
+Top 1 score: 0.7111427878164929
+Top 1 score: 0.6652684562058998
+Top 1 score: 0.7111427878164929
+Top 1 score: 0.7293082464996055
+Top 1 score: 0.7777289046951728
+Top 1 score: 0.7983131224785986
+Top 1 score: 0.7983132469130929
+Top 1 score: 0.7983132469130929
+Top 1 score: 0.7949048344224529
+Top 1 score: 0.8111909386347611
+Top 1 score: 0.9486326200659043
+Top 1 score: 0.8288174219768175
+Top 1 score: 0.8547272592560563
+Top 1 score: 0.7862176501319588
+Top 1 score: 0.7774578208078141
+Top 1 score: 0.7466228217911399
+Top 1 score: 0.7693066077681524
+Top 1 score: 0.8367674182035195
+Top 1 score: 0.7685592816852345
+Top 1 score: 0.8072756330095924
+Top 1 score: 0.8072756330095924
+Top 1 score: 0.751347593149642
+Top 1 score: 0.7834577591560685
+Top 1 score: 0.820177543785539
+Top 1 score: 0.8290462480221021
+Top 1 score: 0.8096839592204017
+Top 1 score: 0.8290462480221021
+Top 1 score: 1.0206811816976797
+Top 1 score: 0.9054934427456669
+Top 1 score: 0.9522403576822207
+Top 1 score: 0.8637795827481164
+Top 1 score: 0.846225882438306
+Top 1 score: 0.7951472627444406
+Top 1 score: 0.797849435184732
+Top 1 score: 0.7825416504790401
+Top 1 score: 0.7475447535996524
+Top 1 score: 0.7877566430897744
+Top 1 score: 0.8714507422085029
+Top 1 score: 0.8382867602630548
+Top 1 score: 0.810650917673129
+Top 1 score: 0.810650917673129
+Top 1 score: 0.7592959112472094
+Top 1 score: 0.7538363355650048
+Top 1 score: 0.8179610974200013
+Top 1 score: 0.8304966378665121
+Top 1 score: 0.8304966378665115
+Top 1 score: 0.7919338859239504
+Attempt 1: Target=[0], Got=[0]
+Generated message: the project. 
+The team in
+
+the room will be working together, working on the project.
+Then the team in
+
+the room will be working together, working together on the project.
+Then the team in
+
+the
+Top 1 score: 0.8223935910789477
+Top 1 score: 0.8031411216307824
+Top 1 score: 0.8694943154534546
+Top 1 score: 0.771473315425852
+Top 1 score: 0.7969200996295847
+Top 1 score: 0.7356146416976035
+Top 1 score: 0.7235700235968127
+Top 1 score: 0.7372062674623394
+Top 1 score: 0.7031270521063817
+Top 1 score: 0.7249527172204158
+Top 1 score: 0.8286130352246799
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Attempt 1: Target=[0], Got=[0]
+Generated message: room will be working together, working together on the project. The team in
+
+the room will be working together, working together on the project.  
+It's going to be interesting to see how they do this.
+You might be
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Attempt 1: Target=[0], Got=[0]
+Generated message: surprised at the team that makes up the project, but you might still be skeptical.
+You might also want to check your email for your project emails.
+And you might just want to read through all their emails in order to get an idea of
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Attempt 1: Target=[0], Got=[0]
+Generated message: how things are going.
+You might even want to read through all their emails in an effort to get an idea of what is going on.
+You might even want to read through
+the project notes that they have.   And maybe you
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Attempt 1: Target=[0], Got=[1]
+Generated message: can even check out some of these
+notes.
+But what if you want to be more specific and have more ideas about how things should go?
+So here are some things to consider.
+The goal of this is to be able to make
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Attempt 2: Target=[0], Got=[0]
+Generated message: want to read through their notes for a
+procedure that is not going to work.  
+I think that's a good idea.  
+You might have a good idea of what is going on. 
+Maybe you
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Attempt 1: Target=[0], Got=[1]
+Generated message: 'll get a sense of what is happening and what isn
+t going on.  
+Or maybe you might just want to get a better sense of how everything is going.  
+Or maybe you might just want a more complete understanding of
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202No sentence-transformers model found with name sentence-transformers/all-MiniLM-L6-v2. Creating a new one with MEAN pooling.
+
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Top 1 score: 0.7121383151430202
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 779, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1048, in _prepare_proxy
+    conn.connect()
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x79aa2672d940>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x79aa2672d940>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x79aa2672d940>: Failed to establish a new connection: [Errno 111] Connection refused')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/examples/example.py", line 45, in <module>
+    stego_texts = system.hide_message(message, history)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/core/steg_system.py", line 112, in hide_message
+    cover_text = encode(
+                 ^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/steg.py", line 81, in encode
+    response = sample_concurrent(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/steg.py", line 45, in sample_concurrent
+    message = generate_response(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/new_text.py", line 136, in generate_response
+    logits = guide_logits(model, context_tokens, logits, target_bits, hash_fn)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/new_text.py", line 58, in guide_logits
+    candidate_embeddings = compute_embeddings_local(candidates, normalize=True, engine="all-MiniLM-L6-v2")
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/embedding_utils.py", line 38, in compute_embeddings_local
+    model = SentenceTransformer(engine,device=device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/sentence_transformers/SentenceTransformer.py", line 205, in __init__
+    modules = self._load_auto_model(
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/sentence_transformers/SentenceTransformer.py", line 1197, in _load_auto_model
+    transformer_model = Transformer(
+                        ^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/sentence_transformers/models/Transformer.py", line 35, in __init__
+    config = AutoConfig.from_pretrained(model_name_or_path, **model_args, cache_dir=cache_dir)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 928, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 631, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 686, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1261, in hf_hub_download
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1667, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 408, in _request_wrapper
+    response = get_session().request(method=method, url=url, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 67, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x79aa2672d940>: Failed to establish a new connection: [Errno 111] Connection refused')))"), '(Request ID: 8b1893f4-1376-4d20-9431-c6d00d3c0414)')

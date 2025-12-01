@@ -1,0 +1,262 @@
+/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Running on device: cuda
+Loading local GPT-2 model (gpt2) on cuda...
+Top 1 score: 1.2989642287218899
+Top 1 score: 1.3314082719822022
+Top 1 score: 1.4416766307929545
+Top 1 score: 1.5927933151833693
+Top 1 score: 1.378458460086601
+Top 1 score: 1.4496471644137208
+Top 1 score: 1.4183095715978808
+Top 1 score: 1.4578382478969083
+Top 1 score: 1.4827378600134709
+Top 1 score: 1.8364637254332115
+Top 1 score: 1.5339523100049486
+Top 1 score: 1.638491431582472
+Top 1 score: 1.7352565759149
+Top 1 score: 1.7964339093601907
+Top 1 score: 1.7984590825247782
+Top 1 score: 1.7708421753523584
+Top 1 score: 1.6857084470075216
+Top 1 score: 1.6207552810748098
+Top 1 score: 1.6365054475740548
+Top 1 score: 1.606480520492734
+Top 1 score: 1.6164163817805097
+Top 1 score: 1.6107613900794364
+Top 1 score: 1.5510096886332772
+Top 1 score: 1.589951508205445
+Top 1 score: 1.5899520215354346
+Top 1 score: 1.683530968104245
+Top 1 score: 1.5885653417013865
+Top 1 score: 1.490736696965835
+Top 1 score: 1.813965165666151
+Top 1 score: 2.337175244729102
+Top 1 score: 1.78021737688454
+Top 1 score: 1.8634302566611405
+Top 1 score: 1.8686713187254127
+Top 1 score: 1.7959248779147188
+Top 1 score: 1.721864439001799
+Top 1 score: 1.8069066199709058
+Top 1 score: 1.74698721893922
+Top 1 score: 1.681994911271127
+Top 1 score: 1.7456461787905324
+Top 1 score: 1.7253785702451574
+Top 1 score: 1.8986686721302728
+Top 1 score: 1.7491435354282447
+Top 1 score: 1.7915106495547963
+Top 1 score: 2.0200620801373623
+Top 1 score: 1.8114346030249775
+Top 1 score: 1.9242047785306313
+Top 1 score: 1.742309416738104
+Top 1 score: 1.7462662269477136
+Top 1 score: 1.9930620583951106
+Top 1 score: 2.506373628932593
+Attempt 1: Target=[0], Got=[0]
+Generated message: Then come over and join in.
+What's your first project? Let us know!
+You're here:
+We're looking for talented people to work with us on our next project.
+We need a lot of people that love the project
+Top 1 score: 1.7952729615067637
+Top 1 score: 1.8497140653640833
+Top 1 score: 1.8496906564121547
+Top 1 score: 1.9733579202412495
+Top 1 score: 1.856791529840749
+Top 1 score: 1.8846761454410759
+Top 1 score: 1.7501664360644313
+Top 1 score: 1.7899524550792327
+Top 1 score: 1.7899522215539556
+Top 1 score: 1.7507467735930127
+Top 1 score: 1.836672311885051
+Top 1 score: 1.8611912392441186
+Top 1 score: 1.7852272939357035
+Top 1 score: 1.7702000657646642
+Top 1 score: 1.8068220875645817
+Top 1 score: 1.8876825689245353
+Top 1 score: 1.8333919092793693
+Top 1 score: 1.8021185661352521
+Top 1 score: 1.8162101941527689
+Top 1 score: 1.809450365015386
+Top 1 score: 1.8582128594564733
+Top 1 score: 1.9620717472105222
+Top 1 score: 1.9370195762461329
+Top 1 score: 1.8866256550482505
+Top 1 score: 1.8803884241500395
+Top 1 score: 1.8897929779934621
+Top 1 score: 1.933723275829781
+Top 1 score: 1.9743446675855103
+Top 1 score: 2.135809993976621
+Top 1 score: 1.9227225906197278
+Top 1 score: 1.9264839274292744
+Top 1 score: 1.8768456313536968
+Top 1 score: 1.8850110600131076
+Top 1 score: 1.8850107238887235
+Top 1 score: 1.8839780385803242
+Top 1 score: 1.9056453746252124
+Top 1 score: 1.9244057752456272
+Top 1 score: 1.867235063404088
+Top 1 score: 1.8778662709260288
+Top 1 score: 1.896235896807552
+Top 1 score: 1.9169042781106889
+Top 1 score: 1.9004384446413338
+Top 1 score: 1.907616024158758
+Top 1 score: 1.8936928954057608
+Top 1 score: 1.8820719647629347
+Top 1 score: 1.8635332219696785
+Top 1 score: 1.9018674685260404
+Top 1 score: 1.9149556344705587
+Top 1 score: 1.9149563668418814
+Top 1 score: 2.0170183157165438
+Attempt 1: Target=[0], Got=[0]
+Generated message: but want to do something different.
+If you have ideas that could be interesting and would like to help us, you can submit them at our email list.
+If you have questions or comments, we'd love to hear them.
+What kind
+Top 1 score: 1.999212127122183
+Top 1 score: 2.0560354288620806
+Top 1 score: 2.1245155359283725
+Top 1 score: 1.9899267610604592
+Top 1 score: 2.0066231322241954
+Top 1 score: 1.9580019787790848
+Attempt 1: Target=[0], Got=[0]
+Generated message: of project is your?
+Top 1 score: 1.9580019787790848
+Top 1 score: 1.9373245123165408
+Top 1 score: 1.9164761249234066
+Top 1 score: 1.9477984819235101
+Top 1 score: 1.8708133411421846
+Top 1 score: 2.146346637704874
+Top 1 score: 2.0399986459764965
+Top 1 score: 1.913177623703981
+Top 1 score: 2.094646508937079
+Top 1 score: 2.6835431162116157
+Top 1 score: 2.7104554093076474
+Top 1 score: 2.6022969865501433
+Top 1 score: 2.7700298619078803
+Top 1 score: 2.7135753065756623
+Top 1 score: 2.7621351501775915
+Top 1 score: 2.781263868419817
+Top 1 score: 2.798671486914947
+Top 1 score: 2.7287360834248235
+Top 1 score: 2.5993074873613384
+Top 1 score: 2.7447598992007896
+Top 1 score: 2.8981294314990778
+Top 1 score: 2.804688282572018
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 779, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1048, in _prepare_proxy
+    conn.connect()
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x762f8084bc20>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x762f8084bc20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x762f8084bc20>: Failed to establish a new connection: [Errno 111] Connection refused')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/examples/example.py", line 45, in <module>
+    stego_texts = system.hide_message(message, history)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/core/steg_system.py", line 112, in hide_message
+    cover_text = encode(
+                 ^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/steg.py", line 81, in encode
+    response = sample_concurrent(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/steg.py", line 45, in sample_concurrent
+    message = generate_response(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/new_text.py", line 136, in generate_response
+    logits = guide_logits(model, context_tokens, logits, target_bits, hash_fn)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/new_text.py", line 58, in guide_logits
+    candidate_embeddings = compute_embeddings_local(candidates, normalize=True, engine="all-MiniLM-L6-v2")
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/embeddings/src/robust_steganography/utils/embedding_utils.py", line 38, in compute_embeddings_local
+    model = SentenceTransformer(engine,device=device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/sentence_transformers/SentenceTransformer.py", line 197, in __init__
+    modules = self._load_sbert_model(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/sentence_transformers/SentenceTransformer.py", line 1296, in _load_sbert_model
+    module = Transformer(model_name_or_path, cache_dir=cache_folder, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/sentence_transformers/models/Transformer.py", line 35, in __init__
+    config = AutoConfig.from_pretrained(model_name_or_path, **model_args, cache_dir=cache_dir)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 928, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 631, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 686, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1261, in hf_hub_download
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1667, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 408, in _request_wrapper
+    response = get_session().request(method=method, url=url, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 67, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/requests/adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x762f8084bc20>: Failed to establish a new connection: [Errno 111] Connection refused')))"), '(Request ID: d5b44e6b-6259-4a3f-89f8-3c84950d4dcd)')

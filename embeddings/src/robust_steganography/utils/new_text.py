@@ -1,11 +1,13 @@
 # This file contains the code to sample a new message
-import torch
-import openai
 import re
+import torch
+import numpy as np
+import openai
+
 # 导入本地模型
 from watermark.models.gpt2 import GPT2Model
-import torch
-# --- 引入本地模型（新增全局变量） ---
+# 引用本地嵌入计算工具
+from .embedding_utils import compute_embeddings_local
 _LOCAL_MODEL = None
 
 # 自动检测设备
@@ -33,39 +35,65 @@ def clean_response(text):
     else:
         return text.strip()
 
+# [核心创新] Logit 引导函数
+def guide_logits(model, context_tokens, logits, target_bits, hash_fn, top_k=10):
+    """
+    通过预测候选词的 Embedding 来调整 Logits，引导生成方向。
+    """
+    # 1. 选出概率最高的 Top-K 个候选词
+    probs = torch.softmax(logits, dim=-1)
+    top_k_probs, top_k_indices = torch.topk(probs, top_k)
+    
+    # 2. 构建 K 个候选句子 (Current Context + Candidate Token)
+    candidates = []
+    current_text = model.tokenizer.decode(context_tokens[0])
+    
+    for idx in top_k_indices:
+        token_id = idx.item()
+        token_str = model.tokenizer.decode([token_id])
+        candidates.append(current_text + token_str)
+    
+    # 3. 批量计算候选句子的 Embeddings (利用 GPU 加速)
+    # 使用 all-MiniLM-L6-v2 (384维)
+    candidate_embeddings = compute_embeddings_local(candidates, normalize=True, engine="all-MiniLM-L6-v2")
+    
+    # 4. 计算每个候选句子与目标哈希的匹配程度
+    # RandomProjectionHash 的原理是: sign(Emb @ Matrix) == Bits
+    # 我们希望: Emb @ Matrix 的符号 与 目标Bits (0/1 -> -1/+1) 一致
+    # Score = sum( (Emb @ Matrix) * (2*Bits - 1) )
+    # 分数越高，说明 Embedding 越符合目标哈希的方向
+    
+    rand_matrix = hash_fn.rand_matrix # (384, num_bits)
+    target_signs = 2 * np.array(target_bits) - 1 # [0, 1] -> [-1, 1]
+    
+    # [K, 384] @ [384, num_bits] -> [K, num_bits]
+    projections = candidate_embeddings @ rand_matrix 
+    
+    # 计算匹配分数: 投影值与目标符号同号则为正，异号则为负
+    # [K, num_bits] * [num_bits] -> [K, num_bits] -> Sum -> [K]
+    scores = np.sum(projections * target_signs, axis=1)
+    
+    # 5. 将分数转化为 Logit 偏置 (Bias) 加回到原始 Logits 上
+    # alpha 是引导强度，可以调整 (例如 5.0 - 20.0)
+    alpha = 3.0 
+    scores_tensor = torch.tensor(scores, device=DEVICE)
+    
+    # 只更新 Top-K 的 logits，其他 token 保持原样 (或设为负无穷)
+    new_logits = logits.clone()
+    # 先把 Top-K 以外的词概率压低，专注于我们在 K 个里面选最好的
+    mask = torch.ones_like(logits, dtype=torch.bool)
+    mask[top_k_indices] = False
+    new_logits[mask] = -float('inf')
+    
+    # 给 Top-K 加上引导分
+    new_logits[top_k_indices] += alpha * scores_tensor
+    print(f"Top 1 score: {scores.max().item()}")
+    return new_logits
+# 修改 generate_response 签名，接收 hash_fn 和 target_bits
 
-'''
-def generate_response(client, conversation_history, system_prompt="You are a highly dynamic conversational model tasked with generating responses that are extremely varied in tone, content, and structure.", max_length=100):
-    # Prepare the prompt from the conversation history
-    prompt = "\n".join(conversation_history) + "\n"
-
-    try:
-        # Generate a response using GPT-4o mini
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",  # Original model name preserved
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=max_length,  # Use passed in max_length
-            temperature=1.0,  # Preserved original temperature
-            top_p=1.0,
-            frequency_penalty=0.0,
-            presence_penalty=0.0,
-            stop=["\n"],
-        )
-        
-        # Extract and return the generated response text
-        text = response.choices[0].message.content.strip()
-        text = clean_response(text)
-        return text
-
-    except Exception as e:
-        return f"An error occurred: {e}"
-'''
 # --- 核心生成函数：修改为使用本地模型 ---
 # 移除了 client 参数，因为它不再是 OpenAI client
-def generate_response(model, conversation_history, system_prompt=None, max_length=100):
+def generate_response(model, conversation_history, hash_fn=None, target_bits=None, system_prompt=None, max_length=100):
     
     # 注意：本地模型通常不能很好地理解 system_prompt，但我们留着它
     # 1. 构造历史上下文
@@ -77,8 +105,8 @@ def generate_response(model, conversation_history, system_prompt=None, max_lengt
     inputs = model.tokenizer(prompt, return_tensors='pt')['input_ids'].to(DEVICE)
 
     # [关键修复]：严格计算剩余空间
-    # GPT-2 上下文最大长度
-    ctx_limit = model.context_length  # 通常是 1024
+    # GPT-2 上下文最大长度# 通常是 1024
+    ctx_limit = model.context_length  
     
     # 我们计划生成 max_length 这么长，所以输入必须留出空间
     # 安全起见，我们再多留 4 个 token 的余量
@@ -102,6 +130,11 @@ def generate_response(model, conversation_history, system_prompt=None, max_lengt
             outputs = model._model(context_tokens)
             # 获取下一个 token 的概率分布（Logits）
             logits = outputs.logits[0, -1, :]
+            # --- [插入引导逻辑] ---
+            if hash_fn is not None and target_bits is not None:
+                # 使用引导后的 Logits 覆盖原始 Logits
+                logits = guide_logits(model, context_tokens, logits, target_bits, hash_fn)
+            # --------------------
             probabilities = torch.softmax(logits, dim=-1)
 
         # 这里是您未来插入引导逻辑的地方！
@@ -135,6 +168,7 @@ def generate_response(model, conversation_history, system_prompt=None, max_lengt
     
     # 清理和返回
     text = clean_response(new_response)
+    if not text: return "..."
     return text
 
 if __name__ == "__main__":
