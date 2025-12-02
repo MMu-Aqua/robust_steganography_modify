@@ -76,3 +76,5 @@ def get_embedding(text, model, client, max_retries=5, backoff_factor=1.5):
 def get_embeddings_in_batch(client, texts):
     # 兼容接口：批量计算
     return np.array(compute_embeddings_local(texts, True, "all-MiniLM-L6-v2"))
+
+    

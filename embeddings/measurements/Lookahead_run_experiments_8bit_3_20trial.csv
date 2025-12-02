@@ -1,0 +1,17 @@
+Num_Bits,Method,Alpha,Avg_Time,Success_Rate
+1,Baseline (Random),0.0,0.5014979243278503,1.0
+1,Ours (Guided),3.0,0.22298521995544435,1.0
+2,Baseline (Random),0.0,0.7745594501495361,1.0
+2,Ours (Guided),3.0,0.45572813749313357,1.0
+3,Baseline (Random),0.0,0.7802116394042968,1.0
+3,Ours (Guided),3.0,0.9043401002883911,1.0
+4,Baseline (Random),0.0,1.8719483137130737,1.0
+4,Ours (Guided),3.0,2.63200763463974,1.0
+5,Baseline (Random),0.0,5.642194390296936,1.0
+5,Ours (Guided),3.0,3.806001913547516,1.0
+6,Baseline (Random),0.0,6.328374195098877,1.0
+6,Ours (Guided),3.0,5.391171658039093,1.0
+7,Baseline (Random),0.0,39.41337662935257,1.0
+7,Ours (Guided),3.0,10.618842172622681,1.0
+8,Baseline (Random),0.0,26.161476220403397,0.7
+8,Ours (Guided),3.0,31.85363425706562,0.95

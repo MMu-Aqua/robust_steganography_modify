@@ -36,7 +36,7 @@ def clean_response(text):
         return text.strip()
 
 # [核心创新] Logit 引导函数
-def guide_logits(model, context_tokens, logits, target_bits, hash_fn, top_k=10):
+def guide_logits(model, context_tokens, logits, target_bits, hash_fn, top_k=10, alpha=3.0):
     """
     通过预测候选词的 Embedding 来调整 Logits，引导生成方向。
     """
@@ -75,7 +75,9 @@ def guide_logits(model, context_tokens, logits, target_bits, hash_fn, top_k=10):
     
     # 5. 将分数转化为 Logit 偏置 (Bias) 加回到原始 Logits 上
     # alpha 是引导强度，可以调整 (例如 5.0 - 20.0)
-    alpha = 3.0 
+    #alpha = 3.0 
+    
+
     scores_tensor = torch.tensor(scores, device=DEVICE)
     
     # 只更新 Top-K 的 logits，其他 token 保持原样 (或设为负无穷)
@@ -93,7 +95,7 @@ def guide_logits(model, context_tokens, logits, target_bits, hash_fn, top_k=10):
 
 # --- 核心生成函数：修改为使用本地模型 ---
 # 移除了 client 参数，因为它不再是 OpenAI client
-def generate_response(model, conversation_history, hash_fn=None, target_bits=None, system_prompt=None, max_length=100):
+def generate_response(model, conversation_history, hash_fn=None, target_bits=None, system_prompt=None, max_length=100, alpha=3.0):
     
     # 注意：本地模型通常不能很好地理解 system_prompt，但我们留着它
     # 1. 构造历史上下文
@@ -130,11 +132,25 @@ def generate_response(model, conversation_history, hash_fn=None, target_bits=Non
             outputs = model._model(context_tokens)
             # 获取下一个 token 的概率分布（Logits）
             logits = outputs.logits[0, -1, :]
-            # --- [插入引导逻辑] ---
-            if hash_fn is not None and target_bits is not None:
+            # --- [插入引导逻辑] ---只有当 alpha 不为 0 时，才进行昂贵的引导计算。这样 Baseline (alpha=0) 就能以 GPT-2 的原生速度飞奔，对比才公平
+            if hash_fn is not None and target_bits is not None and abs(alpha) > 1e-6:
                 # 使用引导后的 Logits 覆盖原始 Logits
-                logits = guide_logits(model, context_tokens, logits, target_bits, hash_fn)
-            # --------------------
+                #logits = guide_logits(model, context_tokens, logits, target_bits, hash_fn)
+                # 调用 guide_logits 时传入 alpha
+                logits = guide_logits(model, context_tokens, logits, target_bits, hash_fn, alpha=alpha)
+            # --- [核心修复] 2. 应用重复惩罚 (Repetition Penalty) ---
+            # 获取已经生成过的新内容的 token ID (排除 prompt 部分)
+            # 这样模型就不会一直复读同一个词了
+            if output_tokens.shape[1] > inputs.shape[1]:
+                generated_so_far = output_tokens[0, inputs.shape[1]:].tolist()
+                for token_id in set(generated_so_far):
+                    # 降低已出现词的分数。
+                    # 如果 logit 是正数，除以 1.2 会变小；如果是负数，乘以 1.2 会更负（更小）
+                    if logits[token_id] > 0:
+                        logits[token_id] /= 1.2
+                    else:
+                        logits[token_id] *= 1.2
+            # --------------------------------------------------
             probabilities = torch.softmax(logits, dim=-1)
 
         # 这里是您未来插入引导逻辑的地方！

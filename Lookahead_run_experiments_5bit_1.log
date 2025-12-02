@@ -1,0 +1,2163 @@
+/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/jieba/__init__.py:44: SyntaxWarning: invalid escape sequence '\.'
+  re_han_default = re.compile("([\u4E00-\u9FD5a-zA-Z0-9+#&\._%\-]+)", re.U)
+/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/jieba/__init__.py:46: SyntaxWarning: invalid escape sequence '\s'
+  re_skip_default = re.compile("(\r\n|\s)", re.U)
+/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/jieba/finalseg/__init__.py:78: SyntaxWarning: invalid escape sequence '\.'
+  re_skip = re.compile("([a-zA-Z0-9]+(?:\.\d+)?%?)")
+/home/mumu/projects/robust_steganography_modify/venv/lib/python3.12/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Running on device: cuda
+Starting Experiments on NVIDIA GeForce RTX 4090
+
+====== Testing Bits = 1 ======
+Baseline (Random):   0%|          | 0/10 [00:00<?, ?it/s]Baseline (Random):  10%|█         | 1/10 [00:07<01:09,  7.68s/it]Baseline (Random):  20%|██        | 2/10 [00:07<00:25,  3.23s/it]Baseline (Random):  30%|███       | 3/10 [00:08<00:13,  1.88s/it]Baseline (Random):  40%|████      | 4/10 [00:08<00:07,  1.24s/it]Baseline (Random):  50%|█████     | 5/10 [00:08<00:04,  1.20it/s]Baseline (Random):  60%|██████    | 6/10 [00:08<00:02,  1.71it/s]Baseline (Random):  70%|███████   | 7/10 [00:08<00:01,  2.34it/s]Baseline (Random):  80%|████████  | 8/10 [00:08<00:00,  2.99it/s]Baseline (Random):  90%|█████████ | 9/10 [00:08<00:00,  3.38it/s]Baseline (Random): 100%|██████████| 10/10 [00:09<00:00,  4.06it/s]Baseline (Random): 100%|██████████| 10/10 [00:09<00:00,  1.10it/s]
+Loading local GPT-2 model (gpt2) on cuda...
+Loading embedding model: all-MiniLM-L6-v2 on cuda...
+Attempt 1: Target=[0], Got=[0]
+Generated message: Everyone here is supporting the clean energy ecosystem.
+- Download Your Free Google Summer of Code 2018 Training Lesson from GM California Tech lectures plan to head
+Attempt 1: Target=[1], Got=[1]
+Generated message: Technology to meet the recruiting needs and engineering development involve software technologies where a single work Formal Job Training Profile can be converted into 382 online support files
+Attempt 1: Target=[0], Got=[1]
+Generated message: ShapeShift is primarily a digital asset trading system in the Americas, where independent analysts service companies around the world and conduct round-the recordings. While
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0], Got=[0]
+Generated message: Software platforms like the open source Cloud Platform beyond traditional cloud-based solutions will be entering into broad market adoption. Amazon has tapped several developers who have
+Attempt 1: Target=[1], Got=[0]
+Generated message: Where Senator Jamal Walker (R-CT) had the tech industry scene built on a very conservative base, Silicon Valley proudly lacks any of that. In
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1], Got=[1]
+Generated message: And virtual environments are rapidly enabling risk free possibilities for enterprises, we see evidence in satellites and high-end webbrowsers. 10 �
+Attempt 1: Target=[0], Got=[0]
+Generated message: Deviating from the industry standard of industrial espionage is becoming more alienating to journalists, students and security researchers. It's leading to new ways for criminals
+Attempt 1: Target=[1], Got=[1]
+Generated message: Entrepreneurship is on the rise globally, based on traditional arms and security agencies; regional corporations are powerful too. Funding sources that benefit from such power
+Attempt 1: Target=[0], Got=[0]
+Generated message: As well as forming clusters to help them innovate, corporations are developing online applications of drugs and devices for the scientific treatment. And there's another evolving aspect
+Attempt 1: Target=[0], Got=[0]
+Generated message: By integrating IoT into every area of the business, there is much potential for innovations that become applied on behalf at any location today. Further privatizing Google
+Attempt 1: Target=[1], Got=[0]
+Generated message: Bitcoin is now dominated by technology companies such as Google and Facebook, - 6% of all new money moves from U.S.-based groups to more
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1], Got=[1]
+Generated message: We are at the point in traditional grade fighting where you need to use my and your raised spoon hand wands. Which means how does some people
+Attempt 1: Target=[1], Got=[1]
+Generated message: This new, selected dimension of the AI industry is comparable to that described above along with (the) acoustic FC spectroscopic mapping spectrum for modeling operators
+  -> Avg Time: 0.6730s
+Ours (Guided):   0%|          | 0/10 [00:00<?, ?it/s]Ours (Guided):  10%|█         | 1/10 [00:00<00:02,  4.33it/s]Ours (Guided):  20%|██        | 2/10 [00:00<00:01,  4.30it/s]Ours (Guided):  30%|███       | 3/10 [00:01<00:03,  2.26it/s]Ours (Guided):  40%|████      | 4/10 [00:01<00:02,  2.80it/s]Ours (Guided):  50%|█████     | 5/10 [00:01<00:01,  3.31it/s]Ours (Guided):  60%|██████    | 6/10 [00:01<00:01,  3.60it/s]Top 1 score: -1.3108072455809279
+Top 1 score: -1.1892493485691686
+Top 1 score: -0.6032660789356837
+Top 1 score: -0.5685710214879277
+Top 1 score: 0.06665165981754634
+Top 1 score: 0.12924425126355432
+Top 1 score: 0.3736957224379017
+Top 1 score: 0.8394905861404742
+Top 1 score: 0.87739239712165
+Top 1 score: 0.6201426995877648
+Top 1 score: 0.4538030328427112
+Top 1 score: 0.6301429186092297
+Top 1 score: 0.4066522478226046
+Top 1 score: 0.3183933071940388
+Top 1 score: 0.22915503347880395
+Top 1 score: 0.42042197442937435
+Top 1 score: 0.5518222536141377
+Top 1 score: 0.5867114357506225
+Top 1 score: 0.5752366728542322
+Top 1 score: 0.8743155073625509
+Top 1 score: 0.6466622641773369
+Top 1 score: 1.0483987376351442
+Top 1 score: 0.7710053120673473
+Top 1 score: 1.1549210191561978
+Top 1 score: 1.0818920956137061
+Top 1 score: 1.091841555717999
+Top 1 score: 1.4276602872429685
+Top 1 score: 1.3965416498340544
+Top 1 score: 1.3090945789932615
+Top 1 score: 1.2962689894536867
+Attempt 1: Target=[1], Got=[1]
+Generated message: The Internet of Things (IoT) has been around for decades. The idea behind it is that a machine, an object or even more
+Top 1 score: -0.22965781611390168
+Top 1 score: 0.07024621841697654
+Top 1 score: -0.15411672442408553
+Top 1 score: -0.21124516616564226
+Top 1 score: -0.031402150908608095
+Top 1 score: -0.11007356646711963
+Top 1 score: 0.10471069401446731
+Top 1 score: -0.1663906462918303
+Top 1 score: -0.19909720189554347
+Top 1 score: -0.11596605372736846
+Top 1 score: -0.24258757882923598
+Top 1 score: -0.24935766952410376
+Top 1 score: 0.27963509063079184
+Top 1 score: 0.33956811302083023
+Top 1 score: 0.4404262843873402
+Top 1 score: 0.9341248654721844
+Top 1 score: 0.9048114970449576
+Top 1 score: 1.1614200422078722
+Top 1 score: 1.5551253599211181
+Top 1 score: 0.9508092841969744
+Top 1 score: 0.9748355374019366
+Top 1 score: 0.9186577452944713
+Top 1 score: 0.9695080333483004
+Top 1 score: 1.0281368488032139
+Top 1 score: 0.9049793353350356
+Top 1 score: 0.9125716036745976
+Top 1 score: 0.9059554415881212
+Top 1 score: 1.1263953104160245
+Top 1 score: 0.6087909252952741
+Top 1 score: 0.7559698078939147
+Attempt 1: Target=[0], Got=[0]
+Generated message: The technology industry has become increasingly connected and is able to provide consumers with more choices in information products than ever before. It allows them greater access to the
+Top 1 score: -1.0096143724270075
+Top 1 score: -0.7685187866543165
+Top 1 score: -0.6582878480624921
+Top 1 score: -0.5456938369634431
+Top 1 score: -0.5782980866634673
+Top 1 score: -0.5046488534403497
+Top 1 score: -0.38498487557872607
+Top 1 score: -0.7189754346638035
+Top 1 score: -1.1149110488630147
+Top 1 score: -1.2962317482180574
+Top 1 score: -1.005220890863138
+Top 1 score: -0.8584864206532308
+Top 1 score: -1.031107462236371
+Top 1 score: -0.8559172844519829
+Top 1 score: -1.044605113311295
+Top 1 score: -0.8787336275799131
+Top 1 score: -1.1234256133059264
+Top 1 score: -1.2018016904587792
+Top 1 score: -1.4761550130552248
+Top 1 score: -1.2018007340893888
+Top 1 score: -1.2952649847599698
+Top 1 score: -1.1818118843094116
+Top 1 score: -0.8977042474514536
+Top 1 score: -1.0271706994993195
+Top 1 score: -0.6308002123346157
+Top 1 score: -0.8931218761174766
+Top 1 score: -0.32867165264397
+Top 1 score: -0.2532079354738752
+Top 1 score: -0.25178915080943753
+Top 1 score: -0.10860914259178052
+Attempt 1: Target=[0], Got=[1]
+Generated message: Companies that have started building and selling mobile apps are starting to take advantage of its advantages.
+, which was created by Microsoft's Bing team in the
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0], Got=[1]
+Generated message: Tim Sperry, president and CEO of a large mobile communications company called Videogamy LLC, explains that he's measuring the improvement: "
+Attempt 3: Target=[0], Got=[1]
+Generated message: We're somewhat nearing the peak of 1.25 billion Internet connections annually, so there is nearly no separation between a typical and all-time
+Attempt 4: Target=[0], Got=[1]
+Generated message: What it sells is at least 10 times more than I can grab and work on a computer," said Tony Floyd with AmbEx. "But there
+Attempt 5: Target=[0], Got=[0]
+Generated message: Somewhat arbitrarily, there might be two aspects of average colleges that comprise very different forms: integrated components categories and market definitions. Tribune Access does not
+Top 1 score: 1.011847343418336
+Top 1 score: 0.7504445130326016
+Top 1 score: 1.3888440986292994
+Top 1 score: 0.7846223067348811
+Top 1 score: 0.8945772451422429
+Top 1 score: 0.6864445710979629
+Top 1 score: 0.4940874835811845
+Top 1 score: 0.5003759232366638
+Top 1 score: 0.8191161689703755
+Top 1 score: 0.5489718098613432
+Top 1 score: 0.386358137788187
+Top 1 score: 0.4932051219635164
+Top 1 score: 0.38397997494346797
+Top 1 score: 0.3458111726948484
+Top 1 score: 0.4144923872416607
+Top 1 score: 0.47544691392099336
+Top 1 score: 0.5530394313733654
+Top 1 score: 0.5175658287706894
+Top 1 score: 0.4702631005593372
+Top 1 score: 0.5018353467102052
+Top 1 score: 0.6247966675232888
+Top 1 score: 0.49690673571617733
+Top 1 score: 0.459811338969476
+Top 1 score: 0.4531247886754124
+Top 1 score: 0.705752482067586
+Top 1 score: 0.7774842855658757
+Top 1 score: 1.0704951159237162
+Top 1 score: 1.169953471414854
+Top 1 score: 1.1504677226856188
+Top 1 score: 1.2400336919619486
+Attempt 1: Target=[0], Got=[0]
+Generated message: The industry has been growing by leaps and bounds since the mid-1990s. But it's still far from being a sustainable business model that works
+Top 1 score: -0.1858994106987363
+Top 1 score: 0.6507262414886977
+Top 1 score: 0.3723741349673999
+Top 1 score: 0.4577300901255986
+Top 1 score: 0.7226403218380186
+Top 1 score: 0.826398925124397
+Top 1 score: 0.4805664480353641
+Top 1 score: 1.197736843833236
+Top 1 score: 0.8295179580207663
+Top 1 score: 0.9023872554735579
+Top 1 score: 1.18569126972894
+Top 1 score: 0.9324814694554243
+Top 1 score: 0.9339320616960446
+Top 1 score: 0.5556720729024865
+Top 1 score: 0.9339322760350693
+Top 1 score: 0.9187416198927216
+Top 1 score: 1.3046469446619893
+Top 1 score: 1.1643051302202616
+Top 1 score: 1.0060980476077983
+Top 1 score: 1.041505989347066
+Top 1 score: 1.3299999439561252
+Top 1 score: 1.8268728900447297
+Top 1 score: 2.0804567023946996
+Top 1 score: 2.3237080218604214
+Top 1 score: 2.484649165661558
+Top 1 score: 2.393416505450476
+Top 1 score: 2.471257113022469
+Top 1 score: 2.363761890158142
+Top 1 score: 2.46305145459611
+Top 1 score: 2.4006658591316064
+Attempt 1: Target=[1], Got=[1]
+Generated message: Companies that have already built a business are starting to take off.
+"I don't care about the price of electricity, I'm interested in how
+Top 1 score: -1.1491152116139054
+Top 1 score: -1.174977324263913
+Top 1 score: -1.143104460160361
+Top 1 score: -1.5259464168479155
+Top 1 score: -1.3233018079176144
+Top 1 score: -0.8696910745981179
+Top 1 score: -0.4001456533906642
+Top 1 score: -0.2379841173313566
+Top 1 score: 0.5971467426605056
+Top 1 score: 0.2957252311401948
+Top 1 score: 0.1969695548617682
+Top 1 score: 0.5502780079796932
+Top 1 score: 0.33733472599922054
+Top 1 score: 0.33063955053288796
+Top 1 score: 0.2168740235466844
+Top 1 score: 0.25530704474012045
+Top 1 score: 0.3975185961324222
+Top 1 score: 0.22367631716501446
+Top 1 score: 0.04256912469467955
+Top 1 score: 0.00599847211128518
+Top 1 score: -0.02113250739273076
+Top 1 score: -0.05133615664967983
+Top 1 score: -0.10116986280170814
+Top 1 score: 0.07083263762612718
+Top 1 score: 0.1699150967438569
+Top 1 score: 0.24406706167527958
+Top 1 score: 0.2921793301795512
+Top 1 score: 0.1364820724960239
+Top 1 score: 0.24029539958379792
+Top 1 score: 0.2639352816475363
+Attempt 1: Target=[1], Got=[1]
+Generated message: As of 2014, the average number of Internet-connected devices is expected to grow by 2.8 percent compared with 2013's 4% growth rate and
+Top 1 score: -0.3840141403963044
+Top 1 score: 0.04486704668250674
+Top 1 score: -0.23500176094442127
+Top 1 score: -0.2014109193930464
+Top 1 score: 0.1318764566538074
+Top 1 score: 0.4953897869798563
+Top 1 score: 0.5432227654106327
+Top 1 score: 0.4369052960935431
+Top 1 score: -0.09250103785941277
+Top 1 score: -0.04636872316746686Ours (Guided):  70%|███████   | 7/10 [00:02<00:01,  2.63it/s]Ours (Guided):  80%|████████  | 8/10 [00:02<00:00,  3.07it/s]Ours (Guided):  90%|█████████ | 9/10 [00:02<00:00,  3.38it/s]Ours (Guided): 100%|██████████| 10/10 [00:02<00:00,  3.49it/s]
+
+Top 1 score: -0.1531501452785523
+Top 1 score: -0.17325681106243246
+Top 1 score: -0.26421901555934363
+Top 1 score: -0.3867604670580099
+Top 1 score: -0.12587519494010035
+Top 1 score: 1.2261580285462346
+Attempt 1: Target=[0], Got=[1]
+Generated message: The industry is not going down the rabbit hole; it's moving forward."
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0], Got=[1]
+Generated message: I don't think there exists a new, completely perfect method for performing front-end development without necessarily having significant capital.  'Manufacturing companies
+Attempt 3: Target=[0], Got=[1]
+Generated message: Which brings us to Sierra Telecom.    Our technology allows a cyber attack or another ground country's planting of some bioweapons may cause 800
+Attempt 4: Target=[0], Got=[1]
+Generated message: A new regulatory framework should be developed; one combining business-to app industry laws, self-regulation and private sector controls with a national delineated entity
+Attempt 5: Target=[0], Got=[1]
+Generated message: -
+"I believe that CRISPR challenges the basic idea of trying to go against AI, though. We have clear exceptions for humans whose
+Warning: Failed after 5 attempts.
+Top 1 score: -0.4101072524467883
+Top 1 score: -0.15023376418623985
+Top 1 score: 0.17024852167854446
+Top 1 score: 0.3207788541808234
+Top 1 score: 1.1175016573355658
+Top 1 score: 0.7826868027172312
+Top 1 score: 0.8804125775713352
+Top 1 score: 1.2219479410657177
+Top 1 score: 1.2132383824560142
+Top 1 score: 1.2179237852072653
+Top 1 score: 1.0453380445241618
+Top 1 score: 1.2031848381858121
+Top 1 score: 2.059578573936238
+Top 1 score: 1.7983361020629067
+Top 1 score: 2.3106168275309775
+Top 1 score: 1.5468898953839167
+Top 1 score: 1.6092222439660198
+Top 1 score: 1.5795754620763103
+Top 1 score: 1.5310134430297093
+Top 1 score: 1.3290852990318134
+Top 1 score: 1.3733395915989426
+Top 1 score: 1.6114260669730756
+Top 1 score: 1.6073228686872683
+Top 1 score: 1.7212797300379818
+Top 1 score: 1.8019149885362267
+Top 1 score: 1.2276579553276359
+Top 1 score: 1.343182286027683
+Top 1 score: 1.2649632665001915
+Top 1 score: 1.2284884448694922
+Top 1 score: 1.2047505551875515
+Attempt 1: Target=[1], Got=[1]
+Generated message: We believe that technology can be used as an alternative to government-funded social security, for example through the use of smart contracts or a blockchain.
+Top 1 score: 0.3864221924695426
+Top 1 score: 1.1171461195568793
+Top 1 score: 0.9834473727841135
+Top 1 score: 0.6014203113820118
+Top 1 score: 0.734364823260289
+Top 1 score: 0.6463445359283613
+Top 1 score: 0.6513802363721273
+Top 1 score: 0.7024194147113973
+Top 1 score: 0.6922304475248997
+Top 1 score: 0.415222724295253
+Top 1 score: 0.30816219089892183
+Top 1 score: 1.1951629240496162
+Top 1 score: 0.6122257992518809
+Top 1 score: 0.5734890079430238
+Top 1 score: 1.1013527669247067
+Top 1 score: 0.9794434190834013
+Top 1 score: 0.693309079150428
+Top 1 score: 1.3310838057216587
+Top 1 score: 0.7902235381264296
+Top 1 score: 0.9911491515824323
+Top 1 score: 1.0384947393420532
+Top 1 score: 0.6780089864932123
+Top 1 score: 1.2516411473961866
+Top 1 score: 0.9383560184230404
+Top 1 score: 1.2544082112552664
+Top 1 score: 1.6121180895862903
+Top 1 score: 1.3980738905723888
+Top 1 score: 1.3273409435541796
+Top 1 score: 1.3518622197300754
+Top 1 score: 1.4317024672784393
+Attempt 1: Target=[0], Got=[0]
+Generated message: The next stage is to make it easier for people like me to create something that will be a real success," says Michael O'Donnell, director of
+Top 1 score: -1.0322538934500636
+Top 1 score: -1.0782232026758805
+Top 1 score: -0.951700442971048
+Attempt 1: Target=[1], Got=[1]
+Generated message: .
+  -> Avg Time: 0.2868s
+
+====== Testing Bits = 2 ======
+Baseline (Random):   0%|          | 0/10 [00:00<?, ?it/s]Baseline (Random):  10%|█         | 1/10 [00:00<00:01,  4.74it/s]Baseline (Random):  20%|██        | 2/10 [00:00<00:01,  6.03it/s]Baseline (Random):  30%|███       | 3/10 [00:00<00:01,  4.95it/s]Baseline (Random):  40%|████      | 4/10 [00:00<00:00,  6.10it/s]Baseline (Random):  50%|█████     | 5/10 [00:00<00:00,  6.99it/s]Baseline (Random):  60%|██████    | 6/10 [00:01<00:00,  4.73it/s]Baseline (Random):  70%|███████   | 7/10 [00:01<00:00,  3.19it/s]Baseline (Random):  80%|████████  | 8/10 [00:01<00:00,  4.05it/s]Baseline (Random):  90%|█████████ | 9/10 [00:02<00:00,  2.90it/s]Baseline (Random): 100%|██████████| 10/10 [00:02<00:00,  2.91it/s]Baseline (Random): 100%|██████████| 10/10 [00:02<00:00,  3.74it/s]
+Attempt 1: Target=[0, 1], Got=[1 1]
+Generated message: Existing methods of technology control clients and companies are faltering. Systemic methodologies now include standardization or migration, change in the data due to
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1], Got=[0 1]
+Generated message: Plus, the pivot toward real estate and not business is definitely going to be an issue. It'll take relatively long years before it reaches its actual
+Attempt 1: Target=[0, 1], Got=[0 1]
+Generated message: Technology companies are all developing tiny computers that can now outperform their competitors – in this case, a lathe chassis. Further refinement and improvement of these
+Attempt 1: Target=[0, 0], Got=[1 0]
+Generated message: ][/quote] [Quoted via Headhatalk.com, July 15th 2014].
+
+ 1) the effectiveness of averaging could be
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0], Got=[0 0]
+Generated message: There are many engineers at Accel and BlackBharamp who have coming up with amazing solutions for spaceships.     Internally, I
+Attempt 1: Target=[0, 0], Got=[0 0]
+Generated message: Sometimes the prospect of changing a product or feature marks an increase in curiosity about its veracity and usefulness. No one knows exactly which changes won't "
+Attempt 1: Target=[0, 0], Got=[0 0]
+Generated message: Major markets have been designed to cater specifically for IoT needs, such as civil and military security systems. But rest assured that Microsoft's 1st generation Visual
+Attempt 1: Target=[0, 1], Got=[0 0]
+Generated message: It has created another $8.4 trillion in trade, employs 175 million jobs and expanded its total sales to 26 auto joints over the past decade,"
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1], Got=[1 1]
+Generated message: Combining advanced data, kernel improvements and new services means it is possible to crunch beautiful scanned images with beveled endpoints as low bandwidth statistics
+Attempt 3: Target=[0, 1], Got=[0 1]
+Generated message: Increasingly—and I say this in spite of my writing being mostly positive about tech, but also because it seems to me that some companies are doing
+Attempt 1: Target=[0, 0], Got=[1 0]
+Generated message: But today, its valuable items have safely been stolen from consumers. We knew exactly what they were for a long time before it was possible or advisable to
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0], Got=[1 1]
+Generated message: "The key to revolutionizing big data is winning the phone wars, spending billions of dollars a day on surveillance and buying thousands or millions more laptops
+Attempt 3: Target=[0, 0], Got=[0 1]
+Generated message: The product today is useful at many of the sites I've built. But each year, there are more and fewer licensing applications available that simply will not
+Attempt 4: Target=[0, 0], Got=[1 0]
+Generated message: And we are able to add new devices. 
+I think my big challenge is now sharing these data with pioneers in the area of pharmaceutical research [
+Attempt 5: Target=[0, 0], Got=[0 1]
+Generated message: Cereal toxins, bloatola and phthalates have been rapidly reported in other chewing products.  The second chug of blue gum
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 0], Got=[1 0]
+Generated message: The Cisco platform was quickly becoming the leading Internet of Things and connected device management system (Etotal data analytics enabled someone with 100 year EOTC
+Attempt 1: Target=[1, 0], Got=[0 1]
+Generated message: While efforts are being made to engineer artificial intelligence streams into applications, AI is still evolving rapidly. It seems that some firms around the world recognize this and
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0], Got=[0 1]
+Generated message: The recomfigurements require two different specialized technologies: the Laser Chameleon technique, now known as subroutines and ELCOME
+Attempt 3: Target=[1, 0], Got=[0 1]
+Generated message: Unlocking our devices and strategies today can create a high-wage world where every man, woman or child is empowered with as little change to do so
+Attempt 4: Target=[1, 0], Got=[1 1]
+Generated message: Fortunately, Lawnland has become a digital space provider.  And now you can take the administration to your bed and thoughtlessly continue dividing people into two
+Attempt 5: Target=[1, 0], Got=[0 1]
+Generated message: Businesses have DNA to this or nearly anything, but are not clear where it comes from.
+WHY IS IT SO BAD TO HEAR
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 0], Got=[0 1]
+Generated message: And it's only getting better. K-Curse peaked just in time to capture the $10 billion market starting on October 7 and then collapsed as
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0], Got=[0 0]
+Generated message: Broadcasting technologies are emerging to appeal to publishing publishers and media company executives. However, SPSDS may be one of the first AI systems able
+Attempt 3: Target=[1, 0], Got=[1 0]
+Generated message: — Adam P. LinnokhupI recently published what he calls a Best Science report, Overcoming Digital Learning too Algorithmic.
+  -> Avg Time: 0.2674s
+Ours (Guided):   0%|          | 0/10 [00:00<?, ?it/s]Ours (Guided):  10%|█         | 1/10 [00:00<00:02,  4.32it/s]Ours (Guided):  20%|██        | 2/10 [00:00<00:01,  4.22it/s]Ours (Guided):  30%|███       | 3/10 [00:00<00:01,  4.52it/s]Ours (Guided):  40%|████      | 4/10 [00:00<00:01,  4.70it/s]Ours (Guided):  50%|█████     | 5/10 [00:01<00:01,  4.60it/s]Ours (Guided):  60%|██████    | 6/10 [00:01<00:01,  3.37it/s]Top 1 score: 0.8749554937256453
+Top 1 score: 1.0858183665541192
+Top 1 score: 1.7691122651712485
+Top 1 score: 1.12892836893202
+Top 1 score: 0.9345524779017294
+Top 1 score: 1.3837081770342572
+Top 1 score: 1.6269733333605498
+Top 1 score: 1.533777469833152
+Top 1 score: 1.6890956337254128
+Top 1 score: 2.096294298700225
+Top 1 score: 2.1379945173915567
+Top 1 score: 2.009425490776418
+Top 1 score: 1.2053122965138279
+Top 1 score: 1.3400797202286963
+Top 1 score: 1.3254383169602457
+Top 1 score: 1.3547502471945314
+Top 1 score: 2.120336573955555
+Top 1 score: 1.6904057366220506
+Top 1 score: 2.0107005194579104
+Top 1 score: 1.6357293926654226
+Top 1 score: 1.9535827484845878
+Top 1 score: 1.8412759741872096
+Top 1 score: 1.8844992223844577
+Top 1 score: 2.0301057259323043
+Top 1 score: 2.0248264219673135
+Top 1 score: 2.141179195056667
+Top 1 score: 2.735191518865822
+Top 1 score: 3.1573011776790194
+Top 1 score: 2.5820441547711845
+Top 1 score: 2.5888614272237724
+Attempt 1: Target=[0, 0], Got=[0 0]
+Generated message: Companies like Samsung have been investing heavily in the semiconductors market. But many companies are now looking to take a bigger lead over smaller firms, such
+Top 1 score: 0.40897001075613404
+Top 1 score: 0.41735629576107414
+Top 1 score: 0.476956309031106
+Top 1 score: 0.810523112980641
+Top 1 score: 0.9771874790181663
+Top 1 score: 0.783023974103912
+Top 1 score: 0.7228265130482245
+Top 1 score: 1.2024908551010411
+Top 1 score: 0.0359018376670549
+Top 1 score: 0.3845849523284216
+Top 1 score: 0.3458168323307793
+Top 1 score: 0.7321149401426333
+Top 1 score: 0.4247536888812613
+Top 1 score: 0.40937520504100544
+Top 1 score: 1.3570794687850807
+Top 1 score: 1.4681676450872776
+Top 1 score: 1.5194973161952832
+Top 1 score: 1.6899345670004005
+Top 1 score: 1.689463215810675
+Top 1 score: 1.583488238283987
+Top 1 score: 1.5496800769215817
+Top 1 score: 1.5501141392444473
+Top 1 score: 1.5866862391723648
+Top 1 score: 1.7528148268215198
+Top 1 score: 1.786985971349769
+Top 1 score: 1.873048840960282
+Top 1 score: 1.4542124421681109
+Top 1 score: 1.6308059978673914
+Top 1 score: 1.5453825108196493
+Top 1 score: 1.5869496721499914
+Attempt 1: Target=[1, 0], Got=[1 0]
+Generated message: "It has a very good potential for making an important part of this ecosystem in the future and it's also one that we have been working to
+Top 1 score: 0.09365302976958229
+Top 1 score: 0.2659679350148685
+Top 1 score: 0.049982096887134286
+Top 1 score: -0.039668043291649246
+Top 1 score: -0.21628231748858448
+Top 1 score: -0.17380997043011487
+Top 1 score: -0.324175083338486
+Top 1 score: -0.16847256409493044
+Top 1 score: 0.3098221977827208
+Top 1 score: 0.33909403461163135
+Top 1 score: 0.3100127200037272
+Top 1 score: 0.09592753885351846
+Top 1 score: 0.24606116441908243
+Top 1 score: 0.8229255456748823
+Top 1 score: 1.0321450804014773
+Top 1 score: 1.591792808945415
+Top 1 score: 0.9159136261991159
+Top 1 score: 1.0802542301640383
+Top 1 score: 1.0979019308879852
+Top 1 score: 1.0821570785162578
+Top 1 score: 0.9139546742592374
+Top 1 score: 1.051618880466334
+Top 1 score: 1.0270814649041053
+Top 1 score: 0.9465110611100545
+Top 1 score: 0.8112360306008453
+Top 1 score: 1.0770359126798588
+Top 1 score: 0.8455635554457679
+Top 1 score: 0.8313622421026107
+Top 1 score: 0.7904687491036035
+Top 1 score: 0.8285590316356873
+Attempt 1: Target=[1, 1], Got=[1 1]
+Generated message: As technology has grown, it is more difficult to predict when a product will be released.
+"It's hard for me," said Rachael
+Top 1 score: 1.4358831489335404
+Top 1 score: 1.8903570072091977
+Top 1 score: 1.828144817170287
+Top 1 score: 2.479460008273929
+Top 1 score: 2.0578581703228256
+Top 1 score: 2.3391085765362805
+Top 1 score: 2.36391835332085
+Top 1 score: 2.6660834254174564
+Top 1 score: 2.1297155818094
+Top 1 score: 1.8525067894154676
+Top 1 score: 2.080485245967922
+Top 1 score: 2.2311412008304616
+Top 1 score: 2.3797135146460207
+Top 1 score: 2.523097017637058
+Top 1 score: 2.7358669329687704
+Top 1 score: 2.8039097332913148
+Top 1 score: 2.7781339324425867
+Top 1 score: 2.6097127660362727
+Top 1 score: 2.7748972115069086
+Top 1 score: 3.264976900214
+Top 1 score: 3.4913272785618257
+Top 1 score: 3.356120911401221
+Top 1 score: 3.4143192854661146
+Top 1 score: 3.444088566162815
+Top 1 score: 3.406478285100902
+Top 1 score: 2.768032750081364
+Top 1 score: 2.7049805294473384
+Top 1 score: 2.8317304857432313
+Top 1 score: 2.947495475790707
+Top 1 score: 2.8349314911793244
+Attempt 1: Target=[0, 0], Got=[0 0]
+Generated message: The next step is to bring the new products together with our other suppliers and partners, such as Amazon.com Inc., Microsoft Corp.'s Office platform
+Top 1 score: 0.26868720259611434
+Top 1 score: 0.5144382701737986
+Top 1 score: 0.9340757739573198
+Top 1 score: 0.5581610014535754
+Top 1 score: 0.3358226166186378
+Top 1 score: 0.46781834920573057
+Top 1 score: 0.8679438485600759
+Top 1 score: 1.4291515604576306
+Top 1 score: 1.269215888583682
+Top 1 score: 1.1645124097962207
+Top 1 score: 1.1824894220817879
+Top 1 score: 1.1798957563318069
+Top 1 score: 1.2219965747597337
+Top 1 score: 1.6675514465678363
+Top 1 score: 1.6658012938263889
+Top 1 score: 1.733741230226657
+Top 1 score: 1.6086578093863717
+Top 1 score: 1.535843689547326
+Top 1 score: 1.2928601954957286
+Top 1 score: 1.3412631469766394
+Top 1 score: 1.1187570033820888
+Top 1 score: 1.315466814138564
+Top 1 score: 1.287901129391696
+Top 1 score: 1.3736550600133057
+Top 1 score: 1.16817973589969
+Top 1 score: 1.3852272707703632
+Top 1 score: 1.6862994361422068
+Top 1 score: 1.8831591087715382
+Top 1 score: 1.8627398420859327
+Top 1 score: 1.6207270582881597
+Attempt 1: Target=[1, 0], Got=[1 0]
+Generated message: The U.K.'s Digital Economy and Internet of Things sector was valued at around £10 billion, the United States' IT business value is more
+Top 1 score: -1.084685741505028
+Top 1 score: -0.8735384475765469
+Top 1 score: -0.1617490039689886
+Top 1 score: -0.3326569802792527
+Top 1 score: -0.30707896603799895
+Top 1 score: -0.23772919108978333
+Top 1 score: -0.949341053585085
+Top 1 score: -0.20798692971627375
+Top 1 score: -0.6389248471866358
+Top 1 score: 0.060412176575247
+Top 1 score: 0.020686882292479947
+Top 1 score: 0.24949002521298858
+Top 1 score: 0.8017761667514015
+Top 1 score: 0.9824611303150352
+Top 1 score: 0.42868003713567715
+Top 1 score: 0.2565844317888617
+Top 1 score: 0.48264607528356085
+Top 1 score: 0.8674582860899827
+Top 1 score: 1.1793173528684728
+Top 1 score: 1.2202939766192802
+Top 1 score: 0.9429128351620738
+Top 1 score: 0.8503965213588276
+Top 1 score: 0.6927473059179443
+Top 1 score: 0.7045118287394979
+Top 1 score: 0.6171307506058812
+Top 1 score: 0.5149891646712279
+Top 1 score: 0.8788329846146457
+Top 1 score: 0.8111590725853215
+Top 1 score: 0.7344255725812949
+Top 1 score: 0.6547086838491201
+Attempt 1: Target=[1, 1], Got=[1 0]
+Generated message: The U.S., Germany, and Japan offer a wide array of technologies that allow us to develop new types for our products without sacrificing quality or value
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1], Got=[0 0]
+Generated message: With the relatively high demand for small-screen MacBooks, iPod touch and iMac machines in general, Apple has used its Kinect technology as a
+Attempt 3: Target=[1, 1], Got=[1 1]
+Generated message: But Republican legislators have been reluctant to prohibit financial aid that can be used in the pharmaceutical industry from being applied for, and this fact has put scrutiny on
+Top 1 score: -1.5124995720692795
+Top 1 score: -1.1400794636583667
+Top 1 score: -0.4868152329133315
+Top 1 score: -0.7491992667897793
+Top 1 score: -0.36594181385803703
+Top 1 score: 0.13713070690048745
+Top 1 score: 0.4230855497842563
+Top 1 score: 0.4199585307795858
+Top 1 score: 0.2655974855977046
+Top 1 score: 0.6965569858022376
+Top 1 score: 0.37531031656333935
+Top 1 score: 0.31295065993243654
+Top 1 score: 0.3832325181179156
+Top 1 score: 0.5443550020931588
+Top 1 score: 0.6680760172253922
+Top 1 score: 0.6061275855003722
+Top 1 score: 0.6984964638612683
+Top 1 score: 0.6936158929645551
+Top 1 score: 1.3657084947925844
+Top 1 score: 2.0560339474923444
+Top 1 score: 2.1122680733235657
+Top 1 score: 2.5262302674114245
+Top 1 score: 1.9061686224652155Ours (Guided):  70%|███████   | 7/10 [00:01<00:00,  3.60it/s]Ours (Guided):  80%|████████  | 8/10 [00:02<00:00,  3.78it/s]Ours (Guided):  90%|█████████ | 9/10 [00:02<00:00,  2.59it/s]Ours (Guided): 100%|██████████| 10/10 [00:03<00:00,  2.12it/s]Ours (Guided): 100%|██████████| 10/10 [00:03<00:00,  3.00it/s]
+
+Top 1 score: 2.139325030733219
+Top 1 score: 2.0945944907107115
+Top 1 score: 2.1615485728962027
+Top 1 score: 2.069159551701816
+Top 1 score: 2.2041848924935006
+Top 1 score: 2.154557350131383
+Top 1 score: 2.5139792610485725
+Attempt 1: Target=[1, 1], Got=[1 1]
+Generated message: The Internet has revolutionized commerce in the United States. In this article, I will outline how to use it and provide a step-by_step
+Top 1 score: 1.262795685109794
+Top 1 score: 1.9527936428078503
+Top 1 score: 1.4180844439760192
+Top 1 score: 1.7174357776549614
+Top 1 score: 1.532512485982291
+Top 1 score: 0.8575580892981007
+Top 1 score: 0.8280855386032837
+Top 1 score: 1.186330147179321
+Top 1 score: 0.7532812920063379
+Top 1 score: 1.7802697551011297
+Top 1 score: 1.487464596587426
+Top 1 score: 1.314480257945017
+Top 1 score: 1.8406069958665519
+Top 1 score: 1.7958172530171694
+Top 1 score: 1.7549531936984284
+Top 1 score: 2.6689167420730486
+Top 1 score: 1.8119667187758126
+Top 1 score: 1.7361944326398755
+Top 1 score: 1.3579042224439006
+Top 1 score: 1.57748012788542
+Top 1 score: 2.0085164918671525
+Top 1 score: 1.7969631748523969
+Top 1 score: 1.438731923952942
+Top 1 score: 2.090593834668277
+Top 1 score: 1.46816699011639
+Top 1 score: 1.3514405242995935
+Top 1 score: 1.365780074928392
+Top 1 score: 1.945928977680906
+Top 1 score: 1.7239858511086272
+Top 1 score: 1.716728571752632
+Attempt 1: Target=[1, 0], Got=[1 0]
+Generated message: We are witnessing a shift in the industry from just one of its competitors, Amazon.com, into an ever-growing and rapidly evolving ecosystem that encompasses
+Top 1 score: -1.193688833526331
+Top 1 score: 0.24918156956638748
+Top 1 score: 0.05085951698865543
+Top 1 score: 0.05129919912179026
+Top 1 score: 0.45311255197906797
+Top 1 score: 0.13738928334427974
+Top 1 score: 0.2925576875981552
+Top 1 score: 0.361248339329127
+Top 1 score: 0.3650760488740486
+Top 1 score: 0.4211293743590989
+Top 1 score: 0.1785719515726618
+Top 1 score: -0.1253188573962395
+Top 1 score: -0.014727535034075812
+Top 1 score: 0.19275149585374413
+Top 1 score: 0.33325860619458186
+Top 1 score: 0.4058229091188277
+Top 1 score: 0.41035712358602094
+Top 1 score: 0.14157753885697788
+Top 1 score: 0.39762079071208684
+Top 1 score: 0.44162259236190216
+Top 1 score: 0.1196384524153078
+Top 1 score: 0.04690670796151075
+Top 1 score: -0.6486040892388772
+Top 1 score: -0.8323606119185349
+Top 1 score: -0.7362610558673996
+Top 1 score: -0.9481400526968973
+Top 1 score: -0.9397375383512466
+Top 1 score: -0.9737386317036809
+Top 1 score: -0.83606663649056
+Attempt 1: Target=[1, 0], Got=[0 0]
+Generated message: In 2011, there were 2.2 billion new jobs in the US economy and 1 million people working on computers worldwide (see chart).
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0], Got=[1 1]
+Generated message: Disruptive geothermal projects have already begun in Colorado, Florida and other states; smaller-scale geological operations are currently forming. [1
+Attempt 3: Target=[1, 0], Got=[0 0]
+Generated message: A study by ISS forensically disclosed that those employed at Soviet Space Laboratories in 1966 recorded bike ride rates of about 52% and sexual assaults existed despite
+Attempt 4: Target=[1, 0], Got=[1 1]
+Generated message: Which doesn't mean it'll stop working. This scenario may only be one phase in the evolution of supervised learning, but an important part will still
+Attempt 5: Target=[1, 0], Got=[0 1]
+Generated message: the main obstacle was not SRI"ses. When you can't find a solution to adoption of it-some goal is that we are stuck
+Warning: Failed after 5 attempts.
+Top 1 score: 0.41005772800413864
+Top 1 score: 0.4483190655692952
+Top 1 score: 0.2731452869811273
+Top 1 score: 0.12721327573684138
+Top 1 score: 1.0176946929707809
+Top 1 score: 0.3490127526288791
+Top 1 score: 0.4049047623347475
+Top 1 score: 0.5774059585358995
+Top 1 score: 1.1606486995873053
+Top 1 score: 1.8219506800555694
+Top 1 score: 1.8662871026863348
+Top 1 score: 1.5507110369032768
+Top 1 score: 1.5261534666601122
+Top 1 score: 1.4736682987929242
+Top 1 score: 1.5302708825560773
+Top 1 score: 1.8172882852317078
+Top 1 score: 1.703984644149021
+Top 1 score: 1.7432164225413997
+Top 1 score: 1.5512700339093561
+Top 1 score: 1.7470996688571303
+Top 1 score: 1.7470996688571303
+Top 1 score: 1.3179918486037623
+Top 1 score: 1.2491363940878797
+Top 1 score: 1.7238725332915676
+Top 1 score: 2.178704576052015
+Top 1 score: 2.373740051527317
+Top 1 score: 2.4621811505891027
+Top 1 score: 1.8905582999968946
+Top 1 score: 1.8040397415557161
+Top 1 score: 1.9102463982735802
+Attempt 1: Target=[0, 0], Got=[0 1]
+Generated message: (The New York Times/Penguin)
+, The technology industry is evolving rapidly. "I'm just going to keep on doing what
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0], Got=[0 1]
+Generated message: Time will tell which companies agitate directly across industry lines, and institutional capital networks develop from here. _______ BORK: Are you certain congestion
+Attempt 3: Target=[0, 0], Got=[0 1]
+Generated message: Price fluctuations feature important characteristics in any ongoing product or service purchase.  ``Cybersecurity'' technology dramatically takes a similar strategic approach, which relies
+Attempt 4: Target=[0, 0], Got=[0 1]
+Generated message: That changes tomorrow. SOTA has dedicated around $400-million in its first 10 years to 326 things that make nano devices, think touchscreens
+Attempt 5: Target=[0, 0], Got=[0 0]
+Generated message: Governors 1224 872 1952 View Adobe Flash Player. 27 Report to THCroomsInform Social Media by opening TOP selects eat Japan[12] Additional
+  -> Avg Time: 0.3337s
+
+====== Testing Bits = 3 ======
+Baseline (Random):   0%|          | 0/10 [00:00<?, ?it/s]Baseline (Random):  10%|█         | 1/10 [00:00<00:04,  1.95it/s]Baseline (Random):  20%|██        | 2/10 [00:00<00:02,  2.82it/s]Baseline (Random):  30%|███       | 3/10 [00:01<00:03,  2.23it/s]Baseline (Random):  40%|████      | 4/10 [00:01<00:01,  3.19it/s]Baseline (Random):  50%|█████     | 5/10 [00:01<00:01,  3.61it/s]Baseline (Random):  60%|██████    | 6/10 [00:02<00:01,  2.60it/s]Baseline (Random):  70%|███████   | 7/10 [00:02<00:01,  2.26it/s]Baseline (Random):  80%|████████  | 8/10 [00:03<00:00,  2.25it/s]Baseline (Random):  90%|█████████ | 9/10 [00:03<00:00,  2.22it/s]Attempt 1: Target=[0, 0, 1], Got=[1 0 1]
+Generated message: Our new technology is consistent, making predictive analytics an important and timely tool for receiving accurate data. We follow closely our Open Source commitments to ensure that unlike
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0, 1], Got=[0 1 0]
+Generated message: Concepts such as F optic converters and MultiLTE have capitalized on current trends in market use of complex geometries, limiting
+Attempt 3: Target=[0, 0, 1], Got=[0 0 0]
+Generated message: So… Is there any way for Silicon Valley-funded NGOs, such as PBS (PDF), Annenberg and the National Academies of Science to
+Attempt 4: Target=[0, 0, 1], Got=[1 0 1]
+Generated message: And as by weather modification applications, ski resorts may be the icing on the cake: • Protecting kids and young people at random are a significant health
+Attempt 5: Target=[0, 0, 1], Got=[1 0 1]
+Generated message: The power to enable low cost smartphones remains weak.,   v KBC 21 Jan 2012
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 1, 1], Got=[1 0 0]
+Generated message: Employers are getting tons of talent in between jobs. A perfect irony is about to happen here—New hires will want to find new options for their
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 1], Got=[0 1 1]
+Generated message: In 2007, a bill were passed by the House of Representatives because it identified all Internet providers and ISPs as charlatans. Â
+If
+Attempt 1: Target=[1, 0, 1], Got=[1 0 0]
+Generated message: As IBM develops similar device algorithms, the public understands a universal view of wands. It is true that weather patterns and environmental hazards can apply problems to
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 1], Got=[0 0 0]
+Generated message: What particular manifestations such as biosurface gas or rosewood are capable of rivals is hard to determine, but these phenomena may ultimately be setting the
+Attempt 3: Target=[1, 0, 1], Got=[1 0 0]
+Generated message: Given the difficulty connected with processors today, I wanted to ensure that we were leading technology economies. 
+I reached out on Twitter and hiked
+Attempt 4: Target=[1, 0, 1], Got=[1 0 0]
+Generated message: Each year is more. The tech industry belongs to a very tiny green block of 1% shareholders, 96 times less than seed investors." Amendment stored
+Attempt 5: Target=[1, 0, 1], Got=[1 0 0]
+Generated message: as of this writing, I don't have enough time to report on new concepts in the science and engineering community for McAfee, recent innovations targeting social
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 1, 1], Got=[0 1 1]
+Generated message: Technology developers are leading the way in finding solutions. Many of us recognize that breaking new boundaries or moving technology design any further requires repeated funds, capital and
+Attempt 1: Target=[1, 0, 1], Got=[1 1 0]
+Generated message: Dental hygienists are technologists and ushering in the era of tablets is a sure way to become an overnight winner.
+ In some
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 1], Got=[1 0 1]
+Generated message: In January 2011, Vision Net unveiled HDFocus's future metrics.   Over the course of my time with CoolSky X 1 400 I had
+Attempt 1: Target=[1, 0, 0], Got=[0 0 1]
+Generated message: , but keeping city residents increasingly isolated and without a sense that they're going to change with their own budgets. Therefore, it is important for RT
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 0], Got=[0 0 1]
+Generated message: If you think Google and others tend to outperform smartphone companies in terms of technical ability, open innovation or user growth rates clearly show up.
+Attempt 3: Target=[1, 0, 0], Got=[1 1 0]
+Generated message: The major retailers are creating new products in all available formats.  Clark's isn't alone, since some of the biggest food labels require customers to
+Attempt 4: Target=[1, 0, 0], Got=[0 1 0]
+Generated message: Neurek Flex Hyper12 concept (November 2011)   Worth noting that Neurlex offers intuitive 3D Universe ephemeris, allowing anyone
+Attempt 5: Target=[1, 0, 0], Got=[1 0 0]
+Generated message: The economic and political environment in which people are considering their options for becoming entrepreneurs has continued to evolve. Now, countries we all know have an open
+Attempt 1: Target=[0, 1, 0], Got=[0 0 1]
+Generated message: We created Apollo, Musk's ride-share infrastructure and his manually operated military aircraft just to show that giving people the access of more things is important.
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0], Got=[0 0 0]
+Generated message: Because of the increasing capacity and level limits areas like immersive reality, Knoppkule aren't in need or interested in for a change.
+Attempt 3: Target=[0, 1, 0], Got=[0 0 0]
+Generated message: Whenever I switch the format, my devices managed to manage that with no warning or explanation. The thing is, it took some time for an F
+Attempt 4: Target=[0, 1, 0], Got=[0 0 0]
+Generated message: Our company is shifting to supporting new technology, regulatory risks and content with highly competitive rewards. As such, we believe that most events can only be held
+Attempt 5: Target=[0, 1, 0], Got=[1 0 0]
+Generated message: This is and will continue to be a source of tremendous stress because it increases the risk for terrorism worldwide. 
+How important was your industry's
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 1, 0], Got=[1 0 1]
+Generated message: Partner companies leverage the expertise of international counterparts to offer exclusive racecar apps for iPhone — and superior supplies as well. In a few car/fiat
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0], Got=[0 0 1]
+Generated message: Analex and ArcThose say it's accelerating. According to Hyde Organics in July, how fast? Tech giants like Google have made quite
+Attempt 3: Target=[0, 1, 0], Got=[0 1 1]
+Generated message: I've beaten the returns on all \(G) and past $$\big category predictions methods, even though it is still within 1-71%
+Attempt 4: Target=[0, 1, 0], Got=[0 1 0]
+Generated message: [7] A decade ago, some students figured out how to simply blink an image of God in a group photo so that they could discuss their
+Attempt 1: Target=[1, 0, 0], Got=[1 0 1]
+Generated message: That is beantowns. Gen-9 flavor was brought back to the graveyards once again from plants that we already had maybe last 20
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 0], Got=[0 0 1]
+Generated message: High-end enterprises are culling more funding out of these high potential targets, allowing infrastructure firms to maximize their clout in developing artificial intelligence.
+Attempt 3: Target=[1, 0, 0], Got=[1 1 1]
+Generated message: Growth's already outpacing the relationship between taxi drivers and pirates.  Try these new infrastructure projects: Uber in San Francisco, Taxiast type 3 or
+Attempt 4: Target=[1, 0, 0], Got=[1 0 0]
+Generated message: At the same time, there are increasing serious challenges on both sides of technological issues. An initial batch of US$20 billion in funding is needed
+Attempt 1: Target=[0, 1, 0], Got=[1 0 1]
+Generated message: Just measure how many products make up the gaming expanding market than Intel Phoronix and Nvidia EdHaxeats, both of which document comparable initiatives
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0], Got=[0 0 0]
+Generated message: If each new gadget has its own flat state, then datasets that do not show this trend fall apart. In other words fences're a power we
+Attempt 3: Target=[0, 1, 0], Got=[1 0 0]
+Generated message: It has been dominating the business for about 5 years now and is clearly valued at $500 billion.  Never before have they managed to generate tenBaseline (Random): 100%|██████████| 10/10 [00:04<00:00,  2.04it/s]Baseline (Random): 100%|██████████| 10/10 [00:04<00:00,  2.33it/s]
+
+Attempt 4: Target=[0, 1, 0], Got=[1 1 0]
+Generated message: But in trying to develop the original Jeffrey Dahmer perpetrated by groups like Al Qaeda and al-Qaeda, they chose another proxy bridge - Russia's
+Attempt 5: Target=[0, 1, 0], Got=[0 1 0]
+Generated message: Meanwhile in 2008, e-commerce giants Alibaba and Jupiters has expanded rapidly across dozens of states. ."   "Breaking up some companies
+  -> Avg Time: 0.4285s
+Ours (Guided):   0%|          | 0/10 [00:00<?, ?it/s]Ours (Guided):  10%|█         | 1/10 [00:00<00:06,  1.46it/s]Ours (Guided):  20%|██        | 2/10 [00:01<00:05,  1.50it/s]Ours (Guided):  30%|███       | 3/10 [00:01<00:03,  2.12it/s]Ours (Guided):  40%|████      | 4/10 [00:01<00:02,  2.67it/s]Ours (Guided):  50%|█████     | 5/10 [00:02<00:02,  2.43it/s]Top 1 score: -0.5219911367233423
+Top 1 score: -0.3291074844499078
+Top 1 score: 0.3499044669057749
+Top 1 score: -0.30146237749508686
+Top 1 score: -0.6055405752919821
+Top 1 score: -0.4302287309253283
+Top 1 score: -0.3754303080135104
+Top 1 score: -0.09261814173861549
+Top 1 score: 0.6621055260201889
+Top 1 score: 1.4650384724071597
+Top 1 score: 0.9319601652828451
+Top 1 score: 0.6911304869417503
+Top 1 score: 0.68973695015942
+Top 1 score: 0.6868631218137937
+Top 1 score: 0.7298950004022947
+Top 1 score: 0.7358868277624058
+Top 1 score: 0.6855579408966145
+Top 1 score: 0.9327163197563135
+Top 1 score: 0.801101566226456
+Top 1 score: 0.597401702417985
+Top 1 score: 0.8637392259967726
+Top 1 score: 0.740121699396894
+Top 1 score: 0.060754620687097916
+Top 1 score: 0.1392789281148058
+Top 1 score: 0.24425589012574966
+Top 1 score: 0.2281027210968271
+Top 1 score: 0.2967466656993049
+Top 1 score: 0.19691873238828328
+Top 1 score: 0.06561492764272447
+Top 1 score: 0.21976011734734796
+Attempt 1: Target=[1, 1, 1], Got=[1 0 0]
+Generated message: In 2011, there were nearly 1 billion wireless devices. Today about one-fourth of all people use the internet and more than 10 million consumers have access
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 1], Got=[0 1 0]
+Generated message: While our monitors from PC hardware use more rapid FTDI and USB peripherals than ever before, the companies' newest devices now support they have many
+Attempt 3: Target=[1, 1, 1], Got=[1 0 0]
+Generated message: Annual revenues from the electric sector have soared in three years, and by 2015 NYC needs to save $75 billion annually on conventional gasoline for both
+Attempt 4: Target=[1, 1, 1], Got=[0 0 1]
+Generated message: We are fast-changing while industries degrade over time. 
+This explanation isn't 100 percent true, but I DO acknowledge you will have to
+Attempt 5: Target=[1, 1, 1], Got=[0 0 1]
+Generated message: USA Today makes the hydraulic fracturing revolution mobile perceived transportation technologies. Currently everybody knows it but no college is ICT ready yet, so energy-
+Warning: Failed after 5 attempts.
+Top 1 score: -1.7216732836987778
+Top 1 score: -0.5218202759176892
+Top 1 score: 0.5624580063692739
+Top 1 score: 1.0486375890046649
+Top 1 score: 0.6578870345490815
+Top 1 score: 0.8625007422033435
+Top 1 score: 1.2536616920479768
+Top 1 score: 0.912294641771477
+Top 1 score: 1.0443322342178754
+Top 1 score: 1.9883507562124487
+Top 1 score: 1.541840375007221
+Top 1 score: 1.215076915563801
+Top 1 score: 1.1134774891839117
+Top 1 score: 1.851732884333181
+Top 1 score: 1.4803007844461435
+Top 1 score: 1.4146797575037648
+Top 1 score: 1.2912378416184007
+Top 1 score: 1.3869982539070662
+Top 1 score: 1.143671530689188
+Top 1 score: 1.3239090260253576
+Top 1 score: 1.0823014592812896
+Top 1 score: 1.5562480378091426
+Top 1 score: 1.5850467470892118
+Top 1 score: 1.734250617083663
+Top 1 score: 2.4568800439398224
+Top 1 score: 1.8312450506545468
+Top 1 score: 1.7028819824905064
+Top 1 score: 1.606434368958901
+Top 1 score: 1.447472464447437
+Top 1 score: 1.3883980488549463
+Attempt 1: Target=[0, 1, 1], Got=[0 0 1]
+Generated message: The average consumer is looking through more than a thousand different brands in less-than 24 hours and they can find just about any product that meets their needs
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 1], Got=[1 1 0]
+Generated message: It will need to create new ways for the whole industry not just somebody named Jason Freeman (not one of us), but also someone else and featuring
+Attempt 3: Target=[0, 1, 1], Got=[0 0 1]
+Generated message: But in the end, many high profile companies still struggle to convince consumers that online advertising platforms can carry similar results as traditional media. 
+The
+Attempt 4: Target=[0, 1, 1], Got=[0 0 0]
+Generated message: I believe that it is about time - not just by the next generation but in so many other sectors too. 
+Wubi's marketing strategy
+Attempt 5: Target=[0, 1, 1], Got=[1 0 1]
+Generated message: How long somebody stays well connected 3.5 years  will be costly 4 Play Xbox 360 manage 32 x die Time: 48 minutes Leap Motion one
+Warning: Failed after 5 attempts.
+Top 1 score: 2.6440798593831065
+Top 1 score: 2.4830238125794293
+Top 1 score: 3.3742621435148337
+Top 1 score: 3.9541136080712236
+Top 1 score: 4.140169521999627
+Top 1 score: 4.3114595655940136
+Top 1 score: 4.203850306889421
+Top 1 score: 4.137580344401837
+Top 1 score: 3.896000053930683
+Top 1 score: 3.6622564428848596
+Top 1 score: 3.8180911193855853
+Top 1 score: 4.296442895637101
+Top 1 score: 4.553238624892734
+Top 1 score: 4.6939945604513245
+Top 1 score: 5.11763772753753
+Top 1 score: 5.288837924358569
+Top 1 score: 5.172526500712083
+Top 1 score: 5.224119023448378
+Top 1 score: 5.601770157206288
+Top 1 score: 5.206677923048829
+Top 1 score: 5.161848962723784
+Top 1 score: 5.128794598814837
+Top 1 score: 5.172195163339896
+Top 1 score: 5.089527821177873
+Top 1 score: 5.037376208221812
+Top 1 score: 5.0492720678667915
+Top 1 score: 5.249892169716657
+Top 1 score: 5.171265655062349
+Top 1 score: 5.306201600452681
+Top 1 score: 5.2890769037729255
+Attempt 1: Target=[1, 1, 1], Got=[1 1 1]
+Generated message: In the US alone, there are now over a million applications for smart meters that have been developed. There has also become one of our most valuable industries
+Top 1 score: 3.1728302994584414
+Top 1 score: 3.783300501926246
+Top 1 score: 3.5891714670458654
+Top 1 score: 4.0419985257230575
+Top 1 score: 3.8149004030116496
+Top 1 score: 4.360545954747489
+Top 1 score: 4.724089183579144
+Top 1 score: 4.075183622518509
+Top 1 score: 4.456270859679488
+Top 1 score: 4.790284151016697
+Top 1 score: 5.53180197441127
+Top 1 score: 5.797707002610061
+Top 1 score: 5.773223763179845
+Top 1 score: 5.535093960194473
+Top 1 score: 5.671996057269705
+Top 1 score: 5.948346222286883
+Top 1 score: 6.029808558196228
+Top 1 score: 6.278949452907375
+Top 1 score: 6.289596863474008
+Top 1 score: 6.202511759205537
+Top 1 score: 6.095232483854094
+Top 1 score: 6.160161506920182
+Top 1 score: 5.949017677337665
+Top 1 score: 5.838264003962062
+Top 1 score: 5.904403810369266
+Top 1 score: 6.148738841534271
+Top 1 score: 6.0263261867003735
+Top 1 score: 6.002209078711067
+Top 1 score: 6.312047074515441
+Top 1 score: 5.682370011938431
+Attempt 1: Target=[1, 0, 1], Got=[1 0 1]
+Generated message: Companies like Facebook and YouTube want to make money on ads that can help them grow their user base in the future. They don't care if you use
+Top 1 score: -1.6544595826781623
+Top 1 score: -0.6189561335517216
+Attempt 1: Target=[0, 1, 1], Got=[1 1 0]
+Generated message: ...
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 1], Got=[0 1 0]
+Generated message: However, when it comes to advances in politics- emerging polls show Hillary Clinton with only 33% of the vote. 
+Vote for Bill and
+Attempt 3: Target=[0, 1, 1], Got=[1 1 1]
+Generated message: Surveillance has become even more apparent and by 2021 utility companies expect the future to be much indistinguishable from 2007's.  Is this your 20
+Attempt 4: Target=[0, 1, 1], Got=[1 0 1]
+Generated message: To the Future 4 security engineer, Saveenes believes *Apple mantra is gaining traction in embedded customers.
+They believe they are actually crafting
+Attempt 5: Target=[0, 1, 1], Got=[0 1 1]
+Generated message: Traveling has become more routine on the 2014 Tour de France TV1 routes, such as reports of swimming pools with canted roofs that at first
+Top 1 score: 3.4866854037427584
+Top 1 score: 3.704341033636125
+Top 1 score: 4.078665684384873
+Top 1 score: 4.262461642298403
+Top 1 score: 4.813141291028931
+Top 1 score: 5.079648129055842
+Top 1 score: 5.211256257021644
+Top 1 score: 5.295806756796817
+Top 1 score: 4.919259665002061
+Top 1 score: 4.90787930197242
+Top 1 score: 4.739703609954452
+Top 1 score: 4.991336959553063
+Top 1 score: 4.927521940703333
+Top 1 score: 5.159827718565252
+Top 1 score: 4.9134702056176955
+Top 1 score: 5.010018220220682
+Top 1 score: 5.077642956711945
+Top 1 score: 5.000333827826708
+Top 1 score: 4.903981529247652
+Top 1 score: 4.907020439496267
+Top 1 score: 4.552134414169914Ours (Guided):  60%|██████    | 6/10 [00:02<00:01,  2.36it/s]Ours (Guided):  70%|███████   | 7/10 [00:02<00:01,  2.77it/s]Ours (Guided):  80%|████████  | 8/10 [00:03<00:00,  3.11it/s]Ours (Guided):  90%|█████████ | 9/10 [00:03<00:00,  2.54it/s]Ours (Guided): 100%|██████████| 10/10 [00:04<00:00,  2.72it/s]Ours (Guided): 100%|██████████| 10/10 [00:04<00:00,  2.46it/s]
+
+Top 1 score: 4.431003730842664
+Top 1 score: 4.624981522000519
+Top 1 score: 4.609847796636445
+Top 1 score: 4.143683857873995
+Top 1 score: 4.090559694111988
+Top 1 score: 4.115525197237984
+Top 1 score: 4.160270594411701
+Top 1 score: 4.24521134033548
+Top 1 score: 4.322955838449845
+Attempt 1: Target=[1, 0, 0], Got=[1 1 0]
+Generated message: As the world's top 10-perpetrator tech industry is in its infancy, more and better ways to attract talent are emerging. In 2014,
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 0], Got=[1 1 0]
+Generated message: Companies investing in tracking and customization technologies are now aggressively creating business models to present students differently." Christian Feuer, University of Michigan D2 Investigator Team
+Attempt 3: Target=[1, 0, 0], Got=[1 0 0]
+Generated message: One goal is to revolutionize computing, next-generation for almost every demographic. What does that mean in practice? But there's the usual set
+Top 1 score: 2.124646381974107
+Top 1 score: 3.333693007405424
+Top 1 score: 3.769469520168124
+Top 1 score: 4.588474110726182
+Top 1 score: 4.850467076020861
+Top 1 score: 4.773363866124107
+Top 1 score: 4.833921897667059
+Top 1 score: 4.730920579477356
+Top 1 score: 4.4632604732955
+Top 1 score: 4.420687739578598
+Top 1 score: 4.42426298695142
+Top 1 score: 4.585962267868812
+Top 1 score: 4.915935750829175
+Top 1 score: 4.53591997219789
+Top 1 score: 4.620895682837035
+Top 1 score: 4.518693232427198
+Top 1 score: 4.496349045500933
+Top 1 score: 4.600537088704439
+Top 1 score: 4.425092673213115
+Top 1 score: 4.367214044041351
+Top 1 score: 4.497669112612729
+Top 1 score: 4.561938306835282
+Top 1 score: 3.8952189439682723
+Top 1 score: 3.70569816968148
+Top 1 score: 3.618002521382302
+Top 1 score: 3.6233704371463973
+Top 1 score: 3.9458449665026016
+Top 1 score: 3.7460681416135926
+Top 1 score: 3.6534324264131497
+Top 1 score: 3.9129065929989104
+Attempt 1: Target=[1, 1, 1], Got=[1 1 1]
+Generated message: Companies can't rely only on one or two companies to provide information and services, as they will need a lot more people than the average human is able
+Top 1 score: 0.606036668015071
+Top 1 score: 0.9495160126989397
+Top 1 score: 0.40467537132326914
+Top 1 score: 0.1545865907261481
+Top 1 score: 0.8342071975539634
+Top 1 score: 0.8610516421571988
+Top 1 score: 0.8863613739521266
+Top 1 score: 1.1250404424545495
+Top 1 score: 1.2858075862876257
+Top 1 score: 1.4958921760568669
+Top 1 score: 1.512937513481867
+Top 1 score: 1.7783848586245286
+Top 1 score: 2.0123300797548773
+Top 1 score: 1.7291718036165507
+Top 1 score: 2.1733840865212444
+Top 1 score: 2.407375123325774
+Top 1 score: 2.6395424513217103
+Top 1 score: 2.9867104083145453
+Top 1 score: 2.9958316973772305
+Top 1 score: 2.9896751529418824
+Top 1 score: 2.9508140189285217
+Top 1 score: 2.866011012002853
+Top 1 score: 2.503515600299311
+Top 1 score: 2.5603785249103512
+Top 1 score: 2.5685861969285346
+Top 1 score: 3.4999187931272506
+Top 1 score: 3.4217429731223157
+Top 1 score: 3.533400559477941
+Top 1 score: 3.62397144193863
+Top 1 score: 3.842974106333224
+Attempt 1: Target=[0, 0, 1], Got=[0 0 1]
+Generated message: As an example, a large-scale solar project is being launched in South Florida to build the first commercially viable photovoltaic (PV)
+Top 1 score: -0.4950458835317108
+Top 1 score: 0.26229439731000437
+Top 1 score: -0.3614213554652337
+Top 1 score: -0.12458211015789478
+Top 1 score: 0.04035602360144633
+Top 1 score: 0.8264815584068487
+Top 1 score: 1.1973628830546805
+Top 1 score: 1.9446433604227364
+Top 1 score: 2.311096111115387
+Top 1 score: 1.713079624609191
+Top 1 score: 2.5554892322481058
+Top 1 score: 2.7738359437930056
+Top 1 score: 2.672938011400106
+Top 1 score: 3.4703954848760907
+Top 1 score: 3.5741156019828138
+Top 1 score: 3.9394944025039296
+Top 1 score: 3.7324853087580934
+Top 1 score: 3.6122050790775653
+Top 1 score: 3.847573400093352
+Top 1 score: 3.7393089030645505
+Top 1 score: 3.9228009793177465
+Top 1 score: 3.8743929794560827
+Top 1 score: 3.9292046233343147
+Top 1 score: 4.046442475005211
+Top 1 score: 3.814436007134282
+Top 1 score: 4.1002321956927315
+Top 1 score: 4.16132920681075
+Top 1 score: 4.197085561777253
+Top 1 score: 4.243611136554342
+Top 1 score: 4.03754517020178
+Attempt 1: Target=[0, 0, 1], Got=[0 1 1]
+Generated message: But for now, it looks like Apple has the ability to use these capabilities. And in that context we see a lot of great opportunities here."
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0, 1], Got=[0 1 0]
+Generated message: Large pieces of knowledge are evolving because engineers at firms in the telecommunications and healthcare industries have access to better technologies that allow them modernised services.
+Attempt 3: Target=[0, 0, 1], Got=[1 1 1]
+Generated message: It's often harder for companies to innovate than control technologies.  I think the history of sovereignty and power is very much in revolution but all essential
+Attempt 4: Target=[0, 0, 1], Got=[0 0 1]
+Generated message: ¯\_(ツ)_/¯ Oh boy! That's a bit of forte For information on Dropbox, you should know about the web
+Top 1 score: -2.641203857277977
+Top 1 score: -2.0233568261932833
+Top 1 score: -2.1088947983234707
+Top 1 score: -2.5689668524798543
+Top 1 score: -2.1276680429643955
+Top 1 score: -2.8109850286777975
+Top 1 score: -2.5346130768780037
+Top 1 score: -2.067110009626986
+Top 1 score: -2.278972823526831
+Top 1 score: -1.5823696916416161
+Top 1 score: -1.5812633840497787
+Top 1 score: -1.466718428052735
+Top 1 score: -1.7787980926248368
+Top 1 score: -1.8547570738940906
+Top 1 score: -0.31799376930910106
+Top 1 score: -0.7578583424888311
+Top 1 score: -1.1793035336355737
+Top 1 score: -1.3964421698889193
+Top 1 score: -1.388332068955189
+Top 1 score: -1.4599321568729413
+Top 1 score: -0.9671487799164364
+Top 1 score: -0.4774561881193331
+Top 1 score: -0.6105184494559811
+Top 1 score: -0.608803883955525
+Top 1 score: -0.9365732447260915
+Top 1 score: -0.6312019471870789
+Top 1 score: -0.589717515138626
+Top 1 score: -0.6319428802955442
+Top 1 score: -0.42287578979898766
+Top 1 score: -0.5926529444544444
+Attempt 1: Target=[0, 1, 0], Got=[1 1 1]
+Generated message: It has developed a multitude of solutions, from wireless charging to the smart home. But it is not clear that any particular technology can be used for all
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0], Got=[0 1 0]
+Generated message: Ever since Microsoft first introduced Surface tablet devices as the purchase system for PC software they have been staying true to their customers' expectations of reliability and durability
+  -> Avg Time: 0.4061s
+
+====== Testing Bits = 4 ======
+Baseline (Random):   0%|          | 0/10 [00:00<?, ?it/s]Baseline (Random):  10%|█         | 1/10 [00:00<00:05,  1.74it/s]Baseline (Random):  20%|██        | 2/10 [00:00<00:02,  3.14it/s]Baseline (Random):  30%|███       | 3/10 [00:01<00:03,  2.26it/s]Baseline (Random):  40%|████      | 4/10 [00:01<00:01,  3.23it/s]Baseline (Random):  50%|█████     | 5/10 [00:02<00:02,  2.42it/s]Baseline (Random):  60%|██████    | 6/10 [00:02<00:01,  2.11it/s]Baseline (Random):  70%|███████   | 7/10 [00:03<00:01,  1.99it/s]Baseline (Random):  80%|████████  | 8/10 [00:03<00:01,  1.88it/s]Baseline (Random):  90%|█████████ | 9/10 [00:04<00:00,  2.10it/s]Attempt 1: Target=[1, 1, 0, 1], Got=[0 0 0 0]
+Generated message: Laptops on the Capitol steps among these new visualizations havecycling advantages, and their paper trails act as cushions against DJ's exploring culture
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 0, 1], Got=[1 1 0 0]
+Generated message: A huge part of the appeal to hardware vendors Etsy stores puts, is online sourcing.    That allowed us over a ten year ago (18
+Attempt 3: Target=[1, 1, 0, 1], Got=[1 0 0 0]
+Generated message: var, i, record @nation/2 b - is NOT a nano or scalar data storage technology due to its high performance and decreasing cost
+Attempt 4: Target=[1, 1, 0, 1], Got=[1 0 0 1]
+Generated message: http://lanhap.net/2013-14-ExpectKnotesonData'thereshows Free View in iTunes
+Attempt 5: Target=[1, 1, 0, 1], Got=[1 1 1 0]
+Generated message: We used this girl to make the breakthrough. So many young junk food lovers right out of you just got into restaurants with that kid in these d
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 0, 1, 1], Got=[1 0 1 1]
+Generated message: When established technologies range from smart food detectors to handheld cell phones, people are clamoring for ways to authenticate them. The spread of touch-screen
+Attempt 1: Target=[0, 1, 1, 1], Got=[0 0 0 0]
+Generated message: Like Santa Barbara County in California, innovation is fledgling — perhaps by a factor of three or more.
+ (Jessica Militia/Star News via AP)
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 1, 1], Got=[1 1 0 0]
+Generated message: This means entrepreneurs are raising a lot more money than creative industries. .   In order to make this happen, startups and smaller businesses need "
+Attempt 3: Target=[0, 1, 1, 1], Got=[0 0 0 1]
+Generated message: This isn't going to change the fact that people have inferior memes. .  A lot of this technology is doing its job on remote
+Attempt 4: Target=[0, 1, 1, 1], Got=[1 1 0 1]
+Generated message: The Internet resetting of today's meme-inspired connections has not come from the telly at Jewish Village Bumo that sounds so strange and Lovecraftian
+Attempt 5: Target=[0, 1, 1, 1], Got=[1 0 0 0]
+Generated message: ) Industry employees routinely independently assess their gross earnings so that the performance apparent to customer of pitch scripts for communication, video and audio technologies is not deliberately low
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 1, 1, 0], Got=[1 1 1 0]
+Generated message: Drivers are reaching self-driving trucks and steel mill workers, driving against their own machines.
+A BMW i8 is a dependent medium employment automatic school
+Attempt 1: Target=[1, 0, 1, 0], Got=[0 1 1 0]
+Generated message: We've seen mobile adoption of voice and cloud connectivity, while leading manufacturers like Amazon (AMZN) are expanding into connected web services to cover emerging
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 1, 0], Got=[1 1 0 1]
+Generated message: There aren't too many spaces in tech to share, but developing native demos will help get folks excited about the field. (Please note that landing
+Attempt 3: Target=[1, 0, 1, 0], Got=[1 0 1 1]
+Generated message: One way forward is in Asia and the United States while this talk was released a few years ago my name has popped up more than 20 times. I
+Attempt 4: Target=[1, 0, 1, 0], Got=[0 1 0 0]
+Generated message: Economies of scale are hype.  |»'s Review
+A recent University Research Forum testify, The NAP shall remain Al Outfronting
+Attempt 5: Target=[1, 0, 1, 0], Got=[0 1 0 1]
+Generated message: The Internet, which began with denial-of—and difference of between (first reported) and fastest singularity prediction via e10.tv
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 1, 1, 0], Got=[1 1 0 0]
+Generated message: In the last two years, there's a remarkable array of new data venues and services providing innovative products to meet changing industry needs—and through training wealth
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 1, 0], Got=[1 1 0 0]
+Generated message: All recent innovations, encompassing this time pace at Microsoft and Opera Networks [without extending the net broadband connection] are more systems than networks combined.
+Attempt 3: Target=[1, 1, 1, 0], Got=[0 1 0 1]
+Generated message: Ninety percent of outgrows posted earlier this month came from Internet-connected devices such as touchscreen phones and smartwatches.  An average prize
+Attempt 4: Target=[1, 1, 1, 0], Got=[1 0 1 1]
+Generated message: It has to grow
+ from the warm hulk ecosystems of some parts and keep comparing changes with other good places, no matter how small or widespread
+Attempt 5: Target=[1, 1, 1, 0], Got=[0 0 0 0]
+Generated message: When NASCAR came along, they were moving graphics tutorials into the reel over there. Simple Driving specs have literally changed but this doesn't care about
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 0, 1, 1], Got=[1 0 1 0]
+Generated message: Ads downloaded to build viral pictures into instant-read ads from our digital maps enhance your promotion by creating smooth, immersive 2D video. We
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0, 1, 1], Got=[0 1 0 1]
+Generated message: We'd like to thank Andrew, Dennis Archibald and Andy Lightfoot for being of particular interest.
+George Fartzner - Microsoft Research
+Attempt 3: Target=[0, 0, 1, 1], Got=[0 1 1 1]
+Generated message: Continuing to innovate with new technologies allows us path driven solutions at change. This means that we can operate less appropriately for our customers, making them
+Attempt 4: Target=[0, 0, 1, 1], Got=[1 1 0 0]
+Generated message: The quality and risk analysis has used to protect private information in its development regimes, but not for typical national security purposes. Twenty-three of the
+Attempt 5: Target=[0, 0, 1, 1], Got=[0 1 0 1]
+Generated message: Two types of crypto-currencies were proposed: As a derivatives asset and to the extent societal change changes, both result in lower earnings as compared
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 1, 1, 0], Got=[0 1 0 0]
+Generated message: Shoes, plainly named and sold to American shoppers who wear dozens of pairs a week -- in fact plenty have changed for the more-common but increasingly
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 1, 0], Got=[1 0 0 0]
+Generated message: Against this backdrop, there are current and emerging threats to public engagement. 
+One of which is the lack or absence by government agencies within governments
+Attempt 3: Target=[1, 1, 1, 0], Got=[1 1 0 0]
+Generated message: Microsoft has its own unique ability to be perviousensing news headlines, or creating a new distinctive product. After seven years of "A-
+Attempt 4: Target=[1, 1, 1, 0], Got=[0 0 0 0]
+Generated message: recent FTC's settlement of numerous cases around friola authentication (some requiring the single input). Several trading companies are now shipping products using recurring online min
+Attempt 5: Target=[1, 1, 1, 0], Got=[1 0 0 0]
+Generated message: __________________
+Exiber Real Estate Buyery Power Supply This is the hardest power supply I have ever owned. It requires model and schematics
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 1, 0, 1], Got=[0 0 0 0]
+Generated message: Today, there are 10.09 billion players worldwide playing online video games."Lending Tax Credit Centers?" Apps include deposit methodologies and non-interest
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 0, 1], Got=[1 1 0 0]
+Generated message: If we believe in innovation, why haven't wages gotten better? We have to see that adaptability is happening faster than net employment. ''
+Attempt 3: Target=[1, 1, 0, 1], Got=[1 1 0 1]
+Generated message:  |--..Mg w'` ;B' n Bf {X) direc ti dumim bolmed a over life
+Attempt 1: Target=[1, 0, 0, 1], Got=[1 1 0 1]
+Generated message:Baseline (Random): 100%|██████████| 10/10 [00:04<00:00,  1.99it/s]Baseline (Random): 100%|██████████| 10/10 [00:04<00:00,  2.14it/s]
+ The web enables publishers and other intermediaries to store the content across marketplaces like WebRIX, search engine rankings or similar tool systems. Software engineers
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 0, 1], Got=[1 0 1 1]
+Generated message: But my concerns about once-in_a century technologies are largely a matter of time.
+In another post exploring risk issues, I wrote in
+Attempt 3: Target=[1, 0, 0, 1], Got=[0 0 1 1]
+Generated message: Any technology can literally change the world around us. Certainly you're looking at technological innovation for transport, transportation education and more in space packages with social-
+Attempt 4: Target=[1, 0, 0, 1], Got=[1 1 0 1]
+Generated message: Technty (or'structural economics') has evolved tremendously thereto, but it's so small scale that the self-driving car field for e
+Attempt 5: Target=[1, 0, 0, 1], Got=[1 1 1 0]
+Generated message: Environmental lobbyists mostly agree) but some oil and gas networks persist rather than implode entirely." According to any small percentage of investors are still motivated by a
+Warning: Failed after 5 attempts.
+  -> Avg Time: 0.4674s
+Ours (Guided):   0%|          | 0/10 [00:00<?, ?it/s]Ours (Guided):  10%|█         | 1/10 [00:00<00:02,  4.28it/s]Ours (Guided):  20%|██        | 2/10 [00:00<00:04,  2.00it/s]Ours (Guided):  30%|███       | 3/10 [00:01<00:02,  2.65it/s]Ours (Guided):  40%|████      | 4/10 [00:01<00:01,  3.13it/s]Ours (Guided):  50%|█████     | 5/10 [00:02<00:02,  2.20it/s]Top 1 score: 2.327291782322262
+Top 1 score: 3.5309742384751197
+Top 1 score: 3.691280754118585
+Top 1 score: 4.031357730627638
+Top 1 score: 2.301784170362667
+Top 1 score: 3.7580649781738256
+Top 1 score: 3.9181158283665396
+Top 1 score: 3.8624845518381483
+Top 1 score: 3.976346967449418
+Top 1 score: 3.6430023587591487
+Top 1 score: 4.021994524421002
+Top 1 score: 4.281253159847397
+Top 1 score: 4.203574155645642
+Top 1 score: 4.515091553080126
+Top 1 score: 4.363622195872371
+Top 1 score: 4.127408606921843
+Top 1 score: 4.299509634240262
+Top 1 score: 4.301051900284319
+Top 1 score: 4.232111965470364
+Top 1 score: 4.148423931836911
+Top 1 score: 4.616677033383115
+Top 1 score: 4.088098415079839
+Top 1 score: 4.336448035276776
+Top 1 score: 4.2952326103700385
+Top 1 score: 4.008246391141961
+Top 1 score: 3.6348218282754625
+Top 1 score: 3.708283186260654
+Top 1 score: 4.079562763728525
+Top 1 score: 3.9845930054206438
+Top 1 score: 4.6581194875760525
+Attempt 1: Target=[0, 0, 0, 0], Got=[0 0 0 0]
+Generated message: The U.S.' energy supply is expected to reach its peak at 2027 by 2020, with a potential for upregulation and increased investment in solar
+Top 1 score: 2.4319910743647126
+Top 1 score: 2.364647519250761
+Top 1 score: 1.937225501517705
+Top 1 score: 1.940305486548294
+Top 1 score: 1.6037711425865717
+Top 1 score: 1.6745959189052781
+Top 1 score: 1.910442425211623
+Top 1 score: 1.9711869971611373
+Top 1 score: 2.020716961189713
+Top 1 score: 2.469285499595229
+Top 1 score: 1.8630705291864182
+Top 1 score: 1.8725290102751369
+Top 1 score: 1.8558671927082597
+Top 1 score: 1.8102727376062728
+Top 1 score: 1.792142089392088
+Top 1 score: 1.8679311025547194
+Top 1 score: 3.100452378996637
+Top 1 score: 3.974135407228269
+Top 1 score: 4.676389907204625
+Top 1 score: 5.196335758655437
+Top 1 score: 4.575460184378576
+Top 1 score: 4.256239308364642
+Top 1 score: 3.5135641677689042
+Top 1 score: 3.8370027213589792
+Top 1 score: 3.5616069045787606
+Top 1 score: 3.58495470451607
+Top 1 score: 3.59234597359755
+Top 1 score: 3.565369509360856
+Top 1 score: 3.8369112508032988
+Top 1 score: 3.8607156643682807
+Attempt 1: Target=[0, 0, 0, 1], Got=[0 0 0 0]
+Generated message: As the technology industry evolves, so too must our communities.
+
+
+: The United Nations' Millennium Development Goals require us to develop and deploy technologies that
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0, 0, 1], Got=[0 1 1 1]
+Generated message: Increasingly, websites and apps can create fake testimonials or bill backgrounds in live chat video docu-ments. Such artificial intelligence is
+Attempt 3: Target=[0, 0, 0, 1], Got=[0 0 0 0]
+Generated message: With the last decade in business No. 530 states are expected to have full infrastructure built by about 2020, so there's no shortage of potential work needs
+Attempt 4: Target=[0, 0, 0, 1], Got=[1 0 0 0]
+Generated message: )
+For consumers, new products and pricing are as important to them because customers will be able to intimately understand the product's specifications.  Internet was
+Attempt 5: Target=[0, 0, 0, 1], Got=[0 1 0 0]
+Generated message: Machines are becoming even more advanced, as they shift from gridlock to resource efficient ways of doing things.  Human cooperation will finally become a reality in
+Warning: Failed after 5 attempts.
+Top 1 score: 2.8162635327060364
+Top 1 score: 4.022480394422502
+Top 1 score: 3.1105275987065735
+Top 1 score: 2.980809307974104
+Top 1 score: 2.953339727835721
+Top 1 score: 3.6314184948789934
+Top 1 score: 3.088444234667849
+Top 1 score: 3.1908085678167177
+Top 1 score: 4.046151617688677
+Top 1 score: 4.136176126509115
+Top 1 score: 4.186104193190696
+Top 1 score: 4.637023320681197
+Top 1 score: 4.337036743705024
+Top 1 score: 4.049269258836637
+Top 1 score: 4.627103957503003
+Top 1 score: 4.3532014097748135
+Top 1 score: 4.163636792930519
+Top 1 score: 3.9940955531175453
+Top 1 score: 4.091528001310476
+Top 1 score: 4.8238736828894755
+Top 1 score: 4.649363136929873
+Top 1 score: 5.178711242576824
+Top 1 score: 4.60676792247199
+Top 1 score: 4.611276403764382
+Top 1 score: 4.606768968332995
+Top 1 score: 4.606768968332995
+Top 1 score: 4.558505610056338
+Top 1 score: 4.514894859350896
+Top 1 score: 5.612402846988897
+Top 1 score: 5.663432148722605
+Attempt 1: Target=[1, 0, 0, 1], Got=[1 0 0 1]
+Generated message: Companies are looking at how to improve on existing technologies in order make the transition from traditional methods of delivery and control.
+
+
+, is a leader with
+Top 1 score: 2.4650526224124425
+Top 1 score: 2.9295622488213438
+Top 1 score: 3.7736368547788524
+Top 1 score: 2.908588980347409
+Top 1 score: 3.2164884607656234
+Top 1 score: 4.292680577051536
+Top 1 score: 3.084861925662269
+Top 1 score: 2.7356938862027524
+Top 1 score: 2.6726824861618064
+Top 1 score: 2.859533108254313
+Top 1 score: 2.8318765156760133
+Top 1 score: 2.7499270778423837
+Top 1 score: 2.977706420715876
+Top 1 score: 2.921945660649686
+Top 1 score: 3.137862385693521
+Top 1 score: 3.197976408075756
+Top 1 score: 3.584510233173571
+Top 1 score: 3.614229538610949
+Top 1 score: 3.778717452570091
+Top 1 score: 3.7613811705246727
+Top 1 score: 3.7162086196272663
+Top 1 score: 3.630212265977674
+Top 1 score: 3.945130619616414
+Top 1 score: 3.2019620271387907
+Top 1 score: 3.11528671897502
+Top 1 score: 3.247730519972291
+Top 1 score: 3.2260264347585945
+Top 1 score: 3.223616218677519
+Top 1 score: 3.4825667485975487
+Top 1 score: 3.590653733830374
+Attempt 1: Target=[0, 0, 1, 0], Got=[0 0 1 0]
+Generated message: It's a very different place from when we had it in the 1960s. I mean, if you're an entrepreneur or someone who has to deal
+Top 1 score: -0.8856904243758709
+Top 1 score: -0.7718386159590336
+Top 1 score: -0.5558710867416394
+Top 1 score: -0.08433128132022039
+Top 1 score: -0.09415578222839555
+Top 1 score: -0.4736524593362729
+Top 1 score: -0.3827735037429077
+Top 1 score: -0.7651880927378996
+Top 1 score: -0.5616155569894471
+Top 1 score: -0.6106408085827927
+Top 1 score: -0.9316968486873012
+Top 1 score: -0.8024860193130257
+Top 1 score: -0.7381404761843345
+Top 1 score: -0.7719618265104321
+Top 1 score: -0.4900677077130454
+Top 1 score: -0.23590028051555434
+Top 1 score: 0.16391707126713623
+Top 1 score: 0.2246897049199277
+Top 1 score: 0.5077096985524555
+Top 1 score: 0.4844353413009599
+Top 1 score: 0.5123504603681774
+Top 1 score: 0.5123504603681774
+Top 1 score: 1.0308355339620157
+Top 1 score: 1.0714001358102414
+Top 1 score: 1.1953116251260656
+Top 1 score: 1.2772623682766167
+Top 1 score: 1.2789267614111282
+Top 1 score: 1.3474087502435128
+Top 1 score: 1.085255552363586
+Top 1 score: 1.1306269036844576
+Attempt 1: Target=[0, 1, 1, 0], Got=[0 1 0 0]
+Generated message: Companies are now developing new, more complex technologies that make use of their existing knowledge and experience.
+
+
+ (Image: Reuters/Marko Djur
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 1, 0], Got=[1 0 0 1]
+Generated message: Nowhere is this clearer than in the backend-level data export API, which lets developers easily migrate to Set Data comprising sensors from factories all across
+Attempt 3: Target=[0, 1, 1, 0], Got=[1 0 1 1]
+Generated message: Ward has made some significant investments including the department of "processing and hibernation" for semi-conductor Systems whose Christophe Justiceament pour un meme
+Attempt 4: Target=[0, 1, 1, 0], Got=[1 1 0 1]
+Generated message: [[Page S96634]] 2. Unless such a technology unfolds, the Government may not have legal action against any individual society that adopts
+Attempt 5: Target=[0, 1, 1, 0], Got=[1 1 0 1]
+Generated message: In the last few years, numerous companies have progressed sharply in their development of this increasingly complex and flexible technology. Here I will give a glimpse at
+Warning: Failed after 5 attempts.
+Top 1 score: 1.1714264774441077
+Top 1 score: 1.7834313749680812
+Top 1 score: 1.8874640475114617
+Top 1 score: 1.5719860517193225
+Top 1 score: 1.37465135400865
+Top 1 score: 2.185985605263622
+Top 1 score: 3.4622276381910986
+Top 1 score: 3.2424843505445198
+Top 1 score: 2.261811386632819
+Top 1 score: 2.443764953545838
+Top 1 score: 2.6315409109176446
+Top 1 score: 1.912836179592784
+Top 1 score: 1.9394219040755152Ours (Guided):  60%|██████    | 6/10 [00:02<00:01,  2.01it/s]Ours (Guided):  70%|███████   | 7/10 [00:02<00:01,  2.49it/s]Ours (Guided):  80%|████████  | 8/10 [00:03<00:00,  2.88it/s]Ours (Guided):  90%|█████████ | 9/10 [00:03<00:00,  3.09it/s]Ours (Guided): 100%|██████████| 10/10 [00:04<00:00,  2.27it/s]Ours (Guided): 100%|██████████| 10/10 [00:04<00:00,  2.46it/s]
+
+Top 1 score: 2.100358743300578
+Top 1 score: 2.8116276559389517
+Top 1 score: 1.7564692329226808
+Top 1 score: 2.262353606470663
+Top 1 score: 2.5211122918478406
+Top 1 score: 2.9753615996750056
+Top 1 score: 3.049264595175641
+Top 1 score: 2.6929645663441817
+Top 1 score: 2.6029881950712244
+Top 1 score: 2.4324258248733504
+Top 1 score: 2.4060244679138396
+Top 1 score: 2.313072710241604
+Top 1 score: 2.252803499319269
+Top 1 score: 2.2924952707228154
+Top 1 score: 2.5860510990131917
+Top 1 score: 2.647400662652319
+Top 1 score: 2.8015370367290333
+Attempt 1: Target=[0, 1, 0, 0], Got=[1 1 0 0]
+Generated message: It's not only a big technology company with huge potential but also one in which people who are very young and have no other way of getting paid,
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0, 0], Got=[1 0 0 0]
+Generated message: But similar newcomer companies may offer up even more obvious loopholes.              For example, picture your first bathroom usage to ask Radford: "
+Attempt 3: Target=[0, 1, 0, 0], Got=[0 0 1 1]
+Generated message: lli kunch
+Read More
+Attempt 4: Target=[0, 1, 0, 0], Got=[1 1 0 0]
+Generated message: Concentrating knowledge and testing on cyber more effectively will allow the state to reduce complexity, minimize environmental damage related both to industrial services workforce- lead by designers
+Attempt 5: Target=[0, 1, 0, 0], Got=[1 0 1 0]
+Generated message: Kiruna's SharePoint/learn standards deliver ultimate solutions for a variety of needs. By improving the promotion, use and quality of this new site we
+Warning: Failed after 5 attempts.
+Top 1 score: -3.4150567596508337
+Top 1 score: -1.6270516627110752
+Top 1 score: -0.03146407943838725
+Top 1 score: 0.25088009723150906
+Top 1 score: 0.3542245188966756
+Top 1 score: 0.5771687530818994
+Top 1 score: 0.9945525531953436
+Top 1 score: 1.377126520182201
+Top 1 score: 1.715304116117597
+Top 1 score: 2.3068306899168087
+Top 1 score: 2.073574719948259
+Top 1 score: 2.6025447238869823
+Top 1 score: 2.2242581899353047
+Top 1 score: 1.909644837617663
+Top 1 score: 2.4603992183577414
+Top 1 score: 2.4000656209524314
+Top 1 score: 2.4924443991774003
+Top 1 score: 3.368159469524218
+Top 1 score: 2.836350087665389
+Top 1 score: 3.0779086395745345
+Top 1 score: 3.095306453012235
+Top 1 score: 3.03071952337413
+Top 1 score: 3.4427696433899797
+Top 1 score: 3.4813364534041202
+Top 1 score: 3.6413201280980028
+Top 1 score: 3.6224169248872746
+Top 1 score: 3.6209693805091057
+Top 1 score: 4.604124081744793
+Top 1 score: 3.813236551507631
+Top 1 score: 3.948513054809271
+Attempt 1: Target=[1, 1, 1, 1], Got=[1 1 1 1]
+Generated message: There will probably not be much time to build anything in the future. The next step is an update on how you do business with this technology and we
+Top 1 score: 2.192922213390527
+Top 1 score: 3.054822275748765
+Top 1 score: 2.8816789819021023
+Top 1 score: 1.964399442879556
+Top 1 score: 2.7932915707084023
+Top 1 score: 2.5089435205264548
+Top 1 score: 2.919734337545846
+Top 1 score: 2.8854823074344633
+Top 1 score: 3.3330020122758075
+Top 1 score: 3.085342795176022
+Top 1 score: 3.4004287704744645
+Top 1 score: 3.3212794931030922
+Top 1 score: 2.939585781959931
+Top 1 score: 2.7865154002565693
+Top 1 score: 2.8225804717245326
+Top 1 score: 2.839445323207808
+Top 1 score: 3.1274469565237273
+Top 1 score: 3.3540408008640386
+Top 1 score: 3.576074930391976
+Top 1 score: 4.228693708009522
+Top 1 score: 4.201417302511175
+Top 1 score: 3.9828282068221545
+Top 1 score: 4.047591878091771
+Top 1 score: 3.8936442061091916
+Top 1 score: 4.2500939804039515
+Top 1 score: 4.310721101000954
+Top 1 score: 4.400210339757381
+Top 1 score: 4.307296367056838
+Top 1 score: 3.98767659473174
+Top 1 score: 4.071210811193414
+Attempt 1: Target=[0, 1, 1, 1], Got=[0 1 1 1]
+Generated message: We have a great deal of information and we will be looking forward to seeing the results in 2017!"
+ (The following article contains affiliate links)
+Top 1 score: -0.4585532445606011
+Top 1 score: 0.5324585579285217
+Attempt 1: Target=[0, 0, 0, 1], Got=[1 1 1 0]
+Generated message: ...
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0, 0, 1], Got=[1 1 1 0]
+Generated message: For decades, the global finance industry has maintained a longstanding monopoly on credit and tenant-based developments in markets like Britain, then shifted to 'System
+Attempt 3: Target=[0, 0, 0, 1], Got=[0 0 1 0]
+Generated message: I have no doubt google will come running down concepts as rapidly or fast as normal. The ecosystem becomes less leered at, so a more talented
+Attempt 4: Target=[0, 0, 0, 1], Got=[0 0 0 1]
+Generated message: Updated June 3, 2014 at 6:04 ET
+Top 1 score: -0.6959773661525505
+Top 1 score: -0.9337162307689116
+Top 1 score: -1.38272117463058
+Top 1 score: -0.7827257093194785
+Top 1 score: -0.9708645559049573
+Top 1 score: 1.5142465784414825
+Top 1 score: 1.5548930974447406
+Top 1 score: 1.971816682012849
+Top 1 score: 2.664249288221171
+Top 1 score: 2.583609392028835
+Top 1 score: 2.292644450762732
+Top 1 score: 2.364544578144164
+Top 1 score: 2.4828597748757586
+Top 1 score: 2.7731084359716145
+Top 1 score: 2.8276581463535466
+Top 1 score: 3.3238870825137035
+Top 1 score: 3.3530169521659188
+Top 1 score: 3.300136068565581
+Top 1 score: 3.069725653488324
+Top 1 score: 3.361945865254268
+Top 1 score: 3.4642263255665973
+Top 1 score: 3.448141906745727
+Top 1 score: 3.197771423306184
+Top 1 score: 3.426446885586573
+Top 1 score: 3.403311367169894
+Top 1 score: 3.606913169369196
+Top 1 score: 3.748813660653908
+Top 1 score: 3.8685699513491363
+Top 1 score: 4.77265373137684
+Top 1 score: 5.0221743095329
+Attempt 1: Target=[0, 1, 0, 0], Got=[0 1 0 1]
+Generated message: There are new opportunities for startups to develop innovative technologies, which can help them achieve their objectives and reach customers faster. This has created a strong competitive pressure
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0, 0], Got=[1 0 0 1]
+Generated message: In the last few years what is initially thought to be a "project-based digital industry" has more popularity and implications for web, cloud and
+Attempt 3: Target=[0, 1, 0, 0], Got=[1 1 0 1]
+Generated message: SteemMusic reminded me of How I Met Your Mother, is the main industry element within it.  These are wines that could accomplish helps you success
+Attempt 4: Target=[0, 1, 0, 0], Got=[1 1 0 1]
+Generated message: Aloperation maker Herbalife has developed a tablet.  * It will be released by Aquas when the iPad comes out in March of 2017
+Attempt 5: Target=[0, 1, 0, 0], Got=[0 1 0 1]
+Generated message: < Swees > Hashcat blog: https://www.swetshotugbiz/blog/?pyid=85271   Just what
+Warning: Failed after 5 attempts.
+  -> Avg Time: 0.4063s
+
+====== Testing Bits = 5 ======
+Baseline (Random):   0%|          | 0/10 [00:00<?, ?it/s]Baseline (Random):  10%|█         | 1/10 [00:00<00:05,  1.69it/s]Baseline (Random):  20%|██        | 2/10 [00:01<00:04,  1.74it/s]Baseline (Random):  30%|███       | 3/10 [00:01<00:03,  1.76it/s]Baseline (Random):  40%|████      | 4/10 [00:02<00:03,  1.78it/s]Baseline (Random):  50%|█████     | 5/10 [00:02<00:02,  1.79it/s]Baseline (Random):  60%|██████    | 6/10 [00:03<00:02,  1.79it/s]Attempt 1: Target=[1, 1, 1, 0, 1], Got=[1 0 0 0 0]
+Generated message: IT firms are starting to be moved into the open, where a company has cheaper access ways."
+
+
+Forget technology. The internet of things under
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 1, 0, 1], Got=[0 1 1 0 1]
+Generated message: All desktop examples used ------------- - spreadsheet macro, tile table and shuffle cursor. located in 5ms september 2002 right-click (resp
+Attempt 3: Target=[1, 1, 1, 0, 1], Got=[1 1 1 0 0]
+Generated message: But for now, most of us miss out on the opportunities that young people can take to truly live and work abroad. Drones failed not
+Attempt 4: Target=[1, 1, 1, 0, 1], Got=[1 1 1 0 0]
+Generated message: These include Arduino Rapid Prototyping, the BBS Multiprocessors Anode (MIP) AFSTB chip program and more that
+Attempt 5: Target=[1, 1, 1, 0, 1], Got=[0 0 0 0 0]
+Generated message: ____ Year
+Now the EPA recognizes that many homes need a power outlet. Which is what we have seen: dams, solar energy production plants (Wh
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 1, 0, 0, 0], Got=[1 0 0 1 0]
+Generated message: We are forced to often bear witness and learn of new challenges generated by adapting technology, industries or government regulations. Often the adoption of complex software interfaces will
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 0, 0, 0], Got=[0 1 1 0 0]
+Generated message: As large industries become more sophisticated, so do the properties of components. What is significant about Ethereum itself will be driven by its technology experiences and features
+Attempt 3: Target=[1, 1, 0, 0, 0], Got=[1 0 1 0 0]
+Generated message: Mobile-device entrepreneurs are seeing data analytics as the go to platform that will transform end user services, content marketing and create new opportunities.  :
+Attempt 4: Target=[1, 1, 0, 0, 0], Got=[0 0 1 0 0]
+Generated message: Are tech products that offer a layer upon the mundane would choose to invest instead of becoming cryptocurrency? http://cbcnews.ca/technology/
+Attempt 5: Target=[1, 1, 0, 0, 0], Got=[1 1 1 0 1]
+Generated message: Since 2007, the world's hedge fund managers have stopped phasing out statutory sales tax on investments made with cash that is "deductible."
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 1, 0, 0, 0], Got=[0 1 0 1 0]
+Generated message: For example, we are seeing excellent results on Vulture's podcasts. We're excited to share the launch of unicorn-focused SaaS products and
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0, 0, 0], Got=[1 1 0 1 0]
+Generated message: As we increasingly know, big corporations like Google become much larger and harder to spot; they prove resilient—but less so. Today's apps are
+Attempt 3: Target=[0, 1, 0, 0, 0], Got=[0 0 0 0 0]
+Generated message: Corporate side of development is growing even faster."   Xiong Ling
+(Imagiphile, Games for Real Guns article at Game
+Attempt 4: Target=[0, 1, 0, 0, 0], Got=[1 1 0 1 0]
+Generated message: The film industry is almost ready for agriculture and HGTC (Hustle, Preparation) programs. You can learn more by falling in
+Attempt 5: Target=[0, 1, 0, 0, 0], Got=[1 1 1 1 0]
+Generated message: The scope for over Product Diversity is extraordinary.  I have seen industry professionals working in the lap of luxury cars, others driving Otto's off-road
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 0, 1, 0, 1], Got=[1 0 0 1 0]
+Generated message: Today technology companies like Apple and Google employ 1,279 million people worldwide—one-sixth of all employees for any 50 billion company.
+ In
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0, 1, 0, 1], Got=[0 0 0 0 1]
+Generated message: Now startups like O2 face the temptation to wrap themselves in a cocky lawsuit manufactured by an entrenched industry whined about being bizarro and
+Attempt 3: Target=[0, 0, 1, 0, 1], Got=[0 0 1 1 1]
+Generated message: \ 2400 reel-to‑reel film does not necessarily create its own special effects, rather it updates the internal playback method related to songs with considerable
+Attempt 4: Target=[0, 0, 1, 0, 1], Got=[0 1 1 0 0]
+Generated message: When technology evolves, a few things seem to happen in life. the overnight homework that your partner will be learning within hours after grade school class beginning:
+Attempt 5: Target=[0, 0, 1, 0, 1], Got=[1 1 0 0 0]
+Generated message: _ | And they call *their* phone "Going digital" because the scrolls changed their avatars into moves. If you look at photos of
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 1, 0, 1, 0], Got=[0 0 1 1 1]
+Generated message: The nature that consumers are contributing to our economic renaissance buys time for an industry boom and proves the benefits of improvements in technology' acceptance.
+It has
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0, 1, 0], Got=[0 1 1 0 1]
+Generated message: Only one sector of smartphones game automation on those bursts will tell the lives that are reinventing our daily routines. NB: Â Since this topic
+Attempt 3: Target=[0, 1, 0, 1, 0], Got=[1 1 1 1 0]
+Generated message: 'The difference between me making money in France and China is that Kwang'ok was taken care of after an internal dispute.'
+2. Y
+Attempt 4: Target=[0, 1, 0, 1, 0], Got=[0 1 0 0 1]
+Generated message: So much so that robotics—like many of the technologies explored in this article's preface to Specialized Materials (Mr. Beltbits), which
+Attempt 5: Target=[0, 1, 0, 1, 0], Got=[0 1 0 0 0]
+Generated message: Yup, there have been some really great innovations like texting on the mobile internet even if already in use. This validation of inertia has also improved
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 0, 0, 0, 0], Got=[0 1 1 0 0]
+Generated message: The underlying underpinning technology is software that tries to interpret input conditions differentially in the use of a computer with opened or closed doors. One way Hollywood
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 0, 0, 0], Got=[0 0 1 0 1]
+Generated message: A third of cable is considered obsolete. Â With televisions never growing as rapidly, many technology companies have moved to steam time like now and
+Attempt 3: Target=[1, 0, 0, 0, 0], Got=[0 0 1 1 1]
+Generated message: Reitman uses biotechnology in a few ways; as well, he operates both on three continents and has been trying his hand at Java's offered
+Attempt 4: Target=[1, 0, 0, 0, 0], Got=[0 1 0 1 0]
+Generated message: Buggy Bitcoin uses advanced features and is in development.  Little Early Stage Developer Ben talks about the Godofspeed Trinity Charts_Scales ET
+Attempt 5: Target=[1, 0, 0, 0, 0], Got=[0 1 0 0 0]
+Generated message: Moreover, preparations and activism are on the rise in place—glycrocannabinol (GMP)—but they cannot be rapidly relaxed if simply
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 1, 0, 0, 1], Got=[1 0 1 1 1]
+Generated message: Google now has ten million users a day – and we believe our online businesses go to great lengths not only locking in data, but also yielding results that
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 0, 0, 1], Got=[1 0 1 1 1]
+Generated message: This means that a number of blockchain software companies are starting to take advantage and their code is building faster than the majority does.   Blockchain will soon
+Attempt 3: Target=[1, 1, 0, 0, 1], Got=[0 1 1 1 1]
+Generated message: Small companies can trade textbooks or negotiate provisions in the provision books for weeks on end and go through multiple supplier contracts to find projects that meet specific customers
+Attempt 4: Target=[1, 1, 0, 0, 1], Got=[0 1 0 1 0]
+Generated message: This Manipulator will work with computer printers, habitats and delivery drones. Comrades from Australia are excited about the anticipated Alpha Lab investment to
+Attempt 5: Target=[1, 1, 0, 0, 1], Got=[0 1 0 1 0]Baseline (Random):  70%|███████   | 7/10 [00:03<00:01,  1.79it/s]Baseline (Random):  80%|████████  | 8/10 [00:04<00:01,  1.82it/s]Baseline (Random):  90%|█████████ | 9/10 [00:04<00:00,  1.85it/s]Baseline (Random): 100%|██████████| 10/10 [00:05<00:00,  1.84it/s]Baseline (Random): 100%|██████████| 10/10 [00:05<00:00,  1.80it/s]
+
+Generated message: Especially as accelerators take off, NAXs dont have room to adapt!
+At netcomms we announced an implementation of NuScale
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[1, 0, 1, 0, 0], Got=[0 0 1 0 0]
+Generated message: filing in federal court for contempt of Congress centred on the administration's use over five years to repeal its birthright standards. Defensible liberals
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 1, 0, 0], Got=[0 0 1 1 0]
+Generated message: We are at a point of immense computing potential and an ability to produce high value products in the process," said Alvin Larson, CEO of Hitoshi
+Attempt 3: Target=[1, 0, 1, 0, 0], Got=[0 1 0 1 0]
+Generated message: It is developing at a snail's pace, biologically or genetically; _____ even the inkblot errors (on based rigid models) where you
+Attempt 4: Target=[1, 0, 1, 0, 0], Got=[0 1 1 0 0]
+Generated message: 🚑 Instagram 15 days ago | Medium Google's Lead Dr. Paul McCartney talks about things you shouldn't do with headphones ✧ 63 seconds
+Attempt 5: Target=[1, 0, 1, 0, 0], Got=[1 1 1 0 1]
+Generated message: and prices are expected to continue rising at a rapid rate by the end of this decade. Viewers have expressed uncertainty about their opponents while also developing an
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 1, 1, 1, 1], Got=[1 1 1 0 1]
+Generated message: The company operates 59 regional locations, according to the Las Vegas-based Association of High Speed Transportation Network's ranking. So there are many more investments at
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 1, 1, 1], Got=[0 1 0 1 0]
+Generated message: And really, nobody believes that Apple is going to be able -- if it's anything competitive a lot quicker than they are in space-based propulsion
+Attempt 3: Target=[0, 1, 1, 1, 1], Got=[0 0 0 1 1]
+Generated message: (Architectural resell). And that is certainly something to consider when purchasing software from PECI.  But especially not now as of yet
+Attempt 4: Target=[0, 1, 1, 1, 1], Got=[0 1 0 1 1]
+Generated message: Very slowly, the Internet of Things provides new opportunities for third party entities to conduct research and innovation that will augment existing educational programs.  3.
+Attempt 5: Target=[0, 1, 1, 1, 1], Got=[0 1 0 0 0]
+Generated message: But even today, when things would be considered before huge advances in technology come along, boosting both readers and iBooks literally has nothing to do
+Warning: Failed after 5 attempts.
+Attempt 1: Target=[0, 1, 0, 1, 1], Got=[1 0 1 1 1]
+Generated message: The U.S.-made Nano Engine impacts nearly every function at sensors, processors and once shown for Ritual Call operations – the Quantum Vector Bonus spins around
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 0, 1, 1], Got=[1 0 0 1 1]
+Generated message: Wherever it and I headed, what was used were all movies or a TV show—only those brimming with money could manufacture this proprietary method
+Attempt 3: Target=[0, 1, 0, 1, 1], Got=[1 0 1 1 1]
+Generated message: My 1 in 3 Pixar family has spent $100 billion leaving the toy arm-up at my grandfather's hospital." And so:
+"Though
+Attempt 4: Target=[0, 1, 0, 1, 1], Got=[0 0 1 1 0]
+Generated message: Share this: Email
+​Sky Mcroatchne | Nike Collaborator KarateBlip.com We like to try and teach people how
+Attempt 5: Target=[0, 1, 0, 1, 1], Got=[1 1 1 1 0]
+Generated message: Yet in the process, Bolivia still faces steep state monetary costs. Each year more than 36% of its officials—including 58 percent from Congress and
+Warning: Failed after 5 attempts.
+  -> Avg Time: 0.5543s
+Ours (Guided):   0%|          | 0/10 [00:00<?, ?it/s]Ours (Guided):  10%|█         | 1/10 [00:00<00:04,  1.95it/s]Ours (Guided):  20%|██        | 2/10 [00:01<00:04,  1.84it/s]Ours (Guided):  30%|███       | 3/10 [00:01<00:02,  2.58it/s]Ours (Guided):  40%|████      | 4/10 [00:01<00:02,  2.08it/s]Top 1 score: 0.4516956744925602
+Top 1 score: 0.9000161562324911
+Top 1 score: 0.9830125219162174
+Top 1 score: 1.3034123439196643
+Top 1 score: 2.318991313351626
+Top 1 score: 2.5469331464887746
+Top 1 score: 2.4047797540489375
+Top 1 score: 2.4754856358897
+Top 1 score: 2.4140840218819006
+Top 1 score: 2.7631711913415637
+Top 1 score: 2.1041039620355733
+Top 1 score: 2.2296556576213376
+Top 1 score: 1.5735299194444488
+Top 1 score: 1.8062047299851194
+Top 1 score: 1.9502739247534797
+Top 1 score: 1.6822847895749513
+Top 1 score: 1.9945572688273092
+Top 1 score: 2.18738834076152
+Top 1 score: 2.162275707172008
+Top 1 score: 2.5920065580664353
+Top 1 score: 2.9381385782802845
+Top 1 score: 2.731538168598222
+Top 1 score: 2.3188862954332
+Top 1 score: 2.1383677567829564
+Top 1 score: 2.1563346031809565
+Top 1 score: 2.4036277648145203
+Top 1 score: 2.3299884468555456
+Top 1 score: 2.049642698160046
+Top 1 score: 2.470787457525728
+Top 1 score: 2.9773743222711766
+Attempt 1: Target=[0, 0, 1, 0, 0], Got=[0 0 0 0 0]
+Generated message: With the rise of cloud and smart-device technologies like Apple's Siri, Facebook Messenger, Skype and Amazon Alexa in particular, many companies now use these
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 0, 1, 0, 0], Got=[1 1 0 0 0]
+Generated message: Job creators are no longer living in hostels and trailers—they're moving into new jobs something like the office.
+The rise of smart cars
+Attempt 3: Target=[0, 0, 1, 0, 0], Got=[0 0 1 1 0]
+Generated message: ~~~~~~~~ Back to SOLDIER ---- ****************************************************************************** * Level 99 LV1 armor only. Debugging herself and heading towards INT-103 Confirmed as
+Attempt 4: Target=[0, 0, 1, 0, 0], Got=[0 0 1 0 0]
+Generated message: Babuya Boxy! Safeguards are emerging at all levels, including software development and security. Without it, developers would not enjoy high
+Top 1 score: 0.2996019692195576
+Top 1 score: 0.015351480223295966
+Top 1 score: 0.21542507695903643
+Top 1 score: 0.17770815382430105
+Top 1 score: 1.272312901000419
+Top 1 score: 1.4289739725305277
+Top 1 score: 0.4819097924605773
+Top 1 score: 0.5631931612137507
+Top 1 score: 0.19524520966984427
+Top 1 score: 0.635297404802173
+Top 1 score: 0.6705645172086698
+Top 1 score: 0.6516560238297388
+Top 1 score: 0.6283641479680919
+Top 1 score: 0.8105040675893374
+Top 1 score: 0.9092115021095991
+Top 1 score: 1.2335241456817425
+Top 1 score: 1.25077447125469
+Top 1 score: 0.8795315633090492
+Top 1 score: 0.3599345255221824
+Top 1 score: 0.7023591592153201
+Top 1 score: 1.159166807244998
+Top 1 score: 2.522591249012536
+Top 1 score: 2.522591249012536
+Attempt 1: Target=[1, 0, 1, 1, 0], Got=[1 0 1 1 1]
+Generated message: It could take another 50 years or more for this to occur. And the technology industry will continue expanding."
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 1, 1, 0], Got=[0 0 1 0 1]
+Generated message: The main market for medical implants using Sovaldi started with Sloan Kettering in 1969.
+However, many are caught up with these new Connections
+Attempt 3: Target=[1, 0, 1, 1, 0], Got=[0 0 0 1 1]
+Generated message: India's telecomaviaddi, who lobbies for Silicon Valley firms in his current capital area Hyderabad, has also seen enormous growth recently.
+Attempt 4: Target=[1, 0, 1, 1, 0], Got=[1 1 1 0 1]
+Generated message: " An industry which has pioneered applications for modern robotics models is now familiar with the uses and manufacturing advantages of these experimental infrastructures," reads one
+Attempt 5: Target=[1, 0, 1, 1, 0], Got=[0 0 0 0 0]
+Generated message: By January of this year, you'll be able to personalize your android device by becoming a smartphone or tablet user. So why are agencies using that
+Warning: Failed after 5 attempts.
+Top 1 score: -1.5427286855451927
+Top 1 score: -0.5560505817541717
+Top 1 score: -0.9053859364049877
+Top 1 score: -1.0281501548209038
+Top 1 score: -0.5003351323293606
+Top 1 score: -0.49162620530248735
+Top 1 score: 0.06265936186772691
+Top 1 score: -0.20182971456690324
+Top 1 score: 0.3186026209070706
+Top 1 score: 1.4065870805129805
+Top 1 score: 1.5985970750102134
+Top 1 score: 1.7481124363748466
+Top 1 score: 1.9151990520546243
+Top 1 score: 1.8661819584659032
+Top 1 score: 1.7362306301409984
+Top 1 score: 1.8489851417508572
+Top 1 score: 2.8419785160804736
+Top 1 score: 2.883359916596679
+Top 1 score: 3.7351453122399105
+Top 1 score: 2.6618974504036705
+Top 1 score: 2.3170074581649485
+Top 1 score: 2.661897603215212
+Top 1 score: 3.8462876539695356
+Top 1 score: 3.6042562494045924
+Top 1 score: 3.2765567510260016
+Top 1 score: 3.4255305387574126
+Top 1 score: 3.1341428773962656
+Top 1 score: 2.722759683616776
+Top 1 score: 2.828890411062728
+Top 1 score: 3.172970693761798
+Attempt 1: Target=[1, 0, 1, 1, 0], Got=[1 0 1 1 0]
+Generated message: In fact, it is not only about data collection and analysis but also for the protection of privacy.
+"Privacy issues are a major issue with technology
+Top 1 score: 1.7687028161313036
+Top 1 score: 2.614612760960215
+Top 1 score: 1.857762166461681
+Top 1 score: 2.613885978521375
+Top 1 score: 1.5993738464717495
+Top 1 score: 2.617526305353311
+Top 1 score: 2.730034680380915
+Top 1 score: 3.3481239002686882
+Top 1 score: 2.991433816908714
+Top 1 score: 2.8065789942373285
+Top 1 score: 2.7710982366643284
+Top 1 score: 2.6700535464985613
+Top 1 score: 2.862374333528056
+Top 1 score: 2.940636397930473
+Top 1 score: 2.1307798018463373
+Top 1 score: 2.463152542216897
+Top 1 score: 2.5201067566943722
+Top 1 score: 2.56015849480067
+Top 1 score: 2.46820161178911
+Top 1 score: 2.7541142154571583
+Top 1 score: 2.711901095567413
+Top 1 score: 2.624555336322624
+Top 1 score: 2.8317924682876647
+Top 1 score: 2.7725714448834546
+Top 1 score: 2.7227947030755097
+Top 1 score: 2.6284402927316624
+Top 1 score: 2.718607887655403
+Top 1 score: 2.9827858083111374
+Top 1 score: 3.053677434824059
+Top 1 score: 2.8229794409104896
+Attempt 1: Target=[1, 1, 1, 0, 1], Got=[1 0 1 1 1]
+Generated message: There is now a huge opportunity for companies of every size to work together in order towards creating new and innovative solutions that improve lives around the world. This
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 1, 1, 0, 1], Got=[0 0 1 1 1]
+Generated message: Today, 33 percent of containers fabricated or assembled stand for export. Today's container manufacturing facilities are regarded as top-competitive source and list suppliers regarding
+Attempt 3: Target=[1, 1, 1, 0, 1], Got=[1 0 1 1 1]
+Generated message: A major boost is coming from the wealthy and well-connected. 
+Mark Ricciardi, business intellectual at
+
+I started working computer games
+Attempt 4: Target=[1, 1, 1, 0, 1], Got=[1 1 0 1 0]
+Generated message: Observe). Of course, the main channel of innovation has been artificially redrawing algorithms over time.  One huge advantage to using statically typed
+Attempt 5: Target=[1, 1, 1, 0, 1], Got=[1 1 0 1 1]
+Generated message: Watch our coverage for 4K news with 13 amazing videos a month well spent. Visit Takeout Media's home page.
+No surprise there:
+Warning: Failed after 5 attempts.
+Top 1 score: -0.2935671253862304
+Top 1 score: -0.30394400992324455
+Top 1 score: 1.4551359887742208
+Top 1 score: 2.052510843194396
+Top 1 score: 3.3835506577919565
+Top 1 score: 4.171575480356623
+Top 1 score: 4.239047256222571
+Top 1 score: 4.681824259574889
+Top 1 score: 4.700725363950657
+Top 1 score: 4.960856153392583
+Top 1 score: 4.8065811927019695
+Top 1 score: 4.947647219328255
+Top 1 score: 4.959849638252577
+Top 1 score: 5.165545348809152
+Top 1 score: 5.258331039092559
+Top 1 score: 5.051844654439708
+Top 1 score: 5.1211682530106675
+Top 1 score: 4.9049062444008396
+Top 1 score: 4.949048378847703
+Top 1 score: 4.836148686393432
+Top 1 score: 5.044312451382593
+Top 1 score: 4.347818551490731
+Top 1 score: 4.416848115724332
+Top 1 score: 4.326688325670688
+Top 1 score: 4.238540850290192
+Top 1 score: 4.060186740202302
+Top 1 score: 4.987206381983945
+Top 1 score: 5.045043623568165
+Top 1 score: 5.0852545551841395
+Top 1 score: 4.863965954964916
+Attempt 1: Target=[1, 0, 1, 0, 1], Got=[1 0 1 0 1]Ours (Guided):  50%|█████     | 5/10 [00:02<00:01,  2.63it/s]Ours (Guided):  60%|██████    | 6/10 [00:02<00:01,  3.13it/s]Ours (Guided):  70%|███████   | 7/10 [00:02<00:01,  2.28it/s]Ours (Guided):  80%|████████  | 8/10 [00:03<00:00,  2.76it/s]Ours (Guided):  90%|█████████ | 9/10 [00:03<00:00,  2.45it/s]Ours (Guided): 100%|██████████| 10/10 [00:04<00:00,  2.64it/s]Ours (Guided): 100%|██████████| 10/10 [00:04<00:00,  2.49it/s]
+
+Generated message: The average age, gender gap in education and employment gaps are still very much present. We need to understand this more deeply than the media has ever done
+Top 1 score: -1.3276377065738576
+Top 1 score: -0.901609831889621
+Top 1 score: 0.22202334092399945
+Top 1 score: -0.005966032578236524
+Top 1 score: -0.4209932351755657
+Top 1 score: 0.05254209490934603
+Top 1 score: -0.17963670200584153
+Top 1 score: -0.4098352904176742
+Top 1 score: -0.08994471920744015
+Top 1 score: -0.3127432443901947
+Top 1 score: 2.3614280152165277
+Top 1 score: 2.6578566382988424
+Top 1 score: 3.209901071550577
+Top 1 score: 2.9089992163850074
+Top 1 score: 2.6427052500676838
+Top 1 score: 2.6123515419321923
+Top 1 score: 2.56417338115199
+Top 1 score: 2.7278851622692453
+Top 1 score: 2.6405680410891983
+Top 1 score: 2.651060478676019
+Top 1 score: 2.7726129496487353
+Top 1 score: 2.81224470363905
+Top 1 score: 2.5552500059302523
+Top 1 score: 2.1311613748674914
+Top 1 score: 2.0895597715707845
+Top 1 score: 2.1670030745571482
+Top 1 score: 2.4214472085148135
+Top 1 score: 2.3355968935389377
+Top 1 score: 2.263263634800847
+Top 1 score: 2.302663767141333
+Attempt 1: Target=[1, 1, 1, 0, 0], Got=[1 1 1 0 0]
+Generated message: The first stage for this will be to find an inexpensive, affordable way, and we believe there has never been more need. We look forward in the
+Top 1 score: 4.310321110001083
+Top 1 score: 4.224880933409107
+Top 1 score: 4.357336978166788
+Top 1 score: 4.746937988445797
+Top 1 score: 4.5461587841429205
+Top 1 score: 4.381707326372202
+Top 1 score: 4.290038851663466
+Top 1 score: 4.612295491352387
+Top 1 score: 4.362707186810863
+Top 1 score: 4.213109345956655
+Top 1 score: 4.556544987725201
+Top 1 score: 4.661094095956878
+Top 1 score: 4.374484934465681
+Top 1 score: 4.501110472468747
+Top 1 score: 4.511820162427069
+Top 1 score: 4.884068728635069
+Top 1 score: 4.76374376244069
+Top 1 score: 4.806667502282107
+Top 1 score: 4.740958535084802
+Top 1 score: 4.6813304422007285
+Top 1 score: 4.812270510250688
+Top 1 score: 4.2592896043095525
+Top 1 score: 4.524417163567713
+Top 1 score: 4.4808587113348235
+Top 1 score: 5.05287638173928
+Top 1 score: 4.672438250945991
+Top 1 score: 4.508132657863357
+Top 1 score: 4.926010616394682
+Top 1 score: 4.735484153911609
+Top 1 score: 4.493640374073157
+Attempt 1: Target=[1, 0, 1, 0, 1], Got=[1 0 0 0 1]
+Generated message: As a company, it is now becoming an increasingly powerful force.
+: The new tech industry will be more complex to implement than before; for example
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 1, 0, 1], Got=[1 1 0 0 1]
+Generated message: The research and development of biotechnology patents has, wisely so far at least ten countries participating. 
+Here is my strategy for effective investing in
+Attempt 3: Target=[1, 0, 1, 0, 1], Got=[0 0 1 0 1]
+Generated message: The future is controlled by atmospheric pressure and weather around the planet.  CO2 reacts with atmosphere to release or 'transpire' large amounts of
+Attempt 4: Target=[1, 0, 1, 0, 1], Got=[0 0 0 0 0]
+Generated message: documentary film production is currently cutting its annual audience from 50 million to 20 billion monthly visitors, about half of which are young site members.  But in
+Attempt 5: Target=[1, 0, 1, 0, 1], Got=[1 1 0 0 1]
+Generated message: The shape of the working relationship between everyone is changing, so anyone who wants to make their own device can get it. 
+Thinking back
+Warning: Failed after 5 attempts.
+Top 1 score: 5.140523908603792
+Top 1 score: 5.348510891423522
+Top 1 score: 5.392242706100655
+Top 1 score: 5.48871114131778
+Top 1 score: 6.695578872772138
+Top 1 score: 6.865241980397828
+Top 1 score: 7.287860326390719
+Top 1 score: 8.057392704327873
+Top 1 score: 9.004065085637386
+Top 1 score: 9.185264748918879
+Top 1 score: 9.062317227454045
+Top 1 score: 8.883584913672129
+Top 1 score: 8.68746188266479
+Top 1 score: 8.658827820653602
+Top 1 score: 9.267068845025259
+Top 1 score: 8.98439818698711
+Top 1 score: 8.657180021819153
+Top 1 score: 8.347501698201143
+Top 1 score: 8.577606559780111
+Top 1 score: 8.712767407842748
+Top 1 score: 8.384426965726002
+Top 1 score: 8.755108273909325
+Top 1 score: 8.975523276632206
+Top 1 score: 8.811201182644355
+Top 1 score: 8.811200767072735
+Top 1 score: 8.811200767072735
+Top 1 score: 8.874720623573676
+Top 1 score: 8.915866209461926
+Top 1 score: 9.084630170290417
+Top 1 score: 9.208728724342162
+Attempt 1: Target=[0, 0, 1, 1, 1], Got=[0 0 1 1 1]
+Generated message: We are seeing many different uses of these devices, and we need to make sure they do the most efficient business.
+
+
+ (Photo: Courtesy Google
+Top 1 score: -0.6033408031481938
+Top 1 score: -0.20986255072609877
+Top 1 score: -0.20986255072609877
+Attempt 1: Target=[0, 1, 1, 1, 0], Got=[0 1 1 0 1]
+Generated message: ...
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[0, 1, 1, 1, 0], Got=[1 1 0 1 0]
+Generated message: Caim has been freely acting as one of the first consultants to customers (like we had in 2015) and Scrubvey, who went mainstream
+Attempt 3: Target=[0, 1, 1, 1, 0], Got=[1 1 0 0 1]
+Generated message: And it has created new sources of revenue. 
+As progress ever becomes more maddening, so too does the complexity with which such innovations
+Attempt 4: Target=[0, 1, 1, 1, 0], Got=[1 0 1 0 1]
+Generated message: Rational Andy Wilman, a first-year software engineer at Yahoo Inc., recently told CNBC. "Obviously if you don't take video over source code
+Attempt 5: Target=[0, 1, 1, 1, 0], Got=[1 0 0 1 0]
+Generated message: But there are easy, desktop ways to sell peripherals in a way only most adults understand.
+The biggest OS feature that Victor helped usher into the
+Warning: Failed after 5 attempts.
+Top 1 score: 0.005459174193124139
+Top 1 score: -0.20554074713256454
+Top 1 score: 2.2862647223338874
+Top 1 score: 2.535063996449161
+Top 1 score: 2.2213452997683083
+Top 1 score: 1.6520550282017092
+Top 1 score: 1.2936637313379218
+Top 1 score: 1.5273456450387235
+Top 1 score: 1.1064902330319537
+Top 1 score: 1.2807512880740348
+Top 1 score: 1.1740545074859927
+Top 1 score: 1.735541039481766
+Top 1 score: 2.985546005931907
+Top 1 score: 3.391576708710782
+Top 1 score: 0.5801198830760004
+Top 1 score: 0.5801187202049892
+Top 1 score: 1.040892589663284
+Top 1 score: 2.251660499246287
+Top 1 score: 2.6978573082064923
+Top 1 score: 2.836492759475632
+Top 1 score: 1.9294694235326775
+Top 1 score: 2.0210925338086447
+Top 1 score: 1.461581868747048
+Top 1 score: 2.088763961051137
+Top 1 score: 2.2324001813163914
+Top 1 score: 2.1408251666323763
+Top 1 score: 1.8312422344248585
+Top 1 score: 1.975847073689823
+Top 1 score: 2.1860097325579853
+Top 1 score: 2.038377568820889
+Attempt 1: Target=[1, 0, 1, 0, 0], Got=[1 1 0 0 0]
+Generated message: In 2016 alone, the industry has added over $1 BILLION.
+I'm not a big fan of Bitcoin and it's an amazing technology
+  [Fallback] Guidance failed, switching to Random Sampling (alpha=0)...
+Attempt 2: Target=[1, 0, 1, 0, 0], Got=[1 0 1 0 0]
+Generated message: Again, I seem to remember not yet seeing the benefit of HashFast. but when North8 dug up a report from MockPr4000 on December
+  -> Avg Time: 0.4011s
+
+=== Final Results ===
+   Num_Bits             Method  Alpha  Avg_Time
+0         1  Baseline (Random)    0.0  0.672960
+1         1      Ours (Guided)    3.0  0.286795
+2         2  Baseline (Random)    0.0  0.267425
+3         2      Ours (Guided)    3.0  0.333711
+4         3  Baseline (Random)    0.0  0.428503
+5         3      Ours (Guided)    3.0  0.406105
+6         4  Baseline (Random)    0.0  0.467397
+7         4      Ours (Guided)    3.0  0.406348
+8         5  Baseline (Random)    0.0  0.554282
+9         5      Ours (Guided)    3.0  0.401096
+
+Results saved to /home/mumu/projects/robust_steganography_modify/embeddings/measurements/final_experiment_results.csv

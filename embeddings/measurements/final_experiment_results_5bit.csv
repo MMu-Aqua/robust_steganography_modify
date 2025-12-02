@@ -1,0 +1,11 @@
+Num_Bits,Method,Alpha,Avg_Time
+1,Baseline (Random),0.0,0.672959852218628
+1,Ours (Guided),3.0,0.2867947816848755
+2,Baseline (Random),0.0,0.2674251556396484
+2,Ours (Guided),3.0,0.33371131420135497
+3,Baseline (Random),0.0,0.428502631187439
+3,Ours (Guided),3.0,0.40610527992248535
+4,Baseline (Random),0.0,0.4673968076705933
+4,Ours (Guided),3.0,0.40634808540344236
+5,Baseline (Random),0.0,0.5542824983596801
+5,Ours (Guided),3.0,0.401095986366272
