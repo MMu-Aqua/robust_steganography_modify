@@ -31,7 +31,7 @@ def run_single_trial(alpha, num_bits):
     # 8 bits 理论平均需要 256 次，我们给 1000 次上限
     # 注意：这需要 steg.py 的 sample_concurrent 支持 max_attempts 参数
     # 如果没改 steg.py，默认是 15，那这里怎么传都没用，Baseline 永远会失败
-    limit = 3000
+    limit = 10000
     
     attempts = 0
     try:
@@ -128,7 +128,7 @@ def main():
     print("\n=== Final Results ===")
     print(df)
     
-    output_file = os.path.join(current_dir, "Lookahead_run_experiments_8bit_4_20trial_max2000.csv")
+    output_file = os.path.join(current_dir, "Lookahead_run_experiments_8bit_5_20trial_max10000.csv")
     df.to_csv(output_file, index=False)
     print(f"\nResults saved to {output_file}")
 

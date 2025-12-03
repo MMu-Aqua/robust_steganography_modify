@@ -1,0 +1,3 @@
+Method,Alpha,Avg_PPL
+Baseline (Random),0.0,316.2064088821411
+Ours (Guided),3.0,145.75783252716064
